@@ -17,16 +17,16 @@
     "meta-header": {
       "type": "advertorial-meta-header",
       "settings": {
-        "category_text": "Women's Health · Nutrition · 4 min read"
+        "category_text": "Kesehatan Wanita · Nutrisi · 4 menit baca"
       }
     },
     "hook": {
       "type": "advertorial-hook",
       "settings": {
-        "headline": "She wakes up 10 minutes before everyone else. Not by choice. Because her knees need that long to start working again.",
-        "deck": "What most women over 45 mistake for \"just getting older\" — and what your body is actually trying to tell you.",
+        "headline": "Ia bangun 10 menit lebih awal dari semua orang. Bukan karena ingin. Karena lututnya butuh waktu selama itu untuk bisa digerakkan lagi.",
+        "deck": "Apa yang sering disalahartikan oleh perempuan di atas 45 tahun sebagai “sekadar bertambah usia” — dan apa yang sebenarnya sedang tubuh coba sampaikan.",
         "author_name": "Nadia Kusumawardani",
-        "author_credential": "Nutrition & Women's Health Writer",
+        "author_credential": "Penulis Nutrisi & Kesehatan Wanita",
         "hero_image": "shopify://shop_images/healtcare.png"
       }
     },
@@ -36,43 +36,43 @@
         "p1": {
           "type": "paragraph",
           "settings": {
-            "text": "You know this morning."
+            "text": "Pagi seperti ini pasti terdengar familier."
           }
         },
         "p2": {
           "type": "paragraph",
           "settings": {
-            "text": "The alarm hasn't gone off yet, but your body already has. Your knees feel locked. Your fingers are stiff. Something in your lower back protests before you've even sat up."
+            "text": "Alarm belum berbunyi, tetapi tubuh sudah lebih dulu “bangun”. Lutut terasa kaku. Jari tangan pegal-pegal. Ada bagian di punggung bawah yang terasa seperti “protes” bahkan sebelum sempat duduk tegak."
           }
         },
         "p3": {
           "type": "paragraph",
           "settings": {
-            "text": "You swing your legs to the floor and wait. Not because you want to. Because you have to. Those few minutes for your joints to \"warm up\" before the household starts moving."
+            "text": "Kaki diturunkan ke lantai dan harus menunggu. Bukan karena ingin, tetapi karena memang perlu beberapa menit agar sendi terasa lebih enak digerakkan sebelum beraktivitas."
           }
         },
         "p4": {
           "type": "paragraph",
           "settings": {
-            "text": "And then you go. Breakfast. School drop-off. The errands. The family. You never stop."
+            "text": "Hari pun dimulai. Sarapan. Antar anak ke sekolah. Urusan rumah. Keluarga. Aktivitas tidak pernah berhenti."
           }
         },
         "p5": {
           "type": "paragraph",
           "settings": {
-            "text": "But lately, your body has started making noise you can't ignore."
+            "text": "Namun belakangan ini, tubuh mulai mengeluarkan “suara” yang tidak lagi bisa diabaikan."
           }
         },
         "p6": {
           "type": "paragraph",
           "settings": {
-            "text": "You are still the woman who holds everything together. The one people lean on. The one who doesn't complain."
+            "text": "Anda masih perempuan yang sama, yang menjadi tumpuan semua orang. Yang diandalkan. Yang jarang mengeluh."
           }
         },
         "p7": {
           "type": "paragraph",
           "settings": {
-            "text": "But privately — in that quiet moment before the house wakes up — you've started to wonder how much longer your body can keep up with the life you lead."
+            "text": "Tetapi diam-diam — di momen sepi sebelum orang rumah terbangun — Anda mulai bertanya, sampai kapan tubuh ini bisa terus mengikuti ritme hidup seperti ini."
           }
         }
       },
@@ -90,17 +90,17 @@
     "education": {
       "type": "advertorial-education",
       "settings": {
-        "subhead": "What no one told you about menopause.",
-        "body": "<p>Here's what's actually happening.</p><p>During perimenopause and menopause, your hormone levels shift — and your body's ability to absorb and use certain nutrients drops with them. Nutritional research on women over 40 has documented this pattern clearly. Calcium. Magnesium. Iron. Vitamin D. Anti-inflammatory compounds your joints used to get enough of without you thinking about it. All of them decline.</p><p>That morning stiffness? It's not wear and tear. It's your joints running on empty.</p><p>The exhaustion that doesn't match your effort? Your cells aren't getting the fuel they used to. The hot flashes, the sleep that never goes deep enough, the skin that suddenly feels thinner and drier — these aren't separate problems. They are all the same problem showing up in different places.</p><p>Clinical nutritionists who work with women in this age group have a term for it: systemic nutrient depletion. The body isn't failing. It's simply running out of raw materials it used to recycle efficiently — and once hormone levels shift, the deficit accelerates.</p><p><strong>Your body isn't breaking down. It's running out of what it needs.</strong> And here's the part that matters: this is not inevitable. It is a gap. And gaps can be filled.</p>"
+        "subhead": "Apa yang jarang dijelaskan tentang menopause.",
+        "body": "<p>Inilah yang sebenarnya terjadi.</p><p>Saat memasuki perimenopause dan menopause, kadar hormon berubah dan kemampuan tubuh untuk menyerap serta memanfaatkan nutrisi tertentu ikut menurun. Penelitian nutrisi pada perempuan di atas 40 tahun mendokumentasikan pola ini dengan jelas. Kalsium. Magnesium. Zat besi. Vitamin D. Senyawa anti-inflamasi alami yang dulu cukup, tanpa disadari, kini semuanya menurun.</p><p>Rasa kaku di pagi hari bukan sekadar “faktor usia”. Sendi terasa seperti kurang pelumas karena tubuh kekurangan fondasi nutrisinya.</p><p>Rasa capek yang tidak sebanding dengan aktivitas? Sel-sel tubuh tidak lagi mendapatkan “bahan bakar” seperti dulu. Hot flash, tidur yang tidak pernah benar-benar nyenyak, kulit yang mendadak terasa lebih kering dan tipis — ini bukan masalah yang terpisah. Ini adalah satu pola yang sama yang muncul di berbagai bagian tubuh.</p><p>Ahli nutrisi klinis yang bekerja dengan perempuan di fase ini menyebutnya: penurunan nutrisi sistemik. Tubuh tidak rusak. Tubuh hanya kekurangan bahan baku yang dulu bisa didaur ulang secara efisien — dan setelah hormon berubah, kekurangan itu semakin cepat terjadi.</p><p><strong>Tubuh tidak sedang “rusak”. Hanya sedang kekurangan apa yang dibutuhkannya.</strong> Dan ini bagian pentingnya: kondisi ini bukan sesuatu yang tidak bisa diperbaiki. Ini adalah celah. Dan celah dapat diisi.</p>"
       }
     },
     "why-nothing-works": {
       "type": "advertorial-why-nothing-works",
       "settings": {
-        "subhead": "Why pushing through isn't working anymore.",
-        "body_before_image": "<p>Most women in this phase respond the same way: they treat each symptom separately. A cream for the joints. Coffee for the energy. A sleep aid for the insomnia. Maybe a bottle of calcium or a turmeric capsule someone recommended. None of these are wrong. But none of them are working — and there's a simple reason why.</p>",
+        "subhead": "Mengapa memaksakan diri tidak lagi efektif.",
+        "body_before_image": "<p>Sebagian besar perempuan di fase ini merespons dengan cara yang sama: mengatasi gejala satu per satu. Krim untuk nyeri sendi. Kopi untuk energi. Obat tidur untuk insomnia. Mungkin juga kalsium atau kapsul herbal yang direkomendasikan teman. Tidak ada yang salah. Namun semuanya terasa tidak cukup dan ada alasan sederhana di baliknya.</p>",
         "analogy_image": "shopify://shop_images/most-women-in-this-phase-respond-the-same-way-they-treat-each-symptom-separately-a-cream-for-the-joints-coffee-for-the-energy-a-sleep-aid-for-the-insomnia-maybe-a-bottle-of-calcium-or.png",
-        "body_after_image": "<p>Imagine your house loses its main power supply. Every room goes dark. You could light a candle in each room — and that helps, temporarily. But what you actually need is to restore the source.</p><p>The body works the same way. When the underlying nutrient foundation drops, symptoms show up everywhere at once. Addressing them one by one is lighting candles. What the body needs is the power turned back on.</p><p>That's what leads many women to moringa — a plant known for delivering broad-spectrum nutrition in a single source. But not all moringa delivers on that promise. Some women try it and feel nothing. The brown powder for Rp 50,000 that tastes bitter and sits heavy — a week later, nothing has changed. What most don't realize is that what they tried was mostly ground-up stems their body couldn't absorb.</p><p>By the time most women reach this point — after the creams, the supplements, the powders that didn't work — the frustration has been building for years.</p>",
+        "body_after_image": "<p>Bayangkan ketika listrik utama rumah padam, lalu semua ruangan menjadi gelap. Anda bisa menyalakan lilin di setiap ruangan dan itu membantu sementara. Tetapi yang sebenarnya dibutuhkan adalah memperbaiki sumber listriknya.</p><p>Tubuh bekerja dengan cara yang sama. Ketika fondasi nutrisi menurun, gejala muncul di berbagai tempat sekaligus. Mengatasi satu per satu, seperti menyalakan lilin. Yang dibutuhkan tubuh adalah menghidupkan kembali sumbernya.</p><p>Di titik inilah banyak perempuan mulai mencari moringa, tanaman yang dikenal mengandung spektrum nutrisi luas dalam satu sumber. Namun tidak semua moringa memberikan hasil yang sama. Sebagian mencoba dan tidak merasakan perubahan. Bubuk cokelat seharga Rp 50.000 yang terasa pahit dan berat di perut, tetapi seminggu kemudian tidak ada yang berubah. Yang sering tidak disadari adalah produk tersebut sebagian besar berisi batang yang sulit diserap tubuh.</p><p>Saat banyak perempuan sampai pada tahap ini — setelah mencoba krim, suplemen, bubuk yang tidak bekerja — rasa frustrasi pun menumpuk bertahun-tahun.</p>",
         "quote_text": "\"Saya 49 tahun. Sendi kaku, hot flash, emosi kacau, kulit kering. Udah agak desperate.\"",
         "quote_attribution": "Via Instagram DM"
       }
@@ -108,12 +108,12 @@
     "moringa-education": {
       "type": "advertorial-moringa-education",
       "settings": {
-        "subhead": "Restoring the source — not just lighting candles.",
-        "body_before_callout": "<p>Recent nutritional research on women's health over 40 points to a different approach: instead of targeting symptoms one at a time, address the underlying depletion with a broad, dense spectrum of bioavailable nutrients — delivered consistently, in a form the body can actually use.</p><p>One plant matches this profile unusually well. Moringa oleifera contains over 90 bioavailable nutrients in a single leaf — including anti-inflammatory compounds, calcium, magnesium, iron, and zinc. Not as isolated chemicals in a lab, but as a complete nutritional profile the body recognizes and absorbs naturally.</p><p>For women in perimenopause and menopause, this matters. The gap isn't one nutrient. It's dozens. Moringa delivers them together, the way food does — not the way a supplement label does.</p>",
-        "fact_label": "From published nutritional analyses",
-        "fact_text": "<p>Moringa leaf contains 7× the vitamin C of oranges, 4× the calcium of milk, 3× the potassium of bananas, and 25× the iron of spinach — in a single, bioavailable source. Studies published in the Journal of Food Science and Technology and the Asian Pacific Journal of Tropical Biomedicine have documented its anti-inflammatory, antioxidant, and hormone-balancing properties.</p>",
+        "subhead": "Memulihkan sumbernya — bukan sekadar menyalakan lilin.",
+        "body_before_callout": "<p>Riset nutrisi terbaru pada kesehatan perempuan usia 40+ menunjukkan pendekatan berbeda: alih-alih menargetkan gejala satu per satu, isi kembali kekurangan nutrisi yang mendasari semuanya dengan spektrum nutrisi yang luas, padat, dan mudah diserap tubuh — secara konsisten.</p><p>Salah satu tanaman yang profilnya paling mendekati kebutuhan ini adalah moringa oleifera. Dalam satu daun terdapat lebih dari 90 nutrisi bioavailable termasuk senyawa anti-inflamasi, kalsium, magnesium, zat besi, dan zinc. Bukan sebagai zat kimia terpisah, tetapi sebagai profil nutrisi lengkap yang dikenali tubuh secara alami.</p><p>Bagi perempuan di fase perimenopause dan menopause, ini penting. Kekurangannya bukan hanya satu nutrisi, melainkan banyak. Moringa menghadirkannya secara bersamaan seperti makanan utuh, bukan seperti label suplemen.</p>",
+        "fact_label": "Dari analisis nutrisi yang dipublikasikan:",
+        "fact_text": "<p>Daun moringa mengandung 7× vitamin C lebih tinggi dari jeruk, 4× kalsium lebih tinggi dari susu, 3× kalium lebih tinggi dari pisang, dan 25× zat besi lebih tinggi dari bayam dalam satu sumber bioavailable. Studi dalam Journal of Food Science and Technology dan Asian Pacific Journal of Tropical Biomedicine mendokumentasikan sifat anti-inflamasi, antioksidan, dan dukungannya terhadap keseimbangan hormon.</p>",
         "comparison_image": "shopify://shop_images/moringa-leaf-contains-7-the-vitamin-c-of-oranges-4-the-calcium-of-milk-3-the-potassium-of-bananas-and-25-the-iron-of-spinach-in-a-single-bioavailable-source-studies-published-in-the-j.png",
-        "body_after_callout": "<p>That covers what's happening inside the body. But remember the skin that suddenly feels thinner and drier? The hair that's lost its density? That's the same depletion — showing up on the surface. Moringa seed oil addresses this from the outside. It contains 72% oleic acid — a fatty acid that closely resembles the skin's own sebum — along with behenic acid and concentrated antioxidants. During menopause, when the skin loses moisture faster than it can rebuild, this oil feeds it directly what it's missing.</p><p>Nourishment from the inside. Nourishment from the outside. The question isn't whether moringa works. It's whether the moringa you try is good enough to make a difference.</p>"
+        "body_after_callout": "<p>Ini menjelaskan apa yang terjadi di dalam tubuh. Lantas bagaimana dengan kulit yang tiba-tiba terasa lebih kering? Rambut yang tampak menipis? Itu adalah pola yang sama, yang kemudian muncul di permukaan. Minyak biji moringa bekerja dari luar. Mengandung 72% asam oleat yang menyerupai sebum alami kulit, serta asam behenat dan antioksidan pekat. Saat menopause mempercepat kehilangan kelembapan, minyak ini memberikan kembali apa yang hilang.</p><p>Nutrisi dari dalam. Perawatan dari luar. Pertanyaannya bukan apakah moringa bekerja. Pertanyaannya adalah apakah moringa yang Anda pilih cukup berkualitas untuk benar-benar memberi hasil.</p>"
       }
     },
     "bridge-cta": {
@@ -122,7 +122,7 @@
         "b1": {
           "type": "badge",
           "settings": {
-            "badge_label": "BPOM Certified"
+            "badge_label": "Terdaftar di BPOM"
           }
         },
         "b2": {
@@ -134,13 +134,13 @@
         "b3": {
           "type": "badge",
           "settings": {
-            "badge_label": "100% Organic"
+            "badge_label": "100% Organik"
           }
         },
         "b4": {
           "type": "badge",
           "settings": {
-            "badge_label": "Lab-Verified"
+            "badge_label": "Terverifikasi Lab"
           }
         }
       },
@@ -151,22 +151,25 @@
         "b4"
       ],
       "settings": {
-        "bridge_text": "<p>While most brands I've researched source their moringa from third parties and focus only on nutrition or only on skincare, I came across a small Indonesian brand that takes a different approach entirely. Treelogy grows its own moringa on their organic-certified farm in Bali and processes it in their own BPOM-registered facility. From soil to product — everything under one roof.</p><p>That matters more than most people realize. Some of the nutrients in moringa are so fragile that if you can't see how it's made, it's probably being made in a way that destroys them. Treelogy publishes their process openly — which, after weeks of researching this market, I can tell you is rare.</p><p>And the best part? They offer a Starter Pack that lets you try the capsules and powder in smaller sizes — so you can find which format fits your daily routine — along with the seed oil for skin and hair. It's their full inside-and-outside protocol in one box. They're running it at a lower price this month with free shipping while stock lasts.</p>",
+        "bridge_text": "<p>Sementara sebagian besar brand yang saya teliti mengambil moringa dari pihak ketiga dan hanya fokus pada nutrisi atau hanya pada skincare, saya menemukan satu brand Indonesia yang mengambil pendekatan berbeda. Treelogy menanam moringanya sendiri di kebun organik bersertifikat di Bali dan memprosesnya di fasilitas terdaftar BPOM milik mereka sendiri. Dari tanah hingga menjadi produk, semuanya diproses di bawah satu atap.</p><p>Hal ini lebih penting daripada yang banyak orang sadari. Sebagian nutrisi moringa sangat sensitif terhadap panas dan oksidasi. Jika tidak transparan, kemungkinan besar prosesnya membuat nutrisinya menjadi rusak. Treelogy mempublikasikan prosesnya secara terbuka dan ini sesuatu yang jarang saya temukan selama meneliti pasar ini.</p><p>Dan yang menarik, mereka menyediakan Discovery Pack yang memungkinkan konsumen mencoba kapsul dan bubuk dalam ukuran lebih kecil, sehingga Anda bisa memilih format yang paling sesuai untuk konsumsi harian, juga minyak biji moringanya untuk kulit dan rambut. Ini adalah nutrisi dari dalam dan luar dalam satu box. Bulan ini harganya lebih rendah dan ada gratis ongkir selama stok tersedia.</p>",
         "cta_url": "https://treelogy.com/products/moringa-ritual-set",
-        "cta_text": "See the Starter Pack →",
-        "cta_subtext": "Free shipping for readers of this article · 30-day protocol"
+        "cta_text": "Temukan Discovery Pack →",
+        "cta_subtext": "Gratis ongkir untuk pembaca artikel ini • Protokol 30 hari",
+        "meta_product_name": "The Discovery Pack",
+        "meta_product_value": "999000",
+        "meta_content_id": "9074141200572"
       }
     },
     "quality-proof": {
       "type": "advertorial-quality-proof",
       "settings": {
-        "intro_text": "<p>If you're still reading, you probably want to understand exactly why quality matters so much with moringa — and how to tell the difference between the real thing and the cheap alternatives that give the plant a bad name.</p>",
+        "intro_text": "<p>Kalau masih membaca sampai di sini, kemungkinan Anda ingin memahami mengapa kualitas moringa begitu menentukan dan bagaimana membedakan produk asli dengan bubuk murah yang buat banyak orang kecewa.</p>",
         "inside_outside_image": "shopify://shop_images/make-more-premium.png",
-        "subhead": "How to tell real moringa from the brown powder that doesn't work.",
-        "body_quality": "<p>Walk into any health store and you'll find moringa powder for Rp 50,000. It's brown. It's bitter. Most of it is ground-up stems.</p><p>Most brands shred the entire branch — leaves, stems, bark — because it's faster and cheaper. The result is a powder that's oxidized before it reaches you. Low absorption. Low potency. That's why so many women try moringa once and give up.</p>",
-        "color_comparison_image": "shopify://shop_images/most-brands-shred-the-entire-branch-leaves-stems-bark-because-its-faster-and-cheaper-the-result-is-a-powder-thats-oxidized-before-it-reaches-you-low-absorption-low-potency-thats-why-s.png",
-        "body_process": "<p>Leaf-only moringa looks different. Vibrant green, like matcha. The difference comes down to whether the stems were removed — by hand, one leaf at a time.</p><p>This process takes one full hour to produce just 12 grams of powder. Treelogy follows this method for every batch. Harvested at dawn in Karangasem, Bali. Hand-separated. Dehydrated at 38°C for 22 hours to protect heat-sensitive vitamins and enzymes. No shortcuts.</p>",
-        "process_image": "shopify://shop_images/leaf-only-moringa-looks-different-vibrant-green-like-matcha-the-difference-comes-down-to-whether-the-stems-were-removed-by-hand-one-leaf-at-a-time-this-process-takes-one-full-hour-to.png"
+        "subhead": "Cara membedakan moringa asli dengan bubuk cokelat yang tidak memberikan hasil.",
+        "body_quality": "<p>Masuk ke toko kesehatan mana pun, Anda akan menemukan bubuk moringa Rp 50.000. Warnanya cokelat. Rasanya pahit. Sebagian besar berasal dari batang yang digiling.</p><p>Banyak brand menggiling seluruh rantingnya — daun dan batang — karena lebih cepat dan murah. Hasilnya adalah bubuk yang sudah teroksidasi sebelum dikonsumsi. Daya serap rendah. Khasiat rendah. Inilah mengapa sebagian perempuan mencoba moringa sekali, lalu berhenti.</p>",
+        "color_comparison_image": "shopify://shop_images/IMAGE_5.png",
+        "body_process": "<p>Moringa daun murni terlihat berbeda. Hijau cerah seperti matcha. Perbedaannya terletak pada apakah batangnya dipisahkan satu per satu secara manual.</p><p>Proses ini membutuhkan satu jam penuh untuk menghasilkan hanya 12 gram bubuk. Treelogy mengikuti metode ini pada setiap batch. Dipanen saat fajar di Karangasem, Bali. Dipisahkan manual dengan tangan. Dikeringkan pada suhu 38°C selama 22 jam untuk menjaga vitamin dan enzim sensitif panas. Tanpa jalan pintas.</p>",
+        "process_image": "shopify://shop_images/Image_6.jpg"
       }
     },
     "social-proof": {
@@ -175,7 +178,7 @@
         "t1": {
           "type": "testimonial",
           "settings": {
-            "bridge_text": "One reviewer, four days in:",
+            "bridge_text": "Salah satu ulasan, setelah hari ke-4:",
             "quote_text": "Baru coba 4 hari dan joint pain saya menghilang. Tidur pun nyenyak.",
             "attribution": "Treelogy customer review"
           }
@@ -183,7 +186,7 @@
         "t2": {
           "type": "testimonial",
           "settings": {
-            "bridge_text": "Another, ten days in:",
+            "bridge_text": "Ulasan lain, setelah hari ke-10:",
             "quote_text": "Usia 51 tahun. Hari ke 10, badan kembali segar, ngilu tulang sudah hilang. Hot flashes sudah hampir ngga pernah.",
             "attribution": "Treelogy customer review · Tokopedia"
           }
@@ -191,7 +194,7 @@
         "t3": {
           "type": "testimonial",
           "settings": {
-            "bridge_text": "According to one repeat customer, the results surprised even her doctor.",
+            "bridge_text": "Menurut salah satu pelanggan setia, hasilnya bahkan mengejutkan dokternya.",
             "quote_text": "Dokter jantung saya sampai kagum sama hasil check-up rutin saya.",
             "attribution": "Treelogy customer review · Tokopedia"
           }
@@ -203,9 +206,9 @@
         "t3"
       ],
       "settings": {
-        "subhead": "What 4,700+ Treelogy users are reporting.",
-        "intro_text": "<p>Moringa is not a miracle. But the pattern across Treelogy's customer reviews — thousands of Indonesian women in this exact phase of life — is consistent enough to be worth paying attention to.</p><p>Most report the first shift between Day 3 and Day 7 — joint stiffness easing, sleep going deeper, the morning \"warm-up\" getting shorter. By Day 14, the changes tend to settle into a rhythm.</p>",
-        "outro_text": "<p>Not every user responds the same way. Some feel it in 48 hours. Some take two weeks. But the pattern across their reviews is consistent: the body responds when it finally gets what it's been missing.</p>"
+        "subhead": "Apa yang dilaporkan oleh 4.700+ pengguna Treelogy.",
+        "intro_text": "<p>Moringa bukan keajaiban. Namun pola dalam ribuan ulasan pelanggan Treelogy — perempuan Indonesia di fase kehidupan ini — terlihat cukup konsisten untuk diperhatikan.</p><p>Sebagian besar melaporkan perubahan awal antara hari ke-3 hingga hari ke-7; rasa kaku berkurang, tidur lebih nyenyak, waktu persiapan di pagi hari jadi semakin singkat. Pada hari ke-14, perubahan biasanya terasa lebih stabil.</p>",
+        "outro_text": "<p>Tidak semua orang merasakan respons yang sama. Ada yang merasakan dalam 48 jam. Ada yang butuh dua minggu. Namun pola dalam ulasan mereka menunjukkan satu hal yang konsisten: tubuh merespons ketika akhirnya mendapatkan kembali apa yang hilang.</p>"
       }
     },
     "final-cta": {
@@ -214,7 +217,7 @@
         "b1": {
           "type": "badge",
           "settings": {
-            "badge_label": "BPOM Certified"
+            "badge_label": "Terdaftar di BPOM"
           }
         },
         "b2": {
@@ -226,13 +229,13 @@
         "b3": {
           "type": "badge",
           "settings": {
-            "badge_label": "100% Organic"
+            "badge_label": "100% Organik"
           }
         },
         "b4": {
           "type": "badge",
           "settings": {
-            "badge_label": "Lab-Verified"
+            "badge_label": "Terverifikasi Lab"
           }
         }
       },
@@ -243,11 +246,14 @@
         "b4"
       ],
       "settings": {
-        "body": "<p>For anyone who scrolled past the link above — Treelogy's Starter Pack includes the capsules, the powder, and the oil. The capsules and powder are the same moringa leaf in two daily formats, so you can try both and keep the one that fits your routine. The oil is for the skin and hair — the outside half of the equation.</p><p>Based on their customer reviews, most women notice the first changes within the first week. And most who start tend to continue — which, given the consistency the body needs to close a nutrient gap, makes biological sense.</p><p>At the time of writing, the Starter Pack is available with free shipping.</p>",
+        "body": "<p>Bagi yang tadi melewati tautan di atas, Discovery Pack Treelogy mencakup kapsul, bubuk, dan minyak. Kapsul dan bubuk berasal dari daun yang sama dalam dua format konsumsi harian, sehingga Anda bisa mencoba keduanya dan memilih yang paling sesuai dengan rutinitas. Minyaknya berguna untuk kulit dan rambut, “sisi luar\" dari pendekatan yang sama.</p><p>Berdasarkan ulasan pelanggan, sebagian besar perempuan mulai merasakan perubahan dalam minggu pertama. Dan banyak yang melanjutkan setelahnya, yang secara biologis masuk akal, mengingat tubuh membutuhkan konsistensi untuk menutup kekurangan nutrisi.</p>",
         "cta_url": "https://treelogy.com/products/moringa-ritual-set",
         "cta_text": "Start the 30-Day Protocol →",
-        "cta_subtext": "Free shipping for readers of this article · 30-day protocol",
-        "disclosure_text": "Disclosure: This article includes a recommendation for Treelogy products. The author independently researched the brand for this piece. For more information, visit treelogy.com."
+        "cta_subtext": "Saat artikel ini ditulis, Discovery Pack tersedia dengan gratis ongkir.",
+        "disclosure_text": "Disclosure: Artikel ini memuat rekomendasi produk Treelogy. Penulis melakukan riset independen terhadap brand ini untuk keperluan penulisan artikel ini.",
+        "meta_product_name": "The Discovery Pack",
+        "meta_product_value": "999000",
+        "meta_content_id": "9074141200572"
       }
     }
   },

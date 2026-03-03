@@ -3,7 +3,16 @@
 </div>
 
 <div class="adv-cta-block" id="cta1">
-  <a href="{{ section.settings.cta_url }}" class="adv-cta-button">
+  <a href="{{ section.settings.cta_url }}"
+     class="adv-cta-button"
+     data-meta-event="Lead"
+     data-meta-product-name="{{ section.settings.meta_product_name }}"
+     data-meta-content-id="{{ section.settings.meta_content_id }}"
+     data-meta-value="{{ section.settings.meta_product_value }}"
+     data-meta-currency="{{ shop.currency }}"
+     data-meta-category="Blog to Store Conversion"
+     data-meta-cta-position="mid-article"
+     id="meta-cta-trigger-1">
     {{ section.settings.cta_text }}
   </a>
   {% if section.settings.cta_subtext != blank %}
@@ -17,6 +26,8 @@
     </div>
   {% endif %}
 </div>
+
+{% render 'meta-cta-tracking' %}
 
 {% schema %}
 {
@@ -44,6 +55,31 @@
       "id": "cta_subtext",
       "label": "CTA Subtext",
       "default": "Free shipping for readers of this article · 30-day protocol"
+    },
+    {
+      "type": "header",
+      "content": "Meta Pixel Tracking"
+    },
+    {
+      "type": "text",
+      "id": "meta_product_name",
+      "label": "Product Name (for Meta)",
+      "default": "Discovery Pack",
+      "info": "Sent as content_name in the Lead event"
+    },
+    {
+      "type": "text",
+      "id": "meta_product_value",
+      "label": "Product Value (for Meta)",
+      "default": "299000",
+      "info": "Numeric value sent with the Lead event"
+    },
+    {
+      "type": "text",
+      "id": "meta_content_id",
+      "label": "Product ID / SKU (for Meta)",
+      "default": "OMC-90-001",
+      "info": "Must match the ID used in your Meta Catalog"
     }
   ],
   "blocks": [

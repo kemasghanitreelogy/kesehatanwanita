@@ -8,5 +8,9 @@
  * ------------------------------------------------------------
  */
 {
-  "current": {}
+  "current": {
+    "max_page_width": "90rem",
+    "min_page_margin": 20,
+    "content_for_index": []
+  }
 }
