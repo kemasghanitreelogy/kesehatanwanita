@@ -3,18 +3,18 @@
 </div>
 
 <div class="adv-cta-block" id="cta1">
-  <a href="{{ section.settings.cta_url }}"
-     class="adv-cta-button"
-     data-meta-event="Lead"
-     data-meta-product-name="{{ section.settings.meta_product_name }}"
-     data-meta-content-id="{{ section.settings.meta_content_id }}"
-     data-meta-value="{{ section.settings.meta_product_value }}"
-     data-meta-currency="{{ shop.currency }}"
-     data-meta-category="Blog to Store Conversion"
-     data-meta-cta-position="mid-article"
-     id="meta-cta-trigger-1">
-    {{ section.settings.cta_text }}
-  </a>
+  <a href="{{ section.settings.cta_url }}?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign=moringa_discovery_launch&utm_content=mid-article"
+   class="adv-cta-button"
+   data-meta-event="Lead"
+   data-meta-product-name="{{ section.settings.meta_product_name }}"
+   data-meta-content-id="{{ section.settings.meta_content_id }}"
+   data-meta-value="{{ section.settings.meta_product_value }}"
+   data-meta-currency="{{ shop.currency }}"
+   data-meta-category="Blog to Store Conversion"
+   data-meta-cta-position="mid-article"
+   id="meta-cta-trigger-1">
+  {{ section.settings.cta_text }}
+</a>
   {% if section.settings.cta_subtext != blank %}
     <div class="adv-cta-sub">{{ section.settings.cta_subtext }}</div>
   {% endif %}
