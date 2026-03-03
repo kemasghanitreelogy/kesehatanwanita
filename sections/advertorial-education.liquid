@@ -1,0 +1,27 @@
+<p class="adv-subhead">{{ section.settings.subhead }}</p>
+
+<div class="adv-richtext">
+  {{ section.settings.body }}
+</div>
+
+<div class="adv-section-break"></div>
+
+{% schema %}
+{
+  "name": "Advertorial Education",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subhead",
+      "label": "Section Heading",
+      "default": "What no one told you about menopause."
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body Content",
+      "default": "<p>Here's what's actually happening.</p><p>During perimenopause and menopause, your hormone levels shift — and your body's ability to absorb and use certain nutrients drops with them. Nutritional research on women over 40 has documented this pattern clearly. Calcium. Magnesium. Iron. Vitamin D. Anti-inflammatory compounds your joints used to get enough of without you thinking about it. All of them decline.</p><p>That morning stiffness? It's not wear and tear. It's your joints running on empty.</p><p>The exhaustion that doesn't match your effort? Your cells aren't getting the fuel they used to. The hot flashes, the sleep that never goes deep enough, the skin that suddenly feels thinner and drier — these aren't separate problems. They are all the same problem showing up in different places.</p><p>Clinical nutritionists who work with women in this age group have a term for it: systemic nutrient depletion. The body isn't failing. It's simply running out of raw materials it used to recycle efficiently — and once hormone levels shift, the deficit accelerates.</p><p><strong>Your body isn't breaking down. It's running out of what it needs.</strong> And here's the part that matters: this is not inevitable. It is a gap. And gaps can be filled.</p>"
+    }
+  ]
+}
+{% endschema %}

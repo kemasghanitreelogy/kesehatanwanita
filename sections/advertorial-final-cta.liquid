@@ -1,0 +1,87 @@
+<div class="adv-richtext">
+  {{ section.settings.body }}
+</div>
+
+<div class="adv-cta-block" id="cta2">
+  <a href="{{ section.settings.cta_url }}" class="adv-cta-button">
+    {{ section.settings.cta_text }}
+  </a>
+  {% if section.settings.cta_subtext != blank %}
+    <div class="adv-cta-sub">{{ section.settings.cta_subtext }}</div>
+  {% endif %}
+  {% if section.blocks.size > 0 %}
+    <div class="adv-cta-badges">
+      {% for block in section.blocks %}
+        <span {{ block.shopify_attributes }}>{{ block.settings.badge_label }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+{% if section.settings.disclosure_text != blank %}
+  <div class="adv-sign-off">
+    <em>{{ section.settings.disclosure_text }}</em>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Advertorial Final CTA",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Final Close Text",
+      "default": "<p>For anyone who scrolled past the link above — Treelogy's Starter Pack includes the capsules, the powder, and the oil. The capsules and powder are the same moringa leaf in two daily formats, so you can try both and keep the one that fits your routine. The oil is for the skin and hair — the outside half of the equation.</p><p>Based on their customer reviews, most women notice the first changes within the first week. And most who start tend to continue — which, given the consistency the body needs to close a nutrient gap, makes biological sense.</p><p>At the time of writing, the Starter Pack is available with free shipping.</p>"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Button URL"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Button Text",
+      "default": "Start the 30-Day Protocol →"
+    },
+    {
+      "type": "text",
+      "id": "cta_subtext",
+      "label": "CTA Subtext",
+      "default": "Free shipping for readers of this article · 30-day protocol"
+    },
+    {
+      "type": "textarea",
+      "id": "disclosure_text",
+      "label": "Editorial Disclosure",
+      "default": "Disclosure: This article includes a recommendation for Treelogy products. The author independently researched the brand for this piece. For more information, visit treelogy.com."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Trust Badge",
+      "settings": [
+        {
+          "type": "text",
+          "id": "badge_label",
+          "label": "Badge Label",
+          "default": "BPOM Certified"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Advertorial Final CTA",
+      "blocks": [
+        { "type": "badge", "settings": { "badge_label": "BPOM Certified" } },
+        { "type": "badge", "settings": { "badge_label": "Halal" } },
+        { "type": "badge", "settings": { "badge_label": "100% Organic" } },
+        { "type": "badge", "settings": { "badge_label": "Lab-Verified" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

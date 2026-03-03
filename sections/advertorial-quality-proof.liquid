@@ -1,0 +1,92 @@
+<div class="adv-richtext">
+  {{ section.settings.intro_text }}
+</div>
+
+{% if section.settings.inside_outside_image != blank %}
+  <div class="adv-image">
+    {{
+      section.settings.inside_outside_image
+      | image_url: width: 1280
+      | image_tag: loading: 'lazy', alt: section.settings.inside_outside_image.alt
+    }}
+  </div>
+{% endif %}
+
+<p class="adv-subhead">{{ section.settings.subhead }}</p>
+
+<div class="adv-richtext">
+  {{ section.settings.body_quality }}
+</div>
+
+{% if section.settings.color_comparison_image != blank %}
+  <div class="adv-image">
+    {{
+      section.settings.color_comparison_image
+      | image_url: width: 1280
+      | image_tag: loading: 'lazy', alt: section.settings.color_comparison_image.alt
+    }}
+  </div>
+{% endif %}
+
+<div class="adv-richtext">
+  {{ section.settings.body_process }}
+</div>
+
+{% if section.settings.process_image != blank %}
+  <div class="adv-image">
+    {{
+      section.settings.process_image
+      | image_url: width: 1280
+      | image_tag: loading: 'lazy', alt: section.settings.process_image.alt
+    }}
+  </div>
+{% endif %}
+
+<div class="adv-section-break"></div>
+
+{% schema %}
+{
+  "name": "Advertorial Quality Proof",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "intro_text",
+      "label": "Intro Text (for scrollers)",
+      "default": "<p>If you're still reading, you probably want to understand exactly why quality matters so much with moringa — and how to tell the difference between the real thing and the cheap alternatives that give the plant a bad name.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "inside_outside_image",
+      "label": "Inside / Outside Illustration"
+    },
+    {
+      "type": "text",
+      "id": "subhead",
+      "label": "Section Heading",
+      "default": "How to tell real moringa from the brown powder that doesn't work."
+    },
+    {
+      "type": "richtext",
+      "id": "body_quality",
+      "label": "Quality Comparison Text",
+      "default": "<p>Walk into any health store and you'll find moringa powder for Rp 50,000. It's brown. It's bitter. Most of it is ground-up stems.</p><p>Most brands shred the entire branch — leaves, stems, bark — because it's faster and cheaper. The result is a powder that's oxidized before it reaches you. Low absorption. Low potency. That's why so many women try moringa once and give up.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "color_comparison_image",
+      "label": "Green vs Brown Comparison Image"
+    },
+    {
+      "type": "richtext",
+      "id": "body_process",
+      "label": "Process / Provenance Text",
+      "default": "<p>Leaf-only moringa looks different. Vibrant green, like matcha. The difference comes down to whether the stems were removed — by hand, one leaf at a time.</p><p>This process takes one full hour to produce just 12 grams of powder. Treelogy follows this method for every batch. Harvested at dawn in Karangasem, Bali. Hand-separated. Dehydrated at 38°C for 22 hours to protect heat-sensitive vitamins and enzymes. No shortcuts.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "process_image",
+      "label": "Farm / Process Image"
+    }
+  ]
+}
+{% endschema %}

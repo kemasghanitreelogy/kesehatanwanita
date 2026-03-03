@@ -1,0 +1,75 @@
+<p class="adv-subhead">{{ section.settings.subhead }}</p>
+
+<div class="adv-richtext">
+  {{ section.settings.body_before_callout }}
+</div>
+
+{% if section.settings.fact_label != blank or section.settings.fact_text != blank %}
+  <div style="padding: 0 20px;">
+    <div class="adv-fact-callout">
+        {% if section.settings.fact_label != blank %}
+        <strong>{{ section.settings.fact_label }}</strong>
+        {% endif %}
+        {{ section.settings.fact_text }}
+    </div>
+  </div>
+{% endif %}
+
+{% if section.settings.comparison_image != blank %}
+  <div class="adv-image">
+    {{
+      section.settings.comparison_image
+      | image_url: width: 1280
+      | image_tag: loading: 'lazy', alt: section.settings.comparison_image.alt
+    }}
+  </div>
+{% endif %}
+
+<div class="adv-richtext">
+  {{ section.settings.body_after_callout }}
+</div>
+
+<div class="adv-section-break"></div>
+
+{% schema %}
+{
+  "name": "Adv Moringa Education",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subhead",
+      "label": "Section Heading",
+      "default": "Restoring the source — not just lighting candles."
+    },
+    {
+      "type": "richtext",
+      "id": "body_before_callout",
+      "label": "Body (before fact callout)",
+      "default": "<p>Recent nutritional research on women's health over 40 points to a different approach: instead of targeting symptoms one at a time, address the underlying depletion with a broad, dense spectrum of bioavailable nutrients — delivered consistently, in a form the body can actually use.</p><p>One plant matches this profile unusually well. Moringa oleifera contains over 90 bioavailable nutrients in a single leaf — including anti-inflammatory compounds, calcium, magnesium, iron, and zinc. Not as isolated chemicals in a lab, but as a complete nutritional profile the body recognizes and absorbs naturally.</p><p>For women in perimenopause and menopause, this matters. The gap isn't one nutrient. It's dozens. Moringa delivers them together, the way food does — not the way a supplement label does.</p>"
+    },
+    {
+      "type": "text",
+      "id": "fact_label",
+      "label": "Fact Callout Label",
+      "default": "From published nutritional analyses"
+    },
+    {
+      "type": "richtext",
+      "id": "fact_text",
+      "label": "Fact Callout Text",
+      "default": "<p>Moringa leaf contains 7× the vitamin C of oranges, 4× the calcium of milk, 3× the potassium of bananas, and 25× the iron of spinach — in a single, bioavailable source. Studies published in the Journal of Food Science and Technology and the Asian Pacific Journal of Tropical Biomedicine have documented its anti-inflammatory, antioxidant, and hormone-balancing properties.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "comparison_image",
+      "label": "Nutrient Comparison Infographic"
+    },
+    {
+      "type": "richtext",
+      "id": "body_after_callout",
+      "label": "Body (after fact callout)",
+      "default": "<p>That covers what's happening inside the body. But remember the skin that suddenly feels thinner and drier? The hair that's lost its density? That's the same depletion — showing up on the surface. Moringa seed oil addresses this from the outside. It contains 72% oleic acid — a fatty acid that closely resembles the skin's own sebum — along with behenic acid and concentrated antioxidants. During menopause, when the skin loses moisture faster than it can rebuild, this oil feeds it directly what it's missing.</p><p>Nourishment from the inside. Nourishment from the outside. The question isn't whether moringa works. It's whether the moringa you try is good enough to make a difference.</p>"
+    }
+  ]
+}
+{% endschema %}

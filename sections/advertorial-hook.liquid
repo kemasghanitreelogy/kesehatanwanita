@@ -1,0 +1,54 @@
+<h1 class="adv-headline">{{ section.settings.headline }}</h1>
+
+<p class="adv-deck">{{ section.settings.deck }}</p>
+
+<p class="adv-byline">
+  Oleh <strong>{{ section.settings.author_name }}</strong> · {{ section.settings.author_credential }}
+</p>
+
+{% if section.settings.hero_image != blank %}
+  <div class="adv-image">
+    {{
+      section.settings.hero_image
+      | image_url: width: 1280
+      | image_tag: loading: 'eager', alt: section.settings.hero_image.alt
+    }}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Advertorial Hook",
+  "settings": [
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "She wakes up 10 minutes before everyone else. Not by choice. Because her knees need that long to start working again."
+    },
+    {
+      "type": "text",
+      "id": "deck",
+      "label": "Deck / Subheadline",
+      "default": "What most women over 45 mistake for \"just getting older\" — and what your body is actually trying to tell you."
+    },
+    {
+      "type": "text",
+      "id": "author_name",
+      "label": "Author Name",
+      "default": "Nadia Kusumawardani"
+    },
+    {
+      "type": "text",
+      "id": "author_credential",
+      "label": "Author Credential",
+      "default": "Nutrition & Women's Health Writer"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    }
+  ]
+}
+{% endschema %}

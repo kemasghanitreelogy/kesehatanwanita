@@ -1,0 +1,75 @@
+<div class="adv-richtext">
+  {{ section.settings.bridge_text }}
+</div>
+
+<div class="adv-cta-block" id="cta1">
+  <a href="{{ section.settings.cta_url }}" class="adv-cta-button">
+    {{ section.settings.cta_text }}
+  </a>
+  {% if section.settings.cta_subtext != blank %}
+    <div class="adv-cta-sub">{{ section.settings.cta_subtext }}</div>
+  {% endif %}
+  {% if section.blocks.size > 0 %}
+    <div class="adv-cta-badges">
+      {% for block in section.blocks %}
+        <span {{ block.shopify_attributes }}>{{ block.settings.badge_label }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Advertorial Bridge + CTA",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "bridge_text",
+      "label": "Bridge Text",
+      "default": "<p>While most brands I've researched source their moringa from third parties and focus only on nutrition or only on skincare, I came across a small Indonesian brand that takes a different approach entirely. Treelogy grows its own moringa on their organic-certified farm in Bali and processes it in their own BPOM-registered facility. From soil to product — everything under one roof.</p><p>That matters more than most people realize. Some of the nutrients in moringa are so fragile that if you can't see how it's made, it's probably being made in a way that destroys them. Treelogy publishes their process openly — which, after weeks of researching this market, I can tell you is rare.</p><p>And the best part? They offer a Starter Pack that lets you try the capsules and powder in smaller sizes — so you can find which format fits your daily routine — along with the seed oil for skin and hair. It's their full inside-and-outside protocol in one box. They're running it at a lower price this month with free shipping while stock lasts.</p>"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Button URL"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Button Text",
+      "default": "See the Starter Pack →"
+    },
+    {
+      "type": "text",
+      "id": "cta_subtext",
+      "label": "CTA Subtext",
+      "default": "Free shipping for readers of this article · 30-day protocol"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Trust Badge",
+      "settings": [
+        {
+          "type": "text",
+          "id": "badge_label",
+          "label": "Badge Label",
+          "default": "BPOM Certified"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Advertorial Bridge + CTA",
+      "blocks": [
+        { "type": "badge", "settings": { "badge_label": "BPOM Certified" } },
+        { "type": "badge", "settings": { "badge_label": "Halal" } },
+        { "type": "badge", "settings": { "badge_label": "100% Organic" } },
+        { "type": "badge", "settings": { "badge_label": "Lab-Verified" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -6,6 +6,12 @@
   margin: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -44,9 +50,6 @@ dialog {
   color: var(--color-foreground);
 }
 
-p {
-  text-wrap: pretty;
-}
 p,
 h1,
 h2,
@@ -62,12 +65,12 @@ p:empty {
 }
 
 :is(p, h1, h2, h3, h4, h5, h6):first-child,
-:empty:first-child + :where(p, h1, h2, h3, h4, h5, h6) {
+:empty:first-child+ :where(p, h1, h2, h3, h4, h5, h6) {
   margin-block-start: 0;
 }
 
 :is(p, h1, h2, h3, h4, h5, h6):last-child,
-:where(p, h1, h2, h3, h4, h5, h6) + :has(+ :empty:last-child) {
+:where(p, h1, h2, h3, h4, h5, h6)+ :has(+ :empty:last-child) {
   margin-block-end: 0;
 }
 
@@ -92,26 +95,25 @@ body {
  * the entire viewport.
  */
 .shopify-section {
-  --content-width: min(
-    calc(var(--page-width) - var(--page-margin) * 2),
-    calc(100% - var(--page-margin) * 2)
-  );
-  --content-margin: minmax(var(--page-margin), 1fr);
-  --content-grid: var(--content-margin) var(--content-width) var(--content-margin);
-
-  /* This is required to make <img> elements work as background images */
   position: relative;
-  grid-template-columns: var(--content-grid);
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
-/* Child elements, by default, are constrained to the central column of the grid. */
-.shopify-section > * {
-  grid-column: 2;
+/* Child elements, by default, are constrained to a max width with horizontal padding. */
+.shopify-section>* {
+  width: 100%;
+  max-width: var(--page-width);
+  padding-left: var(--page-margin);
+  padding-right: var(--page-margin);
+  box-sizing: border-box;
 }
 
 /* Child elements that use the full-width utility class span the entire viewport. */
-.shopify-section > .full-width {
-  grid-column: 1 / -1;
+.shopify-section>.full-width {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
 }

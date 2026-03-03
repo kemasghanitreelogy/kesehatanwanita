@@ -1,0 +1,54 @@
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'paragraph' %}
+      <p class="adv-body-text" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+    {% when 'paragraph_bold' %}
+      <p class="adv-body-text" {{ block.shopify_attributes }}><strong>{{ block.settings.text }}</strong></p>
+  {% endcase %}
+{% endfor %}
+
+<div class="adv-section-break"></div>
+
+{% schema %}
+{
+  "name": "Adv Felt Experience",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "name": "Paragraph",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Paragraph Text"
+        }
+      ]
+    },
+    {
+      "type": "paragraph_bold",
+      "name": "Bold Paragraph",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Bold Paragraph Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Adv Felt Experience",
+      "blocks": [
+        { "type": "paragraph", "settings": { "text": "You know this morning." } },
+        { "type": "paragraph", "settings": { "text": "The alarm hasn't gone off yet, but your body already has. Your knees feel locked. Your fingers are stiff. Something in your lower back protests before you've even sat up." } },
+        { "type": "paragraph", "settings": { "text": "You swing your legs to the floor and wait. Not because you want to. Because you have to. Those few minutes for your joints to \"warm up\" before the household starts moving." } },
+        { "type": "paragraph", "settings": { "text": "And then you go. Breakfast. School drop-off. The errands. The family. You never stop." } },
+        { "type": "paragraph", "settings": { "text": "But lately, your body has started making noise you can't ignore." } },
+        { "type": "paragraph", "settings": { "text": "You are still the woman who holds everything together. The one people lean on. The one who doesn't complain." } },
+        { "type": "paragraph", "settings": { "text": "But privately — in that quiet moment before the house wakes up — you've started to wonder how much longer your body can keep up with the life you lead." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,73 @@
+<p class="adv-subhead">{{ section.settings.subhead }}</p>
+
+<div class="adv-richtext">
+  {{ section.settings.body_before_image }}
+</div>
+
+{% if section.settings.analogy_image != blank %}
+  <div class="adv-image">
+    {{
+      section.settings.analogy_image
+      | image_url: width: 1280
+      | image_tag: loading: 'lazy', alt: section.settings.analogy_image.alt
+    }}
+  </div>
+{% endif %}
+
+<div class="adv-richtext">
+  {{ section.settings.body_after_image }}
+</div>
+
+{% if section.settings.quote_text != blank %}
+  <div class="adv-pull-quote">
+    {{ section.settings.quote_text }}
+    {% if section.settings.quote_attribution != blank %}
+      <span class="adv-attribution">— {{ section.settings.quote_attribution }}</span>
+    {% endif %}
+  </div>
+{% endif %}
+
+<div class="adv-section-break"></div>
+
+{% schema %}
+{
+  "name": "Adv Why Nothing Works",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subhead",
+      "label": "Section Heading",
+      "default": "Why pushing through isn't working anymore."
+    },
+    {
+      "type": "richtext",
+      "id": "body_before_image",
+      "label": "Body (before image)",
+      "default": "<p>Most women in this phase respond the same way: they treat each symptom separately. A cream for the joints. Coffee for the energy. A sleep aid for the insomnia. Maybe a bottle of calcium or a turmeric capsule someone recommended. None of these are wrong. But none of them are working — and there's a simple reason why.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "analogy_image",
+      "label": "Analogy Infographic Image"
+    },
+    {
+      "type": "richtext",
+      "id": "body_after_image",
+      "label": "Body (after image)",
+      "default": "<p>Imagine your house loses its main power supply. Every room goes dark. You could light a candle in each room — and that helps, temporarily. But what you actually need is to restore the source.</p><p>The body works the same way. When the underlying nutrient foundation drops, symptoms show up everywhere at once. Addressing them one by one is lighting candles. What the body needs is the power turned back on.</p><p>That's what leads many women to moringa — a plant known for delivering broad-spectrum nutrition in a single source. But not all moringa delivers on that promise. Some women try it and feel nothing. The brown powder for Rp 50,000 that tastes bitter and sits heavy — a week later, nothing has changed. What most don't realize is that what they tried was mostly ground-up stems their body couldn't absorb.</p><p>By the time most women reach this point — after the creams, the supplements, the powders that didn't work — the frustration has been building for years.</p>"
+    },
+    {
+      "type": "textarea",
+      "id": "quote_text",
+      "label": "Pull Quote Text",
+      "default": "\"Saya 49 tahun. Sendi kaku, hot flash, emosi kacau, kulit kering. Udah agak desperate.\""
+    },
+    {
+      "type": "text",
+      "id": "quote_attribution",
+      "label": "Quote Attribution",
+      "default": "Via Instagram DM"
+    }
+  ]
+}
+{% endschema %}

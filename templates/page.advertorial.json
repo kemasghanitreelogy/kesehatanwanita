@@ -1,0 +1,149 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "wrapper": "div.advertorial-wrapper",
+  "sections": {
+    "advertorial-styles": {
+      "type": "advertorial-styles",
+      "settings": {}
+    },
+    "meta-header": {
+      "type": "advertorial-meta-header",
+      "settings": {
+        "category_text": "Women's Health · Nutrition · 4 min read"
+      }
+    },
+    "hook": {
+      "type": "advertorial-hook",
+      "settings": {
+        "headline": "She wakes up 10 minutes before everyone else. Not by choice. Because her knees need that long to start working again.",
+        "deck": "What most women over 45 mistake for \"just getting older\" — and what your body is actually trying to tell you.",
+        "author_name": "Nadia Kusumawardani",
+        "author_credential": "Nutrition & Women's Health Writer"
+      }
+    },
+    "felt-experience": {
+      "type": "advertorial-felt-experience",
+      "settings": {},
+      "blocks": {
+        "p1": { "type": "paragraph", "settings": { "text": "You know this morning." } },
+        "p2": { "type": "paragraph", "settings": { "text": "The alarm hasn't gone off yet, but your body already has. Your knees feel locked. Your fingers are stiff. Something in your lower back protests before you've even sat up." } },
+        "p3": { "type": "paragraph", "settings": { "text": "You swing your legs to the floor and wait. Not because you want to. Because you have to. Those few minutes for your joints to \"warm up\" before the household starts moving." } },
+        "p4": { "type": "paragraph", "settings": { "text": "And then you go. Breakfast. School drop-off. The errands. The family. You never stop." } },
+        "p5": { "type": "paragraph", "settings": { "text": "But lately, your body has started making noise you can't ignore." } },
+        "p6": { "type": "paragraph", "settings": { "text": "You are still the woman who holds everything together. The one people lean on. The one who doesn't complain." } },
+        "p7": { "type": "paragraph", "settings": { "text": "But privately — in that quiet moment before the house wakes up — you've started to wonder how much longer your body can keep up with the life you lead." } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4", "p5", "p6", "p7"]
+    },
+    "education": {
+      "type": "advertorial-education",
+      "settings": {
+        "subhead": "What no one told you about menopause."
+      }
+    },
+    "why-nothing-works": {
+      "type": "advertorial-why-nothing-works",
+      "settings": {
+        "subhead": "Why pushing through isn't working anymore.",
+        "quote_text": "\"Saya 49 tahun. Sendi kaku, hot flash, emosi kacau, kulit kering. Udah agak desperate.\"",
+        "quote_attribution": "Via Instagram DM"
+      }
+    },
+    "moringa-education": {
+      "type": "advertorial-moringa-education",
+      "settings": {
+        "subhead": "Restoring the source — not just lighting candles.",
+        "fact_label": "From published nutritional analyses"
+      }
+    },
+    "bridge-cta": {
+      "type": "advertorial-bridge-cta",
+      "settings": {
+        "cta_text": "See the Starter Pack →",
+        "cta_subtext": "Free shipping for readers of this article · 30-day protocol"
+      },
+      "blocks": {
+        "b1": { "type": "badge", "settings": { "badge_label": "BPOM Certified" } },
+        "b2": { "type": "badge", "settings": { "badge_label": "Halal" } },
+        "b3": { "type": "badge", "settings": { "badge_label": "100% Organic" } },
+        "b4": { "type": "badge", "settings": { "badge_label": "Lab-Verified" } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4"]
+    },
+    "quality-proof": {
+      "type": "advertorial-quality-proof",
+      "settings": {
+        "subhead": "How to tell real moringa from the brown powder that doesn't work."
+      }
+    },
+    "social-proof": {
+      "type": "advertorial-social-proof",
+      "settings": {
+        "subhead": "What 4,700+ Treelogy users are reporting."
+      },
+      "blocks": {
+        "t1": {
+          "type": "testimonial",
+          "settings": {
+            "bridge_text": "One reviewer, four days in:",
+            "quote_text": "Baru coba 4 hari dan joint pain saya menghilang. Tidur pun nyenyak.",
+            "attribution": "Treelogy customer review"
+          }
+        },
+        "t2": {
+          "type": "testimonial",
+          "settings": {
+            "bridge_text": "Another, ten days in:",
+            "quote_text": "Usia 51 tahun. Hari ke 10, badan kembali segar, ngilu tulang sudah hilang. Hot flashes sudah hampir ngga pernah.",
+            "attribution": "Treelogy customer review · Tokopedia"
+          }
+        },
+        "t3": {
+          "type": "testimonial",
+          "settings": {
+            "bridge_text": "According to one repeat customer, the results surprised even her doctor.",
+            "quote_text": "Dokter jantung saya sampai kagum sama hasil check-up rutin saya.",
+            "attribution": "Treelogy customer review · Tokopedia"
+          }
+        }
+      },
+      "block_order": ["t1", "t2", "t3"]
+    },
+    "final-cta": {
+      "type": "advertorial-final-cta",
+      "settings": {
+        "cta_text": "Start the 30-Day Protocol →",
+        "cta_subtext": "Free shipping for readers of this article · 30-day protocol",
+        "disclosure_text": "Disclosure: This article includes a recommendation for Treelogy products. The author independently researched the brand for this piece. For more information, visit treelogy.com."
+      },
+      "blocks": {
+        "b1": { "type": "badge", "settings": { "badge_label": "BPOM Certified" } },
+        "b2": { "type": "badge", "settings": { "badge_label": "Halal" } },
+        "b3": { "type": "badge", "settings": { "badge_label": "100% Organic" } },
+        "b4": { "type": "badge", "settings": { "badge_label": "Lab-Verified" } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4"]
+    }
+  },
+  "order": [
+    "advertorial-styles",
+    "meta-header",
+    "hook",
+    "felt-experience",
+    "education",
+    "why-nothing-works",
+    "moringa-education",
+    "bridge-cta",
+    "quality-proof",
+    "social-proof",
+    "final-cta"
+  ]
+}
