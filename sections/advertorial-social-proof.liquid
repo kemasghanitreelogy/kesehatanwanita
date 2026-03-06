@@ -5,6 +5,12 @@
 </div>
 
 {% for block in section.blocks %}
+  {% if forloop.last %}
+    <div class="adv-richtext">
+      {{ section.settings.outro_text }}
+    </div>
+  {% endif %}
+
   {% if block.settings.bridge_text != blank %}
     <p class="adv-body-text" {{ block.shopify_attributes }}>{{ block.settings.bridge_text }}</p>
   {% endif %}
@@ -12,10 +18,6 @@
   <p class="adv-inline-quote" {{ block.shopify_attributes }}>"{{ block.settings.quote_text }}"</p>
   <p class="adv-inline-attribution">— {{ block.settings.attribution }}</p>
 {% endfor %}
-
-<div class="adv-richtext">
-  {{ section.settings.outro_text }}
-</div>
 
 <div class="adv-section-break"></div>
 
