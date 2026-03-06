@@ -25,7 +25,7 @@
       "settings": {
         "headline": "Ia bangun 10 menit lebih awal dari semua orang. Bukan karena ingin. Karena lututnya butuh waktu selama itu untuk bisa digerakkan lagi.",
         "deck": "Apa yang sering disalahartikan oleh perempuan di atas 45 tahun sebagai “sekadar bertambah usia” — dan apa yang sebenarnya sedang tubuh coba sampaikan.",
-        "author_name": "Nadia Kusumawardani",
+        "author_name": "Kusumawardani",
         "author_credential": "Penulis Nutrisi & Kesehatan Wanita",
         "hero_image": "shopify://shop_images/pemulihan-biologis-tubuh-tenang-treelogy.webp"
       }
@@ -188,7 +188,7 @@
           "settings": {
             "bridge_text": "Ulasan lain, setelah hari ke-10:",
             "quote_text": "Usia 51 tahun. Hari ke 10, badan kembali segar, ngilu tulang sudah hilang. Hot flashes sudah hampir ngga pernah.",
-            "attribution": "Treelogy customer review · Tokopedia"
+            "attribution": "Treelogy customer review"
           }
         },
         "t3": {
@@ -196,7 +196,7 @@
           "settings": {
             "bridge_text": "Menurut salah satu pelanggan setia, hasilnya bahkan mengejutkan dokternya.",
             "quote_text": "Dokter jantung saya sampai kagum sama hasil check-up rutin saya.",
-            "attribution": "Treelogy customer review · Tokopedia"
+            "attribution": "Treelogy customer review"
           }
         }
       },
