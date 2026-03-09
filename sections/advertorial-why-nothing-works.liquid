@@ -1,6 +1,6 @@
-<p class="adv-subhead">{{ section.settings.subhead }}</p>
+<p class="adv-subhead" data-cs-capture>{{ section.settings.subhead }}</p>
 
-<div class="adv-richtext">
+<div class="adv-richtext" data-cs-capture>
   {{ section.settings.body_before_image }}
 </div>
 
@@ -9,20 +9,20 @@
     {{
       section.settings.analogy_image
       | image_url: width: 1280
-      | image_tag: loading: 'lazy', alt: section.settings.analogy_image.alt
+      | image_tag: loading: 'lazy', alt: section.settings.analogy_image.alt, data-cs-mask: 'false'
     }}
   </div>
 {% endif %}
 
-<div class="adv-richtext">
+<div class="adv-richtext" data-cs-capture>
   {{ section.settings.body_after_image }}
 </div>
 
 {% if section.settings.quote_text != blank %}
-  <div class="adv-pull-quote">
+  <div class="adv-pull-quote" data-cs-capture>
     {{ section.settings.quote_text }}
     {% if section.settings.quote_attribution != blank %}
-      <span class="adv-attribution">— {{ section.settings.quote_attribution }}</span>
+      <span class="adv-attribution" data-cs-capture>— {{ section.settings.quote_attribution }}</span>
     {% endif %}
   </div>
 {% endif %}

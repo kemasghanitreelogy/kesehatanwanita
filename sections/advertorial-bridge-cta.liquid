@@ -1,4 +1,4 @@
-<div class="adv-richtext">
+<div class="adv-richtext" data-cs-capture>
   {{ section.settings.bridge_text }}
 </div>
 
@@ -16,12 +16,12 @@
   {{ section.settings.cta_text }}
 </a>
   {% if section.settings.cta_subtext != blank %}
-    <div class="adv-cta-sub">{{ section.settings.cta_subtext }}</div>
+    <div class="adv-cta-sub" data-cs-capture>{{ section.settings.cta_subtext }}</div>
   {% endif %}
   {% if section.blocks.size > 0 %}
     <div class="adv-cta-badges">
       {% for block in section.blocks %}
-        <span {{ block.shopify_attributes }}>{{ block.settings.badge_label }}</span>
+        <span {{ block.shopify_attributes }} data-cs-capture>{{ block.settings.badge_label }}</span>
       {% endfor %}
     </div>
   {% endif %}

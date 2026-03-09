@@ -1,12 +1,12 @@
-<p class="adv-subhead">{{ section.settings.subhead }}</p>
+<p class="adv-subhead" data-cs-capture>{{ section.settings.subhead }}</p>
 
-<div class="adv-richtext">
+<div class="adv-richtext" data-cs-capture>
   {{ section.settings.body_before_callout }}
 </div>
 
 {% if section.settings.fact_label != blank or section.settings.fact_text != blank %}
   <div style="padding: 0 20px;">
-    <div class="adv-fact-callout">
+    <div class="adv-fact-callout" data-cs-capture>
         {% if section.settings.fact_label != blank %}
         <strong>{{ section.settings.fact_label }}</strong>
         {% endif %}
@@ -20,12 +20,12 @@
     {{
       section.settings.comparison_image
       | image_url: width: 1280
-      | image_tag: loading: 'lazy', alt: section.settings.comparison_image.alt
+      | image_tag: loading: 'lazy', alt: section.settings.comparison_image.alt, data-cs-mask: 'false'
     }}
   </div>
 {% endif %}
 
-<div class="adv-richtext">
+<div class="adv-richtext" data-cs-capture>
   {{ section.settings.body_after_callout }}
 </div>
 

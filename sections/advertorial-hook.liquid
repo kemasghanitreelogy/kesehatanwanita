@@ -1,8 +1,8 @@
-<h1 class="adv-headline">{{ section.settings.headline }}</h1>
+<h1 class="adv-headline" data-cs-capture>{{ section.settings.headline }}</h1>
 
-<p class="adv-deck">{{ section.settings.deck }}</p>
+<p class="adv-deck" data-cs-capture>{{ section.settings.deck }}</p>
 
-<p class="adv-byline">
+<p class="adv-byline" data-cs-capture>
   Oleh <strong>{{ section.settings.author_name }}</strong> · {{ section.settings.author_credential }}
 </p>
 
@@ -11,7 +11,7 @@
     {{
       section.settings.hero_image
       | image_url: width: 1280
-      | image_tag: loading: 'eager', alt: section.settings.hero_image.alt
+      | image_tag: loading: 'eager', alt: section.settings.hero_image.alt, data-cs-mask: 'false'
     }}
   </div>
 {% endif %}

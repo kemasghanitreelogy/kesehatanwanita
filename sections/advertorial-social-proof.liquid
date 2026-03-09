@@ -1,22 +1,22 @@
-<p class="adv-subhead">{{ section.settings.subhead }}</p>
+<p class="adv-subhead" data-cs-capture>{{ section.settings.subhead }}</p>
 
-<div class="adv-richtext">
+<div class="adv-richtext" data-cs-capture>
   {{ section.settings.intro_text }}
 </div>
 
 {% for block in section.blocks %}
   {% if forloop.last %}
-    <div class="adv-richtext">
+    <div class="adv-richtext" data-cs-capture>
       {{ section.settings.outro_text }}
     </div>
   {% endif %}
 
   {% if block.settings.bridge_text != blank %}
-    <p class="adv-body-text" {{ block.shopify_attributes }}>{{ block.settings.bridge_text }}</p>
+    <p class="adv-body-text" {{ block.shopify_attributes }} data-cs-capture>{{ block.settings.bridge_text }}</p>
   {% endif %}
 
-  <p class="adv-inline-quote" {{ block.shopify_attributes }}>"{{ block.settings.quote_text }}"</p>
-  <p class="adv-inline-attribution">— {{ block.settings.attribution }}</p>
+  <p class="adv-inline-quote" {{ block.shopify_attributes }} data-cs-capture>"{{ block.settings.quote_text }}"</p>
+  <p class="adv-inline-attribution" data-cs-capture>— {{ block.settings.attribution }}</p>
 {% endfor %}
 
 <div class="adv-section-break"></div>

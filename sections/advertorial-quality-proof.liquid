@@ -1,4 +1,4 @@
-<div class="adv-richtext">
+<div class="adv-richtext" data-cs-capture>
   {{ section.settings.intro_text }}
 </div>
 
@@ -7,14 +7,14 @@
     {{
       section.settings.inside_outside_image
       | image_url: width: 1280
-      | image_tag: loading: 'lazy', alt: section.settings.inside_outside_image.alt
+      | image_tag: loading: 'lazy', alt: section.settings.inside_outside_image.alt, data-cs-mask: 'false'
     }}
   </div>
 {% endif %}
 
-<p class="adv-subhead">{{ section.settings.subhead }}</p>
+<p class="adv-subhead" data-cs-capture>{{ section.settings.subhead }}</p>
 
-<div class="adv-richtext">
+<div class="adv-richtext" data-cs-capture>
   {{ section.settings.body_quality }}
 </div>
 
@@ -23,12 +23,12 @@
     {{
       section.settings.color_comparison_image
       | image_url: width: 1280
-      | image_tag: loading: 'lazy', alt: section.settings.color_comparison_image.alt
+      | image_tag: loading: 'lazy', alt: section.settings.color_comparison_image.alt, data-cs-mask: 'false'
     }}
   </div>
 {% endif %}
 
-<div class="adv-richtext">
+<div class="adv-richtext" data-cs-capture>
   {{ section.settings.body_process }}
 </div>
 
@@ -37,7 +37,7 @@
     {{
       section.settings.process_image
       | image_url: width: 1280
-      | image_tag: loading: 'lazy', alt: section.settings.process_image.alt
+      | image_tag: loading: 'lazy', alt: section.settings.process_image.alt, data-cs-mask: 'false'
     }}
   </div>
 {% endif %}
