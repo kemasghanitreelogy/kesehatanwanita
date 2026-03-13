@@ -1,0 +1,52 @@
+<h2 class="adv2-subhead" data-cs-capture>{{ section.settings.subhead }}</h2>
+
+<div class="adv2-richtext" data-cs-capture>
+  {{ section.settings.body }}
+</div>
+
+{% if section.settings.analogy_image != blank %}
+  <figure class="adv2-image">
+    {{
+      section.settings.analogy_image
+      | image_url: width: 1360
+      | image_tag: loading: 'lazy', decoding: 'async', alt: section.settings.analogy_image.alt
+    }}
+  </figure>
+{% endif %}
+
+{% if section.settings.body_after_image != blank %}
+  <div class="adv2-richtext" data-cs-capture>
+    {{ section.settings.body_after_image }}
+  </div>
+{% endif %}
+
+<div class="adv2-section-break"></div>
+
+{% schema %}
+{
+  "name": "Advertorial V2 Education",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subhead",
+      "label": "Section Heading",
+      "default": "Inilah yang sebenarnya terjadi."
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "analogy_image",
+      "label": "Analogy / Illustration Image"
+    },
+    {
+      "type": "richtext",
+      "id": "body_after_image",
+      "label": "Body After Image"
+    }
+  ]
+}
+{% endschema %}

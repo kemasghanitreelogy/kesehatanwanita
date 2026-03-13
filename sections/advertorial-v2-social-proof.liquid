@@ -1,0 +1,82 @@
+<h2 class="adv2-subhead" data-cs-capture>{{ section.settings.subhead }}</h2>
+
+<div class="adv2-testimonial-block">
+  {% for block in section.blocks %}
+    <div class="adv2-testimonial" {{ block.shopify_attributes }}>
+      <p data-cs-capture>{{ block.settings.quote_text }}</p>
+      <div class="source" data-cs-capture>&mdash; {{ block.settings.attribution }}</div>
+    </div>
+  {% endfor %}
+</div>
+
+{% if section.settings.outro_text != blank %}
+  <div class="adv2-richtext" data-cs-capture>
+    {{ section.settings.outro_text }}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Advertorial V2 Social Proof",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subhead",
+      "label": "Section Heading",
+      "default": "Yang dilaporkan pelanggan Treelogy:"
+    },
+    {
+      "type": "richtext",
+      "id": "outro_text",
+      "label": "Outro Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote_text",
+          "label": "Quote Text"
+        },
+        {
+          "type": "text",
+          "id": "attribution",
+          "label": "Attribution",
+          "default": "Ulasan pelanggan Treelogy"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Advertorial V2 Social Proof",
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {
+            "quote_text": "Baru coba 4 hari dan joint pain saya menghilang. Tidur pun nyenyak.",
+            "attribution": "Ulasan pelanggan Treelogy"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "quote_text": "Usia 51 tahun. Hari ke 10, badan kembali segar, ngilu tulang sudah hilang. Hot flashes sudah hampir ngga pernah.",
+            "attribution": "Ulasan pelanggan Treelogy"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "quote_text": "Dokter jantung saya sampai kagum sama hasil check-up rutin saya.",
+            "attribution": "Ulasan pelanggan Treelogy"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

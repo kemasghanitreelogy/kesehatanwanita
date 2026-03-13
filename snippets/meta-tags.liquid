@@ -12,10 +12,15 @@
     assign og_type = 'product'
   elsif request.page_type == 'article'
     assign og_type = 'article'
+  elsif request.page_type == 'page'
+    assign og_type = 'article'
   elsif request.page_type == 'password'
     assign og_url = request.origin
   endif
 %}
+
+{%- comment -%} Open Graph locale for Indonesian content {%- endcomment -%}
+<meta property="og:locale" content="{{ request.locale.iso_code | replace: '-', '_' }}">
 
 <meta
   property="og:site_name"

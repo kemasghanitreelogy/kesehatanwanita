@@ -1,0 +1,19 @@
+<header class="adv2-site-header" role="banner">
+  <div class="logo" aria-label="{{ section.settings.logo_text }}">{{ section.settings.logo_text }}</div>
+  <nav class="adv2-hamburger" aria-label="Menu"><span></span><span></span><span></span></nav>
+</header>
+
+{% schema %}
+{
+  "name": "Advertorial V2 Site Header",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "logo_text",
+      "label": "Logo Text",
+      "default": "Kesehatan Wanita Blog"
+    }
+  ]
+}
+{% endschema %}

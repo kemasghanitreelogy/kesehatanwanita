@@ -1,0 +1,57 @@
+<article role="main" aria-label="{{ section.settings.headline | strip_html | truncate: 80 }}">
+
+<h1 class="adv2-headline" data-cs-capture>{{ section.settings.headline }}</h1>
+
+<p class="adv2-byline" data-cs-capture>
+  Oleh <strong>{{ section.settings.author_name }}</strong> &middot; {{ section.settings.author_credential }}
+</p>
+
+{% if section.settings.hero_image != blank %}
+  <figure class="adv2-image">
+    {{
+      section.settings.hero_image
+      | image_url: width: 1360
+      | image_tag: loading: 'eager', fetchpriority: 'high', alt: section.settings.hero_image.alt, data-cs-mask: 'false'
+    }}
+  </figure>
+{% endif %}
+
+{% comment %} Article structured data for SEO rich results {% endcomment %}
+{%
+  render 'adv2-structured-data',
+  headline: section.settings.headline,
+  author: section.settings.author_name,
+  description: page_description,
+  image: section.settings.hero_image
+%}
+
+{% schema %}
+{
+  "name": "Advertorial V2 Hook",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Menopause menguras 6 nutrisi penting dari tubuh. Kebanyakan perempuan tidak menyadarinya sampai sendi, tidur, dan kulit sudah berubah. Ini yang sebenarnya terjadi — dan yang bisa mengisi kekurangannya."
+    },
+    {
+      "type": "text",
+      "id": "author_name",
+      "label": "Author Name",
+      "default": "Kusumawardan"
+    },
+    {
+      "type": "text",
+      "id": "author_credential",
+      "label": "Author Credential",
+      "default": "Penulis Nutrisi & Kesehatan Wanita"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    }
+  ]
+}
+{% endschema %}

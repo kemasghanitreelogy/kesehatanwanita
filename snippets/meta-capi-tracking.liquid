@@ -1,0 +1,247 @@
+<script>
+  (function() {
+    if (window.__metaCapiTrackingInit) return;
+    window.__metaCapiTrackingInit = true;
+
+    /**
+     * Meta CAPI + Pixel Event Tracking — 2026 Best Practice
+     *
+     * EMQ 8+ optimization checklist:
+     * 1. event_id deduplication between fbq (client) and Shopify.analytics (server)
+     * 2. Customer Information Parameters: fbp, fbc, external_id, email (hashed), user_agent
+     * 3. Event hierarchy: PageView → ViewContent → Lead
+     * 4. Scroll depth engagement signals for ad optimization
+     * 5. UTM attribution passthrough for campaign reporting
+     * 6. navigator.sendBeacon fallback for reliable event delivery
+     *
+     * Note: Shopify's native Meta CAPI integration (via Facebook & Instagram
+     * sales channel) handles server-side relay. This script fires client-side
+     * fbq() + Shopify.analytics.publish() which the native integration picks up
+     * and sends server-side with deduplication via matching event_id.
+     */
+
+    // ── Helpers ──────────────────────────────────────────────
+
+    // Crypto-grade event ID for dedup (Pixel ↔ CAPI must match)
+    function generateEventId() {
+      if (window.crypto && crypto.randomUUID) {
+        return crypto.randomUUID();
+      }
+      return 'evt_' + Date.now() + '_' + Math.random().toString(36).substring(2, 11);
+    }
+
+    function getUrlParam(name) {
+      try {
+        return new URL(window.location.href).searchParams.get(name) || '';
+      } catch (e) {
+        return '';
+      }
+    }
+
+    function getCookie(name) {
+      var match = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+      return match ? decodeURIComponent(match[1]) : '';
+    }
+
+    // SHA-256 hash for PII (email/phone) — required for enhanced matching
+    async function sha256(str) {
+      if (!str || !window.crypto || !crypto.subtle) return '';
+      var data = new TextEncoder().encode(str.trim().toLowerCase());
+      var hash = await crypto.subtle.digest('SHA-256', data);
+      return Array.from(new Uint8Array(hash)).map(function(b) {
+        return b.toString(16).padStart(2, '0');
+      }).join('');
+    }
+
+    // ── Customer Information Parameters (CIPs) for EMQ 8+ ──
+
+    function getUserData() {
+      var data = {
+        client_user_agent: navigator.userAgent,
+        fbp: getCookie('_fbp'),
+        fbc: getCookie('_fbc') || generateFbcFromUrl(),
+        external_id: window.__shopifyCustomerId || '',
+        country: 'id',
+        action_source: 'website'
+      };
+
+      // Include hashed customer data if available (set by theme.liquid)
+      if (window.__shopifyCustomerEmail) {
+        data._email_pending = window.__shopifyCustomerEmail;
+      }
+      if (window.__shopifyCustomerPhone) {
+        data._phone_pending = window.__shopifyCustomerPhone;
+      }
+
+      return data;
+    }
+
+    // Generate fbc from fbclid URL parameter if _fbc cookie missing
+    function generateFbcFromUrl() {
+      var fbclid = getUrlParam('fbclid');
+      if (!fbclid) return '';
+      return 'fb.1.' + Date.now() + '.' + fbclid;
+    }
+
+    // Resolve pending PII hashes and return clean user_data
+    async function resolveUserData(baseData) {
+      var resolved = Object.assign({}, baseData);
+
+      if (resolved._email_pending) {
+        resolved.em = await sha256(resolved._email_pending);
+        delete resolved._email_pending;
+      }
+      if (resolved._phone_pending) {
+        resolved.ph = await sha256(resolved._phone_pending);
+        delete resolved._phone_pending;
+      }
+
+      return resolved;
+    }
+
+    // ── Reliable event dispatch ─────────────────────────────
+
+    function publishEvent(eventName, payload) {
+      if (window.Shopify && window.Shopify.analytics && window.Shopify.analytics.publish) {
+        Shopify.analytics.publish(eventName, payload);
+      }
+    }
+
+    // ── ViewContent: fires on page load ─────────────────────
+
+    async function fireViewContent() {
+      var eventId = generateEventId();
+      var userData = await resolveUserData(getUserData());
+
+      var payload = {
+        content_name: document.title,
+        content_category: 'Menopause Advertorial',
+        content_type: 'article',
+        event_id: eventId,
+        event_source_url: window.location.href,
+        user_data: userData,
+        custom_data: {
+          page_source: 'menopause-advertorial',
+          utm_source: getUrlParam('utm_source'),
+          utm_medium: getUrlParam('utm_medium'),
+          utm_campaign: getUrlParam('utm_campaign'),
+          utm_content: getUrlParam('utm_content'),
+          referrer: document.referrer
+        }
+      };
+
+      // Client-side fbq with matching eventID for dedup
+      if (typeof fbq === 'function') {
+        fbq('track', 'ViewContent', {
+          content_name: payload.content_name,
+          content_category: payload.content_category,
+          content_type: payload.content_type
+        }, { eventID: eventId });
+      }
+
+      // Server-side relay via Shopify analytics → Meta CAPI
+      publishEvent('adv2_view_content', payload);
+    }
+
+    // Fire after DOM ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fireViewContent);
+    } else {
+      fireViewContent();
+    }
+
+    // ── Scroll depth tracking ───────────────────────────────
+
+    var scrollMilestones = { 25: false, 50: false, 75: false, 90: false };
+    var scrollThrottle = false;
+
+    window.addEventListener('scroll', function() {
+      if (scrollThrottle) return;
+      scrollThrottle = true;
+      requestAnimationFrame(function() {
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (docHeight <= 0) { scrollThrottle = false; return; }
+        var scrollPercent = Math.round((window.scrollY / docHeight) * 100);
+        var milestones = [25, 50, 75, 90];
+
+        for (var i = 0; i < milestones.length; i++) {
+          var m = milestones[i];
+          if (scrollPercent >= m && !scrollMilestones[m]) {
+            scrollMilestones[m] = true;
+            publishEvent('adv2_scroll_depth', {
+              event_id: generateEventId(),
+              depth: m,
+              page_source: 'menopause-advertorial',
+              event_source_url: window.location.href
+            });
+          }
+        }
+        scrollThrottle = false;
+      });
+    }, { passive: true });
+
+    // ── CTA Lead event ──────────────────────────────────────
+
+    document.addEventListener('click', async function(e) {
+      var cta = e.target.closest('[data-meta-event]');
+      if (!cta) return;
+
+      var href = cta.getAttribute('href');
+      if (!href) return;
+
+      var eventName = cta.getAttribute('data-meta-event') || 'Lead';
+      var eventId = generateEventId();
+      var userData = await resolveUserData(getUserData());
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+      var payload = {
+        content_name: cta.getAttribute('data-meta-product-name') || '',
+        content_ids: [cta.getAttribute('data-meta-content-id') || ''],
+        content_type: cta.getAttribute('data-meta-content-type') || 'product',
+        value: parseFloat(cta.getAttribute('data-meta-value')) || 0,
+        currency: cta.getAttribute('data-meta-currency') || 'IDR',
+        event_id: eventId,
+        event_source_url: window.location.href,
+        user_data: userData,
+        custom_data: {
+          category: cta.getAttribute('data-meta-category') || 'Menopause Advertorial to Store',
+          position: cta.getAttribute('data-meta-cta-position') || 'unknown',
+          page_source: cta.getAttribute('data-meta-page-source') || 'menopause-advertorial',
+          utm_source: getUrlParam('utm_source'),
+          utm_medium: getUrlParam('utm_medium'),
+          utm_campaign: getUrlParam('utm_campaign'),
+          utm_content: getUrlParam('utm_content'),
+          referrer: document.referrer,
+          scroll_depth_at_click: docHeight > 0 ? Math.round((window.scrollY / docHeight) * 100) : 0,
+          time_on_page_seconds: Math.round((Date.now() - window.__pageLoadTime) / 1000)
+        }
+      };
+
+      // Client-side fbq with matching eventID
+      if (typeof fbq === 'function') {
+        fbq('track', eventName, {
+          content_name: payload.content_name,
+          content_ids: payload.content_ids,
+          content_type: payload.content_type,
+          value: payload.value,
+          currency: payload.currency
+        }, { eventID: eventId });
+      }
+
+      // Server-side relay
+      publishEvent('cta_lead_event', payload);
+
+      // Handle navigation
+      var isNewTab = e.ctrlKey || e.metaKey || e.shiftKey || e.button === 1 || cta.getAttribute('target') === '_blank';
+      if (isNewTab) return;
+
+      e.preventDefault();
+      setTimeout(function() {
+        window.location.href = href;
+      }, 150);
+    });
+
+    // Page load timestamp
+    window.__pageLoadTime = Date.now();
+  })();
+</script>

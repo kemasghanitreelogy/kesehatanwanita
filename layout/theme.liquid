@@ -10,6 +10,10 @@
       2. Preload only the critical font variant (base weight)
       3. Additional variants load on-demand via @font-face
     {% endcomment %}
+    {% comment %} Preconnect to Google Fonts for menopause advertorial pages {% endcomment %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     {% unless settings.type_primary_font.system? %}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
 
@@ -30,6 +34,19 @@
   </head>
 
   <body>
+    {% comment %}
+      Expose customer data for Meta CAPI enhanced matching (EMQ 8+).
+      Email and phone are passed unhashed here; the tracking script
+      hashes them client-side via SHA-256 before sending.
+    {% endcomment %}
+    {% if customer %}
+      <script>
+        window.__shopifyCustomerId = {{ customer.id | json }};
+        {% if customer.email %}window.__shopifyCustomerEmail = {{ customer.email | json }};{% endif %}
+        {% if customer.phone %}window.__shopifyCustomerPhone = {{ customer.phone | json }};{% endif %}
+      </script>
+    {% endif %}
+
     {% sections 'header-group' %}
 
     {{ content_for_layout }}
