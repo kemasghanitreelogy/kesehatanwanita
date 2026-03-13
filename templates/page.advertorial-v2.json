@@ -50,11 +50,14 @@
         "p1",
         "p2"
       ],
-      "settings": {}
+      "settings": {
+        "show_section_break": true
+      }
     },
     "why-nothing-works": {
       "type": "advertorial-why-nothing-works",
       "settings": {
+        "show_section_break": true,
         "subhead": "Inilah yang sebenarnya terjadi.",
         "body_before_image": "<p>Saat memasuki perimenopause dan menopause, kemampuan tubuh untuk menyerap nutrisi tertentu menurun drastis. Kalsium, magnesium, zat besi, vitamin D, senyawa anti-inflamasi, zinc — enam fondasi yang dulu terjaga tanpa perlu dipikirkan. Semuanya turun bersamaan.</p><p>Rasa kaku di pagi hari bukan “faktor usia”. Itu tanda sendi kekurangan fondasi nutrisinya. Hot flash, tidur yang tidak pernah benar-benar nyenyak, kulit yang mendadak terasa lebih kering dan tipis — ini bukan masalah terpisah. Ini satu pola kekurangan yang sama, muncul di berbagai bagian tubuh.</p><p>Ahli nutrisi klinis menyebutnya: penurunan nutrisi sistemik. Tubuh tidak rusak. Tubuh kekurangan bahan baku — dan setelah hormon berubah, kekurangan itu semakin cepat.</p><p><strong>Tubuh tidak sedang “rusak”. Hanya sedang kekurangan apa yang dibutuhkannya.</strong> Dan celah ini dapat diisi.</p>",
         "analogy_image": "shopify://shop_images/protokol-kesehatan-atasi-akar-masalah.webp",
@@ -66,6 +69,7 @@
     "moringa-education": {
       "type": "advertorial-moringa-education",
       "settings": {
+        "show_section_break": false,
         "subhead": "Bukan memperbaiki gejala — tapi mengembalikan sumbernya.",
         "body_before_callout": "<p>Sebagian besar perempuan mengatasi gejala satu per satu. Krim untuk sendi. Kopi untuk energi. Obat tidur. Kalsium. Kunyit. Tidak ada yang salah — tetapi tidak ada yang cukup. Seperti rumah yang listriknya padam: menyalakan lilin di setiap ruangan membantu sementara, tetapi yang dibutuhkan adalah memperbaiki sumbernya.</p><p>Satu tanaman yang profilnya paling mendekati kebutuhan ini: moringa oleifera. Dalam satu daun, lebih dari 90 nutrisi bioavailable — termasuk keenam nutrisi yang terkuras saat menopause. Bukan zat kimia terpisah, tetapi profil nutrisi lengkap yang dikenali tubuh secara alami. Moringa menghadirkan apa yang hilang — secara bersamaan, seperti makanan utuh.</p>",
         "fact_label": "Dari analisis nutrisi yang dipublikasikan",
@@ -152,6 +156,7 @@
         "t3"
       ],
       "settings": {
+        "show_section_break": false,
         "subhead": "Yang dilaporkan pelanggan Treelogy:",
         "intro_text": "",
         "outro_text": "<p>Tidak semua orang merasakan hal yang sama. Tetapi pola dalam ribuan ulasan menunjukkan satu hal: tubuh merespons ketika akhirnya mendapatkan kembali apa yang hilang. Sebagian besar merasakan perubahan pertama dalam minggu pertama.</p>",
