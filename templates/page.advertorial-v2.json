@@ -8,41 +8,34 @@
  * ------------------------------------------------------------
  */
 {
-  "wrapper": "div.advertorial-v2-wrapper",
+  "wrapper": "div.advertorial-wrapper",
   "sections": {
-    "adv2-styles": {
-      "type": "advertorial-v2-styles",
+    "advertorial-styles": {
+      "type": "advertorial-styles",
       "settings": {}
     },
-    "adv2-header": {
-      "type": "advertorial-v2-header",
-      "disabled": true,
-      "settings": {
-        "logo_text": "Kesehatan Wanita Blog"
-      }
-    },
-    "adv2-meta-header": {
-      "type": "advertorial-v2-meta-header",
+    "meta-header": {
+      "type": "advertorial-meta-header",
       "settings": {
         "category_text": "Kesehatan Wanita · Nutrisi · 2 Menit Baca"
       }
     },
-    "adv2-hook": {
-      "type": "advertorial-v2-hook",
+    "hook": {
+      "type": "advertorial-hook",
       "settings": {
         "headline": "Menopause menguras 6 nutrisi penting dari tubuh. Kebanyakan perempuan tidak menyadarinya sampai sendi, tidur, dan kulit sudah berubah. Ini yang sebenarnya terjadi — dan yang bisa mengisi kekurangannya.",
+        "deck": "",
         "author_name": "Kusumawardan",
-        "author_credential": "Penulis Nutrisi & Kesehatan Wanita",
-        "hero_image": "shopify://shop_images/pemulihan-biologis-tubuh-tenang-treelogy.webp"
+        "author_credential": "Penulis Nutrisi & Kesehatan Wanita"
       }
     },
-    "adv2-felt-experience": {
-      "type": "advertorial-v2-felt-experience",
+    "felt-experience": {
+      "type": "advertorial-felt-experience",
       "blocks": {
         "p1": {
           "type": "paragraph",
           "settings": {
-            "text": "Pagi seperti ini pasti terdengar familier. Lutut terasa kaku, jari tangan pegal, punggung bawah “protes” bahkan sebelum sempat duduk tegak. Beberapa menit menunggu di tepi tempat tidur agar sendi bisa digerakkan — sebelum hari dimulai dan aktivitas tidak pernah berhenti."
+            "text": "Pagi seperti ini pasti terdengar familier. Lutut terasa kaku, jari tangan pegal, punggung bawah \u201cprotes\u201d bahkan sebelum sempat duduk tegak. Beberapa menit menunggu di tepi tempat tidur agar sendi bisa digerakkan \u2014 sebelum hari dimulai dan aktivitas tidak pernah berhenti."
           }
         },
         "p2": {
@@ -52,147 +45,98 @@
           }
         }
       },
-      "block_order": [
-        "p1",
-        "p2"
-      ],
+      "block_order": ["p1", "p2"],
       "settings": {}
     },
-    "adv2-education": {
-      "type": "advertorial-v2-education",
+    "why-nothing-works": {
+      "type": "advertorial-why-nothing-works",
       "settings": {
         "subhead": "Inilah yang sebenarnya terjadi.",
-        "body": "<p>Saat memasuki perimenopause dan menopause, kemampuan tubuh untuk menyerap nutrisi tertentu menurun drastis. Kalsium, magnesium, zat besi, vitamin D, senyawa anti-inflamasi, zinc — enam fondasi yang dulu terjaga tanpa perlu dipikirkan. Semuanya turun bersamaan.</p><p>Rasa kaku di pagi hari bukan “faktor usia”. Itu tanda sendi kekurangan fondasi nutrisinya. Hot flash, tidur yang tidak pernah benar-benar nyenyak, kulit yang mendadak terasa lebih kering dan tipis — ini bukan masalah terpisah. Ini satu pola kekurangan yang sama, muncul di berbagai bagian tubuh.</p><p>Ahli nutrisi klinis menyebutnya: penurunan nutrisi sistemik. Tubuh tidak rusak. Tubuh kekurangan bahan baku — dan setelah hormon berubah, kekurangan itu semakin cepat.</p><p><strong>Tubuh tidak sedang “rusak”. Hanya sedang kekurangan apa yang dibutuhkannya.</strong> Dan celah ini dapat diisi.</p>",
+        "body_before_image": "<p>Saat memasuki perimenopause dan menopause, kemampuan tubuh untuk menyerap nutrisi tertentu menurun drastis. Kalsium, magnesium, zat besi, vitamin D, senyawa anti-inflamasi, zinc \u2014 enam fondasi yang dulu terjaga tanpa perlu dipikirkan. Semuanya turun bersamaan.</p><p>Rasa kaku di pagi hari bukan \u201cfaktor usia\u201d. Itu tanda sendi kekurangan fondasi nutrisinya. Hot flash, tidur yang tidak pernah benar-benar nyenyak, kulit yang mendadak terasa lebih kering dan tipis \u2014 ini bukan masalah terpisah. Ini satu pola kekurangan yang sama, muncul di berbagai bagian tubuh.</p><p>Ahli nutrisi klinis menyebutnya: penurunan nutrisi sistemik. Tubuh tidak rusak. Tubuh kekurangan bahan baku \u2014 dan setelah hormon berubah, kekurangan itu semakin cepat.</p><p><strong>Tubuh tidak sedang \u201crusak\u201d. Hanya sedang kekurangan apa yang dibutuhkannya.</strong> Dan celah ini dapat diisi.</p>",
         "analogy_image": "shopify://shop_images/protokol-kesehatan-atasi-akar-masalah.webp",
-        "body_after_image": ""
+        "body_after_image": "",
+        "quote_text": "",
+        "quote_attribution": ""
       }
     },
-    "adv2-solution": {
-      "type": "advertorial-v2-solution",
+    "moringa-education": {
+      "type": "advertorial-moringa-education",
       "settings": {
-        "body": "<p>Sebagian besar perempuan mengatasi gejala satu per satu. Krim untuk sendi. Kopi untuk energi. Obat tidur. Kalsium. Kunyit. Tidak ada yang salah — tetapi tidak ada yang cukup. Seperti rumah yang listriknya padam: menyalakan lilin di setiap ruangan membantu sementara, tetapi yang dibutuhkan adalah memperbaiki sumbernya.</p><p>Satu tanaman yang profilnya paling mendekati kebutuhan ini: moringa oleifera. Dalam satu daun, lebih dari 90 nutrisi bioavailable — termasuk keenam nutrisi yang terkuras saat menopause. Bukan zat kimia terpisah, tetapi profil nutrisi lengkap yang dikenali tubuh secara alami. Moringa menghadirkan apa yang hilang — secara bersamaan, seperti makanan utuh.</p>",
+        "subhead": "Bukan memperbaiki gejala \u2014 tapi mengembalikan sumbernya.",
+        "body_before_callout": "<p>Sebagian besar perempuan mengatasi gejala satu per satu. Krim untuk sendi. Kopi untuk energi. Obat tidur. Kalsium. Kunyit. Tidak ada yang salah \u2014 tetapi tidak ada yang cukup. Seperti rumah yang listriknya padam: menyalakan lilin di setiap ruangan membantu sementara, tetapi yang dibutuhkan adalah memperbaiki sumbernya.</p><p>Satu tanaman yang profilnya paling mendekati kebutuhan ini: moringa oleifera. Dalam satu daun, lebih dari 90 nutrisi bioavailable \u2014 termasuk keenam nutrisi yang terkuras saat menopause. Bukan zat kimia terpisah, tetapi profil nutrisi lengkap yang dikenali tubuh secara alami. Moringa menghadirkan apa yang hilang \u2014 secara bersamaan, seperti makanan utuh.</p>",
         "fact_label": "Dari analisis nutrisi yang dipublikasikan",
-        "fact_text": "<p>Daun moringa mengandung 7× vitamin C dari jeruk, 4× kalsium dari susu, 3× kalium dari pisang, dan 25× zat besi dari bayam — dalam satu sumber bioavailable.</p>",
+        "fact_text": "<p>Daun moringa mengandung 7\u00d7 vitamin C dari jeruk, 4\u00d7 kalsium dari susu, 3\u00d7 kalium dari pisang, dan 25\u00d7 zat besi dari bayam \u2014 dalam satu sumber bioavailable.</p>",
         "comparison_image": "shopify://shop_images/infografis-nutrisi-daun-kelor-bali.webp",
-        "body_after_callout": "<p>Itu untuk di dalam tubuh. Untuk kulit dan rambut yang mendadak kering dan menipis, minyak biji moringa bekerja dari luar — mengandung 72% asam oleat yang menyerupai sebum alami kulit. Nutrisi dari dalam, perawatan dari luar.</p><p>Sementara sebagian besar brand mengambil moringa dari pihak ketiga, saya menemukan satu brand Indonesia yang menanam dan memproses semuanya sendiri. Treelogy mengelola kebun organik bersertifikat di Bali dan fasilitas terdaftar BPOM mereka sendiri — dari tanah hingga produk, di bawah satu atap. Mereka mempublikasikan prosesnya secara terbuka, sesuatu yang jarang saya temukan selama meneliti pasar ini.</p><p>Discovery Pack mereka memungkinkan Anda mencoba kapsul dan bubuk dalam ukuran lebih kecil — pilih format yang paling cocok — plus minyak biji moringa untuk kulit dan rambut. Nutrisi dari dalam dan luar dalam satu box. Bulan ini harganya lebih rendah dengan gratis ongkir selama stok tersedia.</p>"
+        "body_after_callout": "<p>Itu untuk di dalam tubuh. Untuk kulit dan rambut yang mendadak kering dan menipis, minyak biji moringa bekerja dari luar \u2014 mengandung 72% asam oleat yang menyerupai sebum alami kulit. Nutrisi dari dalam, perawatan dari luar.</p><p>Sementara sebagian besar brand mengambil moringa dari pihak ketiga, saya menemukan satu brand Indonesia yang menanam dan memproses semuanya sendiri. Treelogy mengelola kebun organik bersertifikat di Bali dan fasilitas terdaftar BPOM mereka sendiri \u2014 dari tanah hingga produk, di bawah satu atap. Mereka mempublikasikan prosesnya secara terbuka, sesuatu yang jarang saya temukan selama meneliti pasar ini.</p><p>Discovery Pack mereka memungkinkan Anda mencoba kapsul dan bubuk dalam ukuran lebih kecil \u2014 pilih format yang paling cocok \u2014 plus minyak biji moringa untuk kulit dan rambut. Nutrisi dari dalam dan luar dalam satu box. Bulan ini harganya lebih rendah dengan gratis ongkir selama stok tersedia.</p>"
       }
     },
-    "adv2-bridge-cta": {
-      "type": "advertorial-v2-bridge-cta",
+    "bridge-cta": {
+      "type": "advertorial-bridge-cta",
       "blocks": {
-        "b1": {
-          "type": "badge",
-          "settings": {
-            "badge_label": "Terdaftar di BPOM"
-          }
-        },
-        "b2": {
-          "type": "badge",
-          "settings": {
-            "badge_label": "Halal"
-          }
-        },
-        "b3": {
-          "type": "badge",
-          "settings": {
-            "badge_label": "100% Organik"
-          }
-        },
-        "b4": {
-          "type": "badge",
-          "settings": {
-            "badge_label": "Terverifikasi Lab"
-          }
-        }
+        "b1": { "type": "badge", "settings": { "badge_label": "Terdaftar di BPOM" } },
+        "b2": { "type": "badge", "settings": { "badge_label": "Halal" } },
+        "b3": { "type": "badge", "settings": { "badge_label": "100% Organik" } },
+        "b4": { "type": "badge", "settings": { "badge_label": "Terverifikasi Lab" } }
       },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4"
-      ],
+      "block_order": ["b1", "b2", "b3", "b4"],
       "settings": {
         "bridge_text": "",
         "cta_url": "https://treelogy.com/id/products/the-discovery-pack",
-        "cta_text": "Temukan Discovery Pack →",
+        "cta_text": "Temukan Discovery Pack \u2192",
         "cta_subtext": "Gratis ongkir untuk pembaca artikel ini",
         "meta_product_name": "The Discovery Pack",
         "meta_product_value": "999000",
         "meta_content_id": "9074141200572"
       }
     },
-    "adv2-social-proof": {
-      "type": "advertorial-v2-social-proof",
+    "social-proof": {
+      "type": "advertorial-social-proof",
       "blocks": {
         "t1": {
           "type": "testimonial",
           "settings": {
-            "quote_text": "“Baru coba 4 hari dan joint pain saya menghilang. Tidur pun nyenyak.”",
+            "bridge_text": "",
+            "quote_text": "Baru coba 4 hari dan joint pain saya menghilang. Tidur pun nyenyak.",
             "attribution": "Ulasan pelanggan Treelogy"
           }
         },
         "t2": {
           "type": "testimonial",
           "settings": {
-            "quote_text": "“Usia 51 tahun. Hari ke 10, badan kembali segar, ngilu tulang sudah hilang. Hot flashes sudah hampir ngga pernah.”",
+            "bridge_text": "",
+            "quote_text": "Usia 51 tahun. Hari ke 10, badan kembali segar, ngilu tulang sudah hilang. Hot flashes sudah hampir ngga pernah.",
             "attribution": "Ulasan pelanggan Treelogy"
           }
         },
         "t3": {
           "type": "testimonial",
           "settings": {
-            "quote_text": "“Dokter jantung saya sampai kagum sama hasil check-up rutin saya.”",
+            "bridge_text": "",
+            "quote_text": "Dokter jantung saya sampai kagum sama hasil check-up rutin saya.",
             "attribution": "Ulasan pelanggan Treelogy"
           }
         }
       },
-      "block_order": [
-        "t1",
-        "t2",
-        "t3"
-      ],
+      "block_order": ["t1", "t2", "t3"],
       "settings": {
         "subhead": "Yang dilaporkan pelanggan Treelogy:",
+        "intro_text": "",
         "outro_text": "<p>Tidak semua orang merasakan hal yang sama. Tetapi pola dalam ribuan ulasan menunjukkan satu hal: tubuh merespons ketika akhirnya mendapatkan kembali apa yang hilang. Sebagian besar merasakan perubahan pertama dalam minggu pertama.</p>"
       }
     },
-    "adv2-final-cta": {
-      "type": "advertorial-v2-final-cta",
+    "final-cta": {
+      "type": "advertorial-final-cta",
       "blocks": {
-        "b1": {
-          "type": "badge",
-          "settings": {
-            "badge_label": "Terdaftar di BPOM"
-          }
-        },
-        "b2": {
-          "type": "badge",
-          "settings": {
-            "badge_label": "Halal"
-          }
-        },
-        "b3": {
-          "type": "badge",
-          "settings": {
-            "badge_label": "100% Organik"
-          }
-        },
-        "b4": {
-          "type": "badge",
-          "settings": {
-            "badge_label": "Terverifikasi Lab"
-          }
-        }
+        "b1": { "type": "badge", "settings": { "badge_label": "Terdaftar di BPOM" } },
+        "b2": { "type": "badge", "settings": { "badge_label": "Halal" } },
+        "b3": { "type": "badge", "settings": { "badge_label": "100% Organik" } },
+        "b4": { "type": "badge", "settings": { "badge_label": "Terverifikasi Lab" } }
       },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4"
-      ],
+      "block_order": ["b1", "b2", "b3", "b4"],
       "settings": {
+        "body": "",
         "cta_url": "https://treelogy.com/id/products/the-discovery-pack",
-        "cta_text": "Temukan Discovery Pack →",
+        "cta_text": "Temukan Discovery Pack \u2192",
         "cta_subtext": "Gratis ongkir untuk pembaca artikel ini",
         "disclosure_text": "Disclosure: Artikel ini memuat rekomendasi produk Treelogy. Penulis melakukan riset independen terhadap brand ini untuk keperluan penulisan artikel ini.",
         "meta_product_name": "The Discovery Pack",
@@ -202,15 +146,14 @@
     }
   },
   "order": [
-    "adv2-styles",
-    "adv2-header",
-    "adv2-meta-header",
-    "adv2-hook",
-    "adv2-felt-experience",
-    "adv2-education",
-    "adv2-solution",
-    "adv2-bridge-cta",
-    "adv2-social-proof",
-    "adv2-final-cta"
+    "advertorial-styles",
+    "meta-header",
+    "hook",
+    "felt-experience",
+    "why-nothing-works",
+    "moringa-education",
+    "bridge-cta",
+    "social-proof",
+    "final-cta"
   ]
 }
