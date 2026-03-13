@@ -3,7 +3,7 @@
 </div>
 
 <div class="adv-cta-block" id="cta1">
-  <a href="{{ section.settings.cta_url }}?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign=moringa_discovery_launch&utm_content=mid-article"
+  <a href="{{ section.settings.cta_url }}?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign={{ section.settings.utm_campaign | default: 'moringa_discovery_launch' | url_encode }}&utm_content={{ section.settings.utm_content | default: 'mid-article' | url_encode }}"
    class="adv-cta-button"
    data-meta-event="Lead"
    data-meta-product-name="{{ section.settings.meta_product_name }}"
@@ -55,6 +55,24 @@
       "id": "cta_subtext",
       "label": "CTA Subtext",
       "default": "Free shipping for readers of this article · 30-day protocol"
+    },
+    {
+      "type": "header",
+      "content": "UTM Tracking"
+    },
+    {
+      "type": "text",
+      "id": "utm_campaign",
+      "label": "UTM Campaign",
+      "default": "moringa_discovery_launch",
+      "info": "Identifies which campaign (e.g. moringa_discovery_launch, menopause_discovery_launch)"
+    },
+    {
+      "type": "text",
+      "id": "utm_content",
+      "label": "UTM Content",
+      "default": "mid-article",
+      "info": "Identifies CTA position & version (e.g. mid-article, mid-article-v2)"
     },
     {
       "type": "header",

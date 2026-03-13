@@ -3,7 +3,7 @@
 </div>
 
 <div class="adv-cta-block" id="cta2">
-  <a href="{{ section.settings.cta_url }}?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign=moringa_discovery_launch&utm_content=end-article"
+  <a href="{{ section.settings.cta_url }}?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign={{ section.settings.utm_campaign | default: 'moringa_discovery_launch' | url_encode }}&utm_content={{ section.settings.utm_content | default: 'end-article' | url_encode }}"
    class="adv-cta-button"
    data-meta-event="Lead"
    data-meta-product-name="{{ section.settings.meta_product_name }}"
@@ -67,6 +67,24 @@
       "id": "disclosure_text",
       "label": "Editorial Disclosure",
       "default": "Disclosure: This article includes a recommendation for Treelogy products. The author independently researched the brand for this piece. For more information, visit treelogy.com."
+    },
+    {
+      "type": "header",
+      "content": "UTM Tracking"
+    },
+    {
+      "type": "text",
+      "id": "utm_campaign",
+      "label": "UTM Campaign",
+      "default": "moringa_discovery_launch",
+      "info": "Identifies which campaign (e.g. moringa_discovery_launch, menopause_discovery_launch)"
+    },
+    {
+      "type": "text",
+      "id": "utm_content",
+      "label": "UTM Content",
+      "default": "end-article",
+      "info": "Identifies CTA position & version (e.g. end-article, end-article-v2)"
     },
     {
       "type": "header",
