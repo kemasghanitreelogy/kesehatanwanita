@@ -154,7 +154,8 @@
       "settings": {
         "subhead": "Yang dilaporkan pelanggan Treelogy:",
         "intro_text": "",
-        "outro_text": "<p>Tidak semua orang merasakan hal yang sama. Tetapi pola dalam ribuan ulasan menunjukkan satu hal: tubuh merespons ketika akhirnya mendapatkan kembali apa yang hilang. Sebagian besar merasakan perubahan pertama dalam minggu pertama.</p>"
+        "outro_text": "<p>Tidak semua orang merasakan hal yang sama. Tetapi pola dalam ribuan ulasan menunjukkan satu hal: tubuh merespons ketika akhirnya mendapatkan kembali apa yang hilang. Sebagian besar merasakan perubahan pertama dalam minggu pertama.</p>",
+        "outro_position": "after_all"
       }
     },
     "final-cta": {
