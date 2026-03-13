@@ -7,11 +7,21 @@
   {% endcase %}
 {% endfor %}
 
-<div class="adv-section-break"></div>
+{% if section.settings.show_section_break %}
+  <div class="adv-section-break"></div>
+{% endif %}
 
 {% schema %}
 {
   "name": "Adv Felt Experience",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_section_break",
+      "label": "Show section break line",
+      "default": true
+    }
+  ],
   "blocks": [
     {
       "type": "paragraph",
