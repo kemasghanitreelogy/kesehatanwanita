@@ -5,7 +5,7 @@
 </div>
 
 {% for block in section.blocks %}
-  {% if forloop.last %}
+  {% if forloop.last and section.settings.outro_position == 'before_last' %}
     <div class="adv-richtext" data-cs-capture>
       {{ section.settings.outro_text }}
     </div>
@@ -18,6 +18,12 @@
   <p class="adv-inline-quote" {{ block.shopify_attributes }} data-cs-capture>"{{ block.settings.quote_text }}"</p>
   <p class="adv-inline-attribution" data-cs-capture>— {{ block.settings.attribution }}</p>
 {% endfor %}
+
+{% if section.settings.outro_position == 'after_all' and section.settings.outro_text != blank %}
+  <div class="adv-richtext" data-cs-capture>
+    {{ section.settings.outro_text }}
+  </div>
+{% endif %}
 
 <div class="adv-section-break"></div>
 
@@ -42,6 +48,16 @@
       "id": "outro_text",
       "label": "Outro Text",
       "default": "<p>Not every user responds the same way. Some feel it in 48 hours. Some take two weeks. But the pattern across their reviews is consistent: the body responds when it finally gets what it's been missing.</p>"
+    },
+    {
+      "type": "select",
+      "id": "outro_position",
+      "label": "Outro Text Position",
+      "options": [
+        { "value": "before_last", "label": "Before last testimonial" },
+        { "value": "after_all", "label": "After all testimonials" }
+      ],
+      "default": "before_last"
     }
   ],
   "blocks": [
