@@ -1,0 +1,139 @@
+{% if section.settings.pre_subhead_text != blank %}
+  <div class="adv-richtext" data-cs-capture>
+    {{ section.settings.pre_subhead_text }}
+  </div>
+{% endif %}
+
+{% if section.settings.social_image != blank %}
+  <div class="adv-image">
+    {{
+      section.settings.social_image
+      | image_url: width: 1280
+      | image_tag: loading: 'lazy', alt: section.settings.social_image.alt, data-cs-mask: 'false'
+    }}
+  </div>
+{% endif %}
+
+<p class="adv-subhead" data-cs-capture>
+  {{ section.settings.subhead_prefix }}
+  {% if section.settings.subhead_highlight != blank %}
+    <span style="font-size: 1.15em; color: #2d6a4f;">{{ section.settings.subhead_highlight }}</span>
+  {% endif %}
+  {{ section.settings.subhead_suffix }}
+</p>
+
+{% if section.settings.intro_text != blank %}
+  <div class="adv-richtext intro" data-cs-capture>
+    {{ section.settings.intro_text }}
+  </div>
+{% endif %}
+
+{% for block in section.blocks %}
+  {% if forloop.last and section.settings.outro_position == 'before_last' and section.settings.outro_text != blank %}
+    <div class="adv-richtext" data-cs-capture>
+      {{ section.settings.outro_text }}
+    </div>
+  {% endif %}
+
+  {% if block.settings.bridge_text != blank %}
+    <p class="adv-body-text" {{ block.shopify_attributes }} data-cs-capture>{{ block.settings.bridge_text }}</p>
+  {% endif %}
+
+  <p class="adv-inline-quote" {{ block.shopify_attributes }} data-cs-capture>&ldquo;{{ block.settings.quote_text }}&rdquo;</p>
+  <p class="adv-inline-attribution" data-cs-capture>{{ block.settings.attribution }}</p>
+{% endfor %}
+
+{% if section.settings.outro_position == 'after_all' and section.settings.outro_text != blank %}
+  <div class="adv-richtext" data-cs-capture>
+    {{ section.settings.outro_text }}
+  </div>
+{% endif %}
+
+{% if section.settings.show_section_break %}
+  <div class="adv-section-break"></div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Adv Social Proof v2",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "pre_subhead_text",
+      "label": "Text before subhead"
+    },
+    {
+      "type": "image_picker",
+      "id": "social_image",
+      "label": "Social Proof Image"
+    },
+    {
+      "type": "text",
+      "id": "subhead_prefix",
+      "label": "Subhead (before highlight)",
+      "default": "Apa yang dilaporkan oleh"
+    },
+    {
+      "type": "text",
+      "id": "subhead_highlight",
+      "label": "Subhead Highlight (colored)",
+      "default": "4.700+"
+    },
+    {
+      "type": "text",
+      "id": "subhead_suffix",
+      "label": "Subhead (after highlight)",
+      "default": "pengguna Treelogy."
+    },
+    {
+      "type": "richtext",
+      "id": "intro_text",
+      "label": "Intro Text"
+    },
+    {
+      "type": "richtext",
+      "id": "outro_text",
+      "label": "Outro Text"
+    },
+    {
+      "type": "select",
+      "id": "outro_position",
+      "label": "Outro Text Position",
+      "options": [
+        { "value": "before_last", "label": "Before last testimonial" },
+        { "value": "after_all", "label": "After all testimonials" }
+      ],
+      "default": "before_last"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_section_break",
+      "label": "Show section break line",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "text",
+          "id": "bridge_text",
+          "label": "Bridge Text (before quote)"
+        },
+        {
+          "type": "textarea",
+          "id": "quote_text",
+          "label": "Quote Text"
+        },
+        {
+          "type": "text",
+          "id": "attribution",
+          "label": "Attribution"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

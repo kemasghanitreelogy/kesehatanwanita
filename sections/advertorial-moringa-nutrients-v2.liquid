@@ -1,0 +1,41 @@
+{% if section.settings.nutrient_image != blank %}
+  <div class="adv-image">
+    {{
+      section.settings.nutrient_image
+      | image_url: width: 1280
+      | image_tag: loading: 'lazy', alt: section.settings.nutrient_image.alt, data-cs-mask: 'false'
+    }}
+  </div>
+{% endif %}
+
+<div class="adv-richtext" data-cs-capture>
+  {{ section.settings.body }}
+</div>
+
+{% if section.settings.show_section_break %}
+  <div class="adv-section-break"></div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Adv Moringa Nutrients v2",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "nutrient_image",
+      "label": "Nutrient Comparison Image"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_section_break",
+      "label": "Show section break line",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

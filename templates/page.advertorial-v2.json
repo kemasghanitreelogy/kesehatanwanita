@@ -14,77 +14,96 @@
       "type": "advertorial-styles",
       "settings": {}
     },
-    "meta-header": {
-      "type": "advertorial-meta-header",
+    "meta-header-v2": {
+      "type": "advertorial-meta-header-v2",
       "settings": {
-        "category_text": "Kesehatan Wanita · Nutrisi · 2 Menit Baca"
+        "category_text": "Kesehatan Wanita · Nutrisi · 6 menit baca"
       }
     },
-    "hook": {
-      "type": "advertorial-hook",
+    "hook-v2": {
+      "type": "advertorial-hook-v2",
       "settings": {
-        "headline": "Menopause menguras 6 nutrisi penting dari tubuh. Kebanyakan perempuan tidak menyadarinya sampai sendi, tidur, dan kulit sudah berubah. Ini yang sebenarnya terjadi — dan yang bisa mengisi kekurangannya.",
-        "deck": "",
+        "headline": "Anda bangun 10 menit lebih awal dari semua orang. Bukan karena ingin. Karena lutut Anda butuh waktu selama itu untuk bisa digerakkan lagi.",
+        "deck": "Apa yang sering disalahartikan oleh perempuan di atas 45 tahun sebagai “sekadar bertambah usia” — dan apa yang sebenarnya sedang tubuh coba sampaikan.",
         "author_name": "Kusumawardani",
         "author_credential": "Penulis Nutrisi & Kesehatan Wanita",
         "hero_image": "shopify://shop_images/pemulihan-biologis-tubuh-tenang-treelogy.webp"
       }
     },
-    "felt-experience": {
-      "type": "advertorial-felt-experience",
+    "felt-experience-v2": {
+      "type": "advertorial-felt-experience-v2",
       "blocks": {
         "p1": {
           "type": "paragraph",
           "settings": {
-            "text": "Pagi seperti ini pasti terdengar familier. Lutut terasa kaku, jari tangan pegal, punggung bawah “protes” bahkan sebelum sempat duduk tegak. Beberapa menit menunggu di tepi tempat tidur agar sendi bisa digerakkan — sebelum hari dimulai dan aktivitas tidak pernah berhenti."
+            "text": "Pagi seperti ini pasti terasa familier."
           }
         },
         "p2": {
-          "type": "paragraph_bold",
+          "type": "paragraph",
           "settings": {
-            "text": "Kebanyakan perempuan mengira ini bagian normal dari bertambah usia. Ternyata bukan."
+            "text": "Alarm belum berbunyi, tetapi tubuh sudah lebih dulu “bangun.” Lutut terasa kaku. Jari-jari tangan pegal. Ada bagian di punggung bawah yang sudah protes bahkan sebelum sempat duduk tegak."
+          }
+        },
+        "p3": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Kaki diturunkan ke lantai dan harus menunggu. Bukan karena ingin, tetapi karena memang harus. Beberapa menit agar sendi “pemanasan” dulu sebelum rumah mulai beraktivitas."
+          }
+        },
+        "p4": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Lalu hari pun dimulai. Sarapan. Antar anak ke sekolah. Urusan rumah. Keluarga. Tidak pernah berhenti."
+          }
+        },
+        "p5": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Namun belakangan ini, tubuh mulai mengeluarkan “suara” yang tidak lagi bisa diabaikan."
+          }
+        },
+        "p6": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Anda masih perempuan yang sama. Yang menjadi tumpuan semua orang. Yang diandalkan. Yang jarang mengeluh."
+          }
+        },
+        "p7": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Tetapi diam-diam — di momen sepi sebelum orang rumah terbangun — Anda mulai bertanya, sampai kapan tubuh ini bisa terus mengikuti ritme hidup seperti ini."
           }
         }
       },
       "block_order": [
         "p1",
-        "p2"
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7"
       ],
       "settings": {
         "show_section_break": true
       }
     },
-    "why-nothing-works": {
-      "type": "advertorial-why-nothing-works",
+    "menopause-explain-v2": {
+      "type": "advertorial-menopause-explain-v2",
       "settings": {
-        "show_section_break": true,
-        "subhead": "Inilah yang sebenarnya terjadi.",
-        "body_before_image": "<p>Saat memasuki perimenopause dan menopause, kemampuan tubuh untuk menyerap nutrisi tertentu menurun drastis. Kalsium, magnesium, zat besi, vitamin D, senyawa anti-inflamasi, zinc — enam fondasi yang dulu terjaga tanpa perlu dipikirkan. Semuanya turun bersamaan.</p><p>Rasa kaku di pagi hari bukan “faktor usia”. Itu tanda sendi kekurangan fondasi nutrisinya. Hot flash, tidur yang tidak pernah benar-benar nyenyak, kulit yang mendadak terasa lebih kering dan tipis — ini bukan masalah terpisah. Ini satu pola kekurangan yang sama, muncul di berbagai bagian tubuh.</p><p>Ahli nutrisi klinis menyebutnya: penurunan nutrisi sistemik. Tubuh tidak rusak. Tubuh kekurangan bahan baku — dan setelah hormon berubah, kekurangan itu semakin cepat.</p><p><strong>Tubuh tidak sedang “rusak”. Hanya sedang kekurangan apa yang dibutuhkannya.</strong> Dan celah ini dapat diisi.</p>",
-        "analogy_image": "shopify://shop_images/protokol-kesehatan-atasi-akar-masalah.webp",
-        "body_after_image": "",
-        "quote_text": "",
-        "quote_attribution": ""
+        "subhead": "Apa yang jarang dijelaskan tentang menopause.",
+        "body": "<p>Inilah yang sebenarnya terjadi.</p><p>Saat memasuki perimenopause dan menopause, kadar hormon berubah — dan kemampuan tubuh untuk menyerap serta memanfaatkan nutrisi tertentu ikut menurun. Kalsium. Magnesium. Zat besi. Vitamin D. Senyawa anti-inflamasi alami yang dulu tercukupi tanpa perlu dipikirkan. Semuanya menurun.</p><p>Rasa kaku di pagi hari? Bukan sekadar “faktor usia.” Itu sendi yang kekurangan fondasi nutrisinya.</p><p>Rasa capek yang tidak sebanding dengan aktivitas? Sel-sel tubuh tidak lagi mendapatkan “bahan bakar” seperti dulu. Hot flash, tidur yang tidak pernah benar-benar nyenyak, kulit yang mendadak terasa lebih kering dan tipis — ini bukan masalah yang terpisah-pisah. Ini adalah satu masalah yang sama, yang muncul di berbagai bagian tubuh.</p><p>Ahli nutrisi klinis yang bekerja dengan perempuan di atas 40 tahun menyebutnya: penurunan nutrisi sistemik. Tubuh tidak rusak. Tubuh hanya kekurangan bahan baku yang dulu bisa didaur ulang secara efisien — dan setelah hormon berubah, kekurangan itu semakin cepat terjadi.</p><p><strong>Tubuh Anda tidak sedang rusak. Hanya sedang kekurangan apa yang dibutuhkannya.</strong> Dan ini bagian pentingnya: kondisi ini bukan sesuatu yang tidak bisa diperbaiki. Ini adalah celah. Dan celah dapat diisi.</p>",
+        "show_section_break": true
       }
     },
-    "moringa-education": {
-      "type": "advertorial-moringa-education",
-      "settings": {
-        "show_section_break": false,
-        "subhead": "Bukan memperbaiki gejala — tapi mengembalikan sumbernya.",
-        "body_before_callout": "<p>Sebagian besar perempuan mengatasi gejala satu per satu. Krim untuk sendi. Kopi untuk energi. Obat tidur. Kalsium. Kunyit. Tidak ada yang salah — tetapi tidak ada yang cukup. Seperti rumah yang listriknya padam: menyalakan lilin di setiap ruangan membantu sementara, tetapi yang dibutuhkan adalah memperbaiki sumbernya.</p><p>Satu tanaman yang profilnya paling mendekati kebutuhan ini: moringa oleifera. Dalam satu daun, lebih dari 90 nutrisi bioavailable — termasuk keenam nutrisi yang terkuras saat menopause. Bukan zat kimia terpisah, tetapi profil nutrisi lengkap yang dikenali tubuh secara alami. Moringa menghadirkan apa yang hilang — secara bersamaan, seperti makanan utuh.</p>",
-        "fact_label": "Dari analisis nutrisi yang dipublikasikan",
-        "fact_text": "<p>Daun moringa mengandung 7× vitamin C dari jeruk, 4× kalsium dari susu, 3× kalium dari pisang, dan 25× zat besi dari bayam — dalam satu sumber bioavailable.</p>",
-        "comparison_image": "shopify://shop_images/infografis-nutrisi-daun-kelor-bali.webp",
-        "body_after_callout": "<p>Itu untuk di dalam tubuh. Untuk kulit dan rambut yang mendadak kering dan menipis, minyak biji moringa bekerja dari luar — mengandung 72% asam oleat yang menyerupai sebum alami kulit. Nutrisi dari dalam, perawatan dari luar.</p><p>Sementara sebagian besar brand mengambil moringa dari pihak ketiga, saya menemukan satu brand Indonesia yang menanam dan memproses semuanya sendiri. Treelogy mengelola kebun organik bersertifikat di Bali dan fasilitas terdaftar BPOM mereka sendiri — dari tanah hingga produk, di bawah satu atap. Mereka mempublikasikan prosesnya secara terbuka, sesuatu yang jarang saya temukan selama meneliti pasar ini.</p><p>Discovery Pack mereka memungkinkan Anda mencoba kapsul dan bubuk dalam ukuran lebih kecil — pilih format yang paling cocok — plus minyak biji moringa untuk kulit dan rambut. Nutrisi dari dalam dan luar dalam satu box. Bulan ini harganya lebih rendah dengan gratis ongkir selama stok tersedia.</p>"
-      }
-    },
-    "bridge-cta": {
-      "type": "advertorial-bridge-cta",
+    "why-nothing-works-v2": {
+      "type": "advertorial-why-nothing-works-v2",
       "blocks": {
         "b1": {
           "type": "badge",
           "settings": {
-            "badge_label": "Terdaftar di BPOM"
+            "badge_label": "Terdaftar BPOM"
           }
         },
         "b2": {
@@ -102,7 +121,7 @@
         "b4": {
           "type": "badge",
           "settings": {
-            "badge_label": "Terverifikasi Lab"
+            "badge_label": "Teruji Laboratorium"
           }
         }
       },
@@ -113,10 +132,80 @@
         "b4"
       ],
       "settings": {
-        "bridge_text": "",
+        "subhead": "Mengapa memaksakan diri tidak lagi efektif.",
+        "body_before_quote": "<p>Sebagian besar perempuan di fase ini merespons dengan cara yang sama: mengatasi gejala satu per satu. Krim untuk nyeri sendi. Kopi untuk energi. Obat tidur untuk insomnia. Mungkin kapsul “ajaib” entah isi apa, rekomendasi seseorang. Ujungnya selalu sama:</p>",
+        "quote_text": "“Saya 49 tahun. Sendi kaku, hot flash, emosi kacau, kulit kering. Udah agak desperate.”",
+        "quote_attribution": "— Rahma, via Instagram DM",
+        "body_after_quote": "<p>Saat sebagian besar perempuan sampai di titik ini — setelah krim murah, suplemen sintetis, bubuk all-in-one yang tidak bekerja — rasa frustrasi sudah menumpuk bertahun-tahun. Tidak ada yang salah dari semua itu. Namun tidak ada yang bekerja — dan ada alasan sederhana di baliknya.</p>",
+        "analogy_image": "shopify://shop_images/protokol-kesehatan-atasi-akar-masalah.webp",
+        "body_after_image": "<p>Bayangkan listrik utama rumah padam. Semua ruangan gelap. Anda bisa menyalakan lilin di setiap ruangan — dan itu membantu, sementara. Tetapi yang sebenarnya dibutuhkan adalah memperbaiki sumber listriknya.</p><p>Tubuh bekerja dengan cara yang sama. Ketika fondasi nutrisi menurun, gejala muncul di berbagai tempat sekaligus. Mengatasi satu per satu sama seperti menyalakan lilin. Yang dibutuhkan tubuh adalah menghidupkan kembali sumbernya.</p><p>Di titik inilah banyak perempuan di atas 40 tahun — termasuk saya — kembali menemukan moringa oleifera. Satu daun saja mengandung lebih dari 90 nutrisi yang bekerja bersama untuk memulihkan sumber itu. Namun yang tidak saya duga saat mulai mendalaminya: seperti halnya matcha, cara moringa diproses sangat menentukan kualitas yang masuk ke tubuh.</p><p>Butuh waktu bagi saya untuk menemukan brand yang benar-benar peduli pada prosesnya — yang menjaga nutrisi tetap utuh, baik dalam produk daun mereka (tersedia dalam kapsul dan bubuk) maupun dalam minyak biji moringa cold-pressed untuk kulit dan rambut.</p><p>Kalau Anda sudah membaca sampai sini dan merasa ini memang tentang Anda — kalau Anda sudah lelah bangun pagi-pagi hanya untuk menunggu tubuh bisa diajak bergerak — dan ingin jalan pintas dari saya: tautan di bawah ini adalah Discovery Pack dari brand yang saya percaya. Mereka sedang menjalankan penawaran terbatas agar Anda bisa mencoba ketiga produknya dalam ukuran terkecil.</p>",
+        "show_exit_cta": true,
         "cta_url": "https://treelogy.com/id/products/the-discovery-pack",
-        "cta_text": "Temukan Discovery Pack →",
-        "cta_subtext": "Gratis ongkir untuk pembaca artikel ini",
+        "cta_text": "Lihat Discovery Pack →",
+        "cta_subtext": "Gratis ongkir untuk pembaca artikel ini · selama stok tersedia",
+        "after_cta_text": "Ingin tahu mengapa moringa ini berbeda? Lanjut baca.",
+        "show_section_break": true,
+        "utm_campaign": "menopause_discovery_launch",
+        "utm_content": "exit-cta-v2",
+        "meta_product_name": "The Discovery Pack",
+        "meta_product_value": "999000",
+        "meta_content_id": "9074141200572"
+      }
+    },
+    "moringa-nutrients-v2": {
+      "type": "advertorial-moringa-nutrients-v2",
+      "settings": {
+        "nutrient_image": "shopify://shop_images/infografis-nutrisi-daun-kelor-bali.webp",
+        "body": "<p>Yang membuat moringa luar biasa untuk perempuan di fase ini adalah spesifisitas nutrisi yang diberikannya. Quercetin yang membantu meredakan kekakuan sendi. Zat besi alami yang menjaga energi tetap stabil sepanjang siang. Asam amino triptofan yang membantu tubuh tidur lebih dalam tanpa terbangun jam 2 pagi. Bukan sebagai zat kimia terpisah di laboratorium, tetapi sebagai profil nutrisi lengkap yang dikenali dan diserap tubuh secara alami.</p><p>Bagi perempuan di fase perimenopause dan menopause, ini penting.</p><p>Dan bukan itu saja yang ditawarkan pohon ini. Ingat kulit yang tiba-tiba terasa lebih kering dan tipis? Rambut yang mulai menipis? Itu adalah pola kekurangan yang sama — yang muncul di permukaan.</p><p>Minyak moringa, yang dibuat dari biji pohon ini dan digunakan oleh brand seperti Clarins dan The Body Shop untuk khasiat anti-aging-nya, mengatasi ini dari luar. Mengandung 72% asam oleat — asam lemak yang menyerupai sebum alami kulit — serta asam behenat dan antioksidan pekat. Saat menopause mempercepat kehilangan kelembapan kulit, minyak ini memberikan kembali apa yang hilang.</p><p>Nutrisi dari dalam. Perawatan dari luar. Pertanyaannya bukan apakah moringa bekerja. Pertanyaannya adalah apakah moringa yang Anda pilih cukup berkualitas untuk benar-benar memberi hasil.</p>",
+        "show_section_break": true
+      }
+    },
+    "quality-proof-v2": {
+      "type": "advertorial-quality-proof-v2",
+      "settings": {
+        "quality_image": "shopify://shop_images/bubuk-kelor-hijau-murni-tanpa-batang.webp",
+        "body": "<p>Tidak semua moringa sama. Masuk ke toko kesehatan mana pun, Anda akan menemukan bubuk moringa seharga Rp 50.000. Warnanya cokelat. Rasanya pahit. Sebagian besar isinya batang yang digiling — sudah teroksidasi dan berat di perut. Daya serap tubuh sangat rendah.</p><p>Moringa daun murni terlihat berbeda. Hijau cerah, seperti matcha. Perbedaannya terletak pada apakah batangnya dipisahkan — satu per satu, dengan tangan.</p><p>Inilah mengapa moringa Treelogy (di sebelah kiri) adalah satu-satunya brand yang saya percaya. Mereka menanam moringa sendiri di kebun organik bersertifikat di Bali dan memprosesnya di fasilitas terdaftar BPOM milik mereka sendiri. Dari tanah hingga produk — semuanya di bawah satu atap.</p><p>Ini lebih penting dari yang banyak orang sadari. Sebagian nutrisi dalam moringa sangat sensitif, dan jika prosesnya tidak transparan, kemungkinan besar nutrisinya sudah rusak sebelum sampai ke tangan Anda. Treelogy mempublikasikan prosesnya secara terbuka — yang setelah berminggu-minggu meneliti pasar ini, bisa saya bilang sangat jarang.</p><p>Kalau Anda ingin mencoba dan belum tahu harus mulai dari mana, mereka sedang menjalankan penawaran terbatas berupa Discovery Pack — berisi kapsul dan bubuk dalam ukuran kecil agar Anda bisa menemukan format yang paling cocok untuk rutinitas harian, ditambah minyak biji moringa untuk kulit dan rambut. Nutrisi dari dalam dan luar dalam satu box. Gratis ongkir selama stok tersedia.</p>"
+      }
+    },
+    "bridge-cta-v2": {
+      "type": "advertorial-bridge-cta-v2",
+      "blocks": {
+        "b1": {
+          "type": "badge",
+          "settings": {
+            "badge_label": "Terdaftar BPOM"
+          }
+        },
+        "b2": {
+          "type": "badge",
+          "settings": {
+            "badge_label": "Halal"
+          }
+        },
+        "b3": {
+          "type": "badge",
+          "settings": {
+            "badge_label": "100% Organik"
+          }
+        },
+        "b4": {
+          "type": "badge",
+          "settings": {
+            "badge_label": "Teruji Laboratorium"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "cta_url": "https://treelogy.com/id/products/the-discovery-pack",
+        "cta_text": "Coba Discovery Pack →",
+        "cta_subtext": "Gratis ongkir untuk pembaca artikel ini · penawaran terbatas",
+        "show_section_break": true,
         "utm_campaign": "menopause_discovery_launch",
         "utm_content": "mid-article-v2",
         "meta_product_name": "The Discovery Pack",
@@ -124,31 +213,31 @@
         "meta_content_id": "9074141200572"
       }
     },
-    "social-proof": {
-      "type": "advertorial-social-proof",
+    "social-proof-v2": {
+      "type": "advertorial-social-proof-v2",
       "blocks": {
         "t1": {
           "type": "testimonial",
           "settings": {
             "bridge_text": "",
-            "quote_text": "Baru coba 4 hari dan joint pain saya menghilang. Tidur pun nyenyak.",
-            "attribution": "Ulasan pelanggan Treelogy"
+            "quote_text": "Awalnya liat iklannya bersliweran di IG, lanjut baca-baca khasiatnya, cari-cari di Toped, berakhir beli. Gambling karena buat penderita autoimun macam aku. Dan sekarang berakhir jatuh hati — nyeri pegel di sendi hilang, badan enteng.",
+            "attribution": "— Yuni, 46, Jakarta"
           }
         },
         "t2": {
           "type": "testimonial",
           "settings": {
-            "bridge_text": "",
-            "quote_text": "Usia 51 tahun. Hari ke 10, badan kembali segar, ngilu tulang sudah hilang. Hot flashes sudah hampir nggak pernah.",
-            "attribution": "Ulasan pelanggan Treelogy"
+            "bridge_text": "Ulasan lain, baru empat hari, melaporkan pola yang sama persis seperti yang diceritakan sebagian besar perempuan:",
+            "quote_text": "Ini beneran terjadi, baru coba 4 hari ngefek banget ama knee pain saya. Pagi badan ga kaku, dan hot flash mulai berkurang. Ntar mau beli yang lebih gede package-nya.",
+            "attribution": "— Dian, 48, Bandung"
           }
         },
         "t3": {
           "type": "testimonial",
           "settings": {
-            "bridge_text": "",
-            "quote_text": "Dokter jantung saya sampai kagum sama hasil check-up rutin saya.",
-            "attribution": "Ulasan pelanggan Treelogy"
+            "bridge_text": "Dan ada Rahma — perempuan yang sudah Anda temui di awal artikel ini, yang menyebut dirinya “agak desperate.” Ini yang terjadi setelahnya:",
+            "quote_text": "Hot flash dan sendi kaku pelan-pelan berkurang sampai hampir hilang. Minum Treelogy juga iseng aja karena alami — ternyata beneran ngefek.",
+            "attribution": "— Rahma, 49, Jakarta"
           }
         }
       },
@@ -158,20 +247,24 @@
         "t3"
       ],
       "settings": {
-        "show_section_break": false,
-        "subhead": "Yang dilaporkan pelanggan Treelogy:",
-        "intro_text": "",
-        "outro_text": "<p>Tidak semua orang merasakan hal yang sama. Tetapi pola dalam ribuan ulasan menunjukkan satu hal: tubuh merespons ketika akhirnya mendapatkan kembali apa yang hilang. Sebagian besar merasakan perubahan pertama dalam minggu pertama.</p>",
-        "outro_position": "after_all"
+        "pre_subhead_text": "<p>Moringa, ketika diperlakukan dengan benar, memberikan hasil yang unik. Berikut beberapa ulasan yang menonjol dari pelanggan Treelogy.</p>",
+        "social_image": "shopify://shop_images/panen-daun-kelor-segar-karangasem-bali.webp",
+        "subhead_prefix": "Apa yang dilaporkan oleh",
+        "subhead_highlight": "4.700+",
+        "subhead_suffix": "pengguna Treelogy.",
+        "intro_text": "<p>Moringa bukan keajaiban. Namun pola dalam ribuan ulasan pelanggan Treelogy — perempuan Indonesia di fase kehidupan yang sama persis — cukup konsisten untuk diperhatikan.</p><p>Sebagian besar melaporkan perubahan awal antara hari ke-3 hingga hari ke-7 — rasa kaku sendi berkurang, tidur lebih dalam, waktu “pemanasan” di pagi hari semakin singkat. Di hari ke-14, perubahan biasanya mulai terasa lebih stabil.</p><p>Satu pelanggan menyebut pembeliannya sebagai taruhan — ia memiliki kondisi autoimun dan sudah lama mengalami nyeri sendi:</p>",
+        "outro_text": "<p>Tidak semua orang merasakan respons yang sama. Ada yang merasakan dalam 48 jam. Ada yang butuh dua minggu. Namun pola dalam ulasan mereka konsisten: tubuh merespons ketika akhirnya mendapatkan kembali apa yang selama ini hilang.</p>",
+        "outro_position": "before_last",
+        "show_section_break": true
       }
     },
-    "final-cta": {
-      "type": "advertorial-final-cta",
+    "final-cta-v2": {
+      "type": "advertorial-final-cta-v2",
       "blocks": {
         "b1": {
           "type": "badge",
           "settings": {
-            "badge_label": "Terdaftar di BPOM"
+            "badge_label": "Terdaftar BPOM"
           }
         },
         "b2": {
@@ -189,7 +282,7 @@
         "b4": {
           "type": "badge",
           "settings": {
-            "badge_label": "Terverifikasi Lab"
+            "badge_label": "Teruji Laboratorium"
           }
         }
       },
@@ -200,11 +293,18 @@
         "b4"
       ],
       "settings": {
-        "body": "",
+        "credential_image": "shopify://shop_images/pemberdayaan-petani-lokal-karangasem-bali.webp",
+        "body_credentials": "<p>Desember lalu, Treelogy memenangkan penghargaan The Punch Community untuk kapsul moringa mereka — sebuah platform independen yang mengulas brand wellness di Indonesia. Ini adalah tahun kedua berturut-turut, setelah tahun sebelumnya mereka menang untuk praktik pertanian mereka.</p><p>Namun yang meyakinkan saya bukan penghargaannya. Melainkan apa yang saya temukan saat mendalami cara mereka beroperasi. Treelogy saat ini adalah brand pertama dan satu-satunya di Indonesia yang mendaftarkan kapsul daun moringa murni di bawah kategori Obat Tradisional BPOM — perubahan regulasi yang mereka sendiri yang dorong. Tidak ada brand lain yang memiliki ini. Bagi saya, itu berbicara lebih banyak tentang standar mereka dibanding klaim marketing mana pun.</p><p>Prosesnya mencerminkan hal itu. Mereka memisahkan setiap daun dari batangnya dengan tangan, satu per satu — metode yang membutuhkan satu jam penuh untuk menghasilkan hanya 12 gram bubuk. Setiap batch. Dipanen saat fajar di Karangasem, Bali. Dipisahkan manual. Dikeringkan pada suhu 38°C selama 22 jam untuk menjaga vitamin dan enzim yang sensitif terhadap panas. Tanpa jalan pintas.</p>",
+        "product_image": "shopify://shop_images/capsiule-and-oil.png",
+        "body_before_testimonial": "<p>Bagi yang tadi melewati tautan di atas — saya ingin menegaskan: ini bukan obat ajaib. Moringa Treelogy adalah yang terbaik yang saya temukan, namun tidak akan mengubah tubuh Anda dalam hitungan hari. Nutrisinya bekerja secara bertahap, dengan konsumsi yang konsisten, menutrisi dari dalam dan luar.</p>",
+        "testimonial_bridge": "Satu pelanggan yang mencoba kapsul dan minyaknya bersamaan selama lebih dari dua minggu:",
+        "testimonial_quote": "Saya mencoba kombinasi 2 produk Treelogy ini dalam 15 hari — hasilnya luar biasa. Kulit lebih lembap, sendi tidak kaku lagi, tidur lebih nyenyak, hot flashes jauh berkurang. Tubuh benar-benar terasa seimbang.",
+        "testimonial_attribution": "— Lina, 52, Surabaya",
+        "body_after_testimonial": "<p>Discovery Pack Treelogy berisi ketiga produk dalam ukuran terkecil — kapsul, bubuk, dan minyak biji moringa. Kapsul dan bubuk berasal dari daun moringa yang sama dalam dua format konsumsi harian, jadi Anda bisa mencoba keduanya dan memilih yang paling cocok untuk rutinitas Anda. Minyaknya untuk kulit dan rambut — sisi luar dari pendekatan yang sama.</p><p>Gratis ongkir saat artikel ini ditulis. Coba saja — dan berterima kasih nanti.</p>",
         "cta_url": "https://treelogy.com/id/products/the-discovery-pack",
-        "cta_text": "Temukan Discovery Pack →",
-        "cta_subtext": "Gratis ongkir untuk pembaca artikel ini",
-        "disclosure_text": "Disclosure: Artikel ini memuat rekomendasi produk Treelogy. Penulis melakukan riset independen terhadap brand ini untuk keperluan penulisan artikel ini.",
+        "cta_text": "Dapatkan Discovery Pack →",
+        "cta_subtext": "Gratis ongkir untuk pembaca artikel ini · penawaran terbatas",
+        "disclosure_text": "Disclosure: Artikel ini memuat rekomendasi produk Treelogy. Penulis melakukan riset independen terhadap brand ini untuk keperluan penulisan artikel. Untuk informasi lebih lanjut, kunjungi treelogy.com.",
         "utm_campaign": "menopause_discovery_launch",
         "utm_content": "end-article-v2",
         "meta_product_name": "The Discovery Pack",
@@ -215,13 +315,15 @@
   },
   "order": [
     "advertorial-styles",
-    "meta-header",
-    "hook",
-    "felt-experience",
-    "why-nothing-works",
-    "moringa-education",
-    "bridge-cta",
-    "social-proof",
-    "final-cta"
+    "meta-header-v2",
+    "hook-v2",
+    "felt-experience-v2",
+    "menopause-explain-v2",
+    "why-nothing-works-v2",
+    "moringa-nutrients-v2",
+    "quality-proof-v2",
+    "bridge-cta-v2",
+    "social-proof-v2",
+    "final-cta-v2"
   ]
 }

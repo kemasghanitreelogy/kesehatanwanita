@@ -1,0 +1,54 @@
+<h1 class="adv-headline" data-cs-capture>{{ section.settings.headline }}</h1>
+
+{% if section.settings.deck != blank %}
+  <p class="adv-deck" data-cs-capture>{{ section.settings.deck }}</p>
+{% endif %}
+
+<p class="adv-byline" data-cs-capture>
+  Oleh <strong>{{ section.settings.author_name }}</strong> &middot; {{ section.settings.author_credential }}
+</p>
+
+{% if section.settings.hero_image != blank %}
+  <div class="adv-image">
+    {{
+      section.settings.hero_image
+      | image_url: width: 1280
+      | image_tag: loading: 'eager', alt: section.settings.hero_image.alt, data-cs-mask: 'false'
+    }}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Adv Hook v2",
+  "settings": [
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline"
+    },
+    {
+      "type": "text",
+      "id": "deck",
+      "label": "Deck / Subheadline"
+    },
+    {
+      "type": "text",
+      "id": "author_name",
+      "label": "Author Name",
+      "default": "Kusumawardani"
+    },
+    {
+      "type": "text",
+      "id": "author_credential",
+      "label": "Author Credential",
+      "default": "Penulis Nutrisi & Kesehatan Wanita"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    }
+  ]
+}
+{% endschema %}

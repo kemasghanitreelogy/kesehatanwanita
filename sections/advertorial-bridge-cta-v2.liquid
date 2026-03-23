@@ -1,0 +1,113 @@
+<div class="adv-cta-block" id="cta1">
+  <a href="{{ section.settings.cta_url }}?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign={{ section.settings.utm_campaign | default: 'menopause_discovery_launch' | url_encode }}&utm_content={{ section.settings.utm_content | default: 'mid-article-v2' | url_encode }}"
+   class="adv-cta-button"
+   data-meta-event="Lead"
+   data-meta-product-name="{{ section.settings.meta_product_name }}"
+   data-meta-content-id="{{ section.settings.meta_content_id }}"
+   data-meta-value="{{ section.settings.meta_product_value }}"
+   data-meta-currency="{{ shop.currency }}"
+   data-meta-category="Blog to Store Conversion"
+   data-meta-cta-position="mid-article"
+   id="meta-cta-trigger-1">
+  {{ section.settings.cta_text }}
+</a>
+  {% if section.settings.cta_subtext != blank %}
+    <div class="adv-cta-sub" data-cs-capture>{{ section.settings.cta_subtext }}</div>
+  {% endif %}
+  {% if section.blocks.size > 0 %}
+    <div class="adv-cta-badges">
+      {% for block in section.blocks %}
+        <span {{ block.shopify_attributes }} data-cs-capture>{{ block.settings.badge_label }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+{% if section.settings.show_section_break %}
+  <div class="adv-section-break"></div>
+{% endif %}
+
+{% render 'meta-cta-tracking' %}
+
+{% schema %}
+{
+  "name": "Adv Bridge CTA v2",
+  "settings": [
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Button URL"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Button Text",
+      "default": "Coba Discovery Pack \u2192"
+    },
+    {
+      "type": "text",
+      "id": "cta_subtext",
+      "label": "CTA Subtext",
+      "default": "Gratis ongkir untuk pembaca artikel ini \u00b7 penawaran terbatas"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_section_break",
+      "label": "Show section break line",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "UTM Tracking"
+    },
+    {
+      "type": "text",
+      "id": "utm_campaign",
+      "label": "UTM Campaign",
+      "default": "menopause_discovery_launch"
+    },
+    {
+      "type": "text",
+      "id": "utm_content",
+      "label": "UTM Content",
+      "default": "mid-article-v2"
+    },
+    {
+      "type": "header",
+      "content": "Meta Pixel Tracking"
+    },
+    {
+      "type": "text",
+      "id": "meta_product_name",
+      "label": "Product Name (for Meta)",
+      "default": "The Discovery Pack"
+    },
+    {
+      "type": "text",
+      "id": "meta_product_value",
+      "label": "Product Value (for Meta)",
+      "default": "999000"
+    },
+    {
+      "type": "text",
+      "id": "meta_content_id",
+      "label": "Product ID / SKU (for Meta)",
+      "default": "9074141200572"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Trust Badge",
+      "settings": [
+        {
+          "type": "text",
+          "id": "badge_label",
+          "label": "Badge Label",
+          "default": "Terdaftar BPOM"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

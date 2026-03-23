@@ -1,0 +1,34 @@
+<p class="adv-subhead" data-cs-capture>{{ section.settings.subhead }}</p>
+
+<div class="adv-richtext" data-cs-capture>
+  {{ section.settings.body }}
+</div>
+
+{% if section.settings.show_section_break %}
+  <div class="adv-section-break"></div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Adv Menopause Explain v2",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subhead",
+      "label": "Section Heading",
+      "default": "Apa yang jarang dijelaskan tentang menopause."
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_section_break",
+      "label": "Show section break line",
+      "default": true
+    }
+  ]
+}
+{% endschema %}
