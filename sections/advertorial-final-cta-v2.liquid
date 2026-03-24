@@ -1,9 +1,7 @@
 {% if section.settings.credential_image != blank %}
-  <div class="adv-image">
+  <div class="adv-image" style="margin: {{ section.settings.image_margin }};">
     {{
-      section.settings.credential_image
-      | image_url: width: 1280
-      | image_tag: loading: 'lazy', alt: section.settings.credential_image.alt, data-cs-mask: 'false'
+      section.settings.credential_image | image_url: width: 1280 | image_tag: loading: 'lazy', alt: section.settings.credential_image.alt, data-cs-mask: 'false'
     }}
   </div>
 {% endif %}
@@ -15,11 +13,9 @@
 {% endif %}
 
 {% if section.settings.product_image != blank %}
-  <div class="adv-image">
+  <div class="adv-image" style="margin: {{ section.settings.image_margin2 }};">
     {{
-      section.settings.product_image
-      | image_url: width: 1280
-      | image_tag: loading: 'lazy', alt: section.settings.product_image.alt, data-cs-mask: 'false'
+      section.settings.product_image | image_url: width: 1280 | image_tag: loading: 'lazy', alt: section.settings.product_image.alt, data-cs-mask: 'false'
     }}
   </div>
 {% endif %}
@@ -31,11 +27,11 @@
 {% endif %}
 
 {% if section.settings.testimonial_bridge != blank %}
-  <p class="adv-body-text" data-cs-capture>{{ section.settings.testimonial_bridge }}</p>
+  <p class="adv-body-text" style="margin: {{ section.settings.body_text_margin }};" data-cs-capture>{{ section.settings.testimonial_bridge }}</p>
 {% endif %}
 
 {% if section.settings.testimonial_quote != blank %}
-  <p class="adv-inline-quote" data-cs-capture>&ldquo;{{ section.settings.testimonial_quote }}&rdquo;</p>
+  <p class="adv-inline-quote-v2" data-cs-capture>&ldquo;{{ section.settings.testimonial_quote }}&rdquo;</p>
   {% if section.settings.testimonial_attribution != blank %}
     <p class="adv-inline-attribution" data-cs-capture>{{ section.settings.testimonial_attribution }}</p>
   {% endif %}
@@ -48,18 +44,19 @@
 {% endif %}
 
 <div class="adv-cta-block" id="cta2">
-  <a href="{{ section.settings.cta_url }}?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign={{ section.settings.utm_campaign | default: 'menopause_discovery_launch' | url_encode }}&utm_content={{ section.settings.utm_content | default: 'end-article-v2' | url_encode }}"
-   class="adv-cta-button"
-   data-meta-event="Lead"
-   data-meta-product-name="{{ section.settings.meta_product_name }}"
-   data-meta-content-id="{{ section.settings.meta_content_id }}"
-   data-meta-value="{{ section.settings.meta_product_value }}"
-   data-meta-currency="{{ shop.currency }}"
-   data-meta-category="Blog to Store Conversion"
-   data-meta-cta-position="end-article"
-   id="meta-cta-trigger-2">
-  {{ section.settings.cta_text }}
-</a>
+  <a
+    href="{{ section.settings.cta_url }}?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign={{ section.settings.utm_campaign | default: 'menopause_discovery_launch' | url_encode }}&utm_content={{ section.settings.utm_content | default: 'end-article-v2' | url_encode }}"
+    class="adv-cta-button"
+    data-meta-event="Lead"
+    data-meta-product-name="{{ section.settings.meta_product_name }}"
+    data-meta-content-id="{{ section.settings.meta_content_id }}"
+    data-meta-value="{{ section.settings.meta_product_value }}"
+    data-meta-currency="{{ shop.currency }}"
+    data-meta-category="Blog to Store Conversion"
+    data-meta-cta-position="end-article"
+    id="meta-cta-trigger-2">
+    {{ section.settings.cta_text }}
+  </a>
   {% if section.settings.cta_subtext != blank %}
     <div class="adv-cta-sub" data-cs-capture>{{ section.settings.cta_subtext }}</div>
   {% endif %}
@@ -81,127 +78,153 @@
 {% render 'meta-cta-tracking' %}
 
 {% schema %}
-{
-  "name": "Adv Final CTA v2",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "credential_image",
-      "label": "Credential Image"
-    },
-    {
-      "type": "richtext",
-      "id": "body_credentials",
-      "label": "Credentials Body Text"
-    },
-    {
-      "type": "image_picker",
-      "id": "product_image",
-      "label": "Product Image"
-    },
-    {
-      "type": "richtext",
-      "id": "body_before_testimonial",
-      "label": "Body (before testimonial)"
-    },
-    {
-      "type": "text",
-      "id": "testimonial_bridge",
-      "label": "Testimonial Bridge Text"
-    },
-    {
-      "type": "textarea",
-      "id": "testimonial_quote",
-      "label": "Testimonial Quote"
-    },
-    {
-      "type": "text",
-      "id": "testimonial_attribution",
-      "label": "Testimonial Attribution"
-    },
-    {
-      "type": "richtext",
-      "id": "body_after_testimonial",
-      "label": "Body (after testimonial)"
-    },
-    {
-      "type": "header",
-      "content": "CTA Button"
-    },
-    {
-      "type": "url",
-      "id": "cta_url",
-      "label": "CTA Button URL"
-    },
-    {
-      "type": "text",
-      "id": "cta_text",
-      "label": "CTA Button Text",
-      "default": "Dapatkan Discovery Pack \u2192"
-    },
-    {
-      "type": "text",
-      "id": "cta_subtext",
-      "label": "CTA Subtext",
-      "default": "Gratis ongkir untuk pembaca artikel ini \u00b7 penawaran terbatas"
-    },
-    {
-      "type": "textarea",
-      "id": "disclosure_text",
-      "label": "Editorial Disclosure"
-    },
-    {
-      "type": "header",
-      "content": "UTM Tracking"
-    },
-    {
-      "type": "text",
-      "id": "utm_campaign",
-      "label": "UTM Campaign",
-      "default": "menopause_discovery_launch"
-    },
-    {
-      "type": "text",
-      "id": "utm_content",
-      "label": "UTM Content",
-      "default": "end-article-v2"
-    },
-    {
-      "type": "header",
-      "content": "Meta Pixel Tracking"
-    },
-    {
-      "type": "text",
-      "id": "meta_product_name",
-      "label": "Product Name (for Meta)",
-      "default": "The Discovery Pack"
-    },
-    {
-      "type": "text",
-      "id": "meta_product_value",
-      "label": "Product Value (for Meta)",
-      "default": "999000"
-    },
-    {
-      "type": "text",
-      "id": "meta_content_id",
-      "label": "Product ID / SKU (for Meta)",
-      "default": "9074141200572"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "badge",
-      "name": "Trust Badge",
-      "settings": [
-        {
-          "type": "text",
-          "id": "badge_label",
-          "label": "Badge Label",
-          "default": "Terdaftar BPOM"
-        }
-      ]
-    }
-  ]
-}
+  {
+    "name": "Adv Final CTA v2",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "credential_image",
+        "label": "Credential Image"
+      },
+      {
+        "type": "select",
+        "id": "image_margin",
+        "label": "Image Margin Style",
+        "options": [
+          {
+            "value": "20px 0",
+            "label": "Symmetric (20px top & bottom)"
+          }, {
+            "value": "0px 0 20px",
+            "label": "Bottom only (0 top, 20px bottom)"
+          }
+        ],
+        "default": "20px 0"
+      },
+      {
+        "type": "richtext",
+        "id": "body_credentials",
+        "label": "Credentials Body Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "product_image",
+        "label": "Product Image"
+      }, {
+        "type": "select",
+        "id": "image_margin2",
+        "label": "Image Margin Style 2",
+        "options": [
+          {
+            "value": "20px 0",
+            "label": "Symmetric (20px top & bottom)"
+          }, {
+            "value": "0px 0 20px",
+            "label": "Bottom only (0 top, 20px bottom)"
+          }
+        ],
+        "default": "20px 0"
+      }, {
+        "type": "richtext",
+        "id": "body_before_testimonial",
+        "label": "Body (before testimonial)"
+      }, {
+        "type": "select",
+        "id": "body_text_margin",
+        "label": "Body Text Margin Style",
+        "options": [
+          {
+            "value": "0 0 20px",
+            "label": "Bottom only (margin-bottom: 20px)"
+          }, {
+            "value": "20px 0",
+            "label": "Symmetric (20px top & bottom)"
+          }
+        ],
+        "default": "0 0 20px"
+      }, {
+        "type": "text",
+        "id": "testimonial_bridge",
+        "label": "Testimonial Bridge Text"
+      }, {
+        "type": "textarea",
+        "id": "testimonial_quote",
+        "label": "Testimonial Quote"
+      }, {
+        "type": "text",
+        "id": "testimonial_attribution",
+        "label": "Testimonial Attribution"
+      }, {
+        "type": "richtext",
+        "id": "body_after_testimonial",
+        "label": "Body (after testimonial)"
+      }, {
+        "type": "header",
+        "content": "CTA Button"
+      }, {
+        "type": "url",
+        "id": "cta_url",
+        "label": "CTA Button URL"
+      }, {
+        "type": "text",
+        "id": "cta_text",
+        "label": "CTA Button Text",
+        "default": "Dapatkan Discovery Pack →"
+      }, {
+        "type": "text",
+        "id": "cta_subtext",
+        "label": "CTA Subtext",
+        "default": "Gratis ongkir untuk pembaca artikel ini · penawaran terbatas"
+      }, {
+        "type": "textarea",
+        "id": "disclosure_text",
+        "label": "Editorial Disclosure"
+      }, {
+        "type": "header",
+        "content": "UTM Tracking"
+      }, {
+        "type": "text",
+        "id": "utm_campaign",
+        "label": "UTM Campaign",
+        "default": "menopause_discovery_launch"
+      }, {
+        "type": "text",
+        "id": "utm_content",
+        "label": "UTM Content",
+        "default": "end-article-v2"
+      }, {
+        "type": "header",
+        "content": "Meta Pixel Tracking"
+      }, {
+        "type": "text",
+        "id": "meta_product_name",
+        "label": "Product Name (for Meta)",
+        "default": "The Discovery Pack"
+      }, {
+        "type": "text",
+        "id": "meta_product_value",
+        "label": "Product Value (for Meta)",
+        "default": "999000"
+      }, {
+        "type": "text",
+        "id": "meta_content_id",
+        "label": "Product ID / SKU (for Meta)",
+        "default": "9074141200572"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "badge",
+        "name": "Trust Badge",
+        "settings": [
+          {
+            "type": "text",
+            "id": "badge_label",
+            "label": "Badge Label",
+            "default": "Terdaftar BPOM"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}

@@ -27,7 +27,8 @@
         "deck": "Apa yang sering disalahartikan oleh perempuan di atas 45 tahun sebagai “sekadar bertambah usia” — dan apa yang sebenarnya sedang tubuh coba sampaikan.",
         "author_name": "Kusumawardani",
         "author_credential": "Penulis Nutrisi & Kesehatan Wanita",
-        "hero_image": "shopify://shop_images/pemulihan-biologis-tubuh-tenang-treelogy.webp"
+        "hero_image": "shopify://shop_images/Image_0.0.webp",
+        "image_margin": "20px 0"
       }
     },
     "felt-experience-v2": {
@@ -138,6 +139,7 @@
         "quote_attribution": "— Rahma, via Instagram DM",
         "body_after_quote": "<p>Saat sebagian besar perempuan sampai di titik ini — setelah krim murah, suplemen sintetis, bubuk all-in-one yang tidak bekerja — rasa frustrasi sudah menumpuk bertahun-tahun. Tidak ada yang salah dari semua itu. Namun tidak ada yang bekerja — dan ada alasan sederhana di baliknya.</p>",
         "analogy_image": "shopify://shop_images/protokol-kesehatan-atasi-akar-masalah.webp",
+        "image_margin": "20px 0",
         "body_after_image": "<p>Bayangkan listrik utama rumah padam. Semua ruangan gelap. Anda bisa menyalakan lilin di setiap ruangan — dan itu membantu, sementara. Tetapi yang sebenarnya dibutuhkan adalah memperbaiki sumber listriknya.</p><p>Tubuh bekerja dengan cara yang sama. Ketika fondasi nutrisi menurun, gejala muncul di berbagai tempat sekaligus. Mengatasi satu per satu sama seperti menyalakan lilin. Yang dibutuhkan tubuh adalah menghidupkan kembali sumbernya.</p><p>Di titik inilah banyak perempuan di atas 40 tahun — termasuk saya — kembali menemukan moringa oleifera. Satu daun saja mengandung lebih dari 90 nutrisi yang bekerja bersama untuk memulihkan sumber itu. Namun yang tidak saya duga saat mulai mendalaminya: seperti halnya matcha, cara moringa diproses sangat menentukan kualitas yang masuk ke tubuh.</p><p>Butuh waktu bagi saya untuk menemukan brand yang benar-benar peduli pada prosesnya — yang menjaga nutrisi tetap utuh, baik dalam produk daun mereka (tersedia dalam kapsul dan bubuk) maupun dalam minyak biji moringa cold-pressed untuk kulit dan rambut.</p><p>Kalau Anda sudah membaca sampai sini dan merasa ini memang tentang Anda — kalau Anda sudah lelah bangun pagi-pagi hanya untuk menunggu tubuh bisa diajak bergerak — dan ingin jalan pintas dari saya: tautan di bawah ini adalah Discovery Pack dari brand yang saya percaya. Mereka sedang menjalankan penawaran terbatas agar Anda bisa mencoba ketiga produknya dalam ukuran terkecil.</p>",
         "show_exit_cta": true,
         "cta_url": "https://treelogy.com/id/products/the-discovery-pack",
@@ -145,8 +147,8 @@
         "cta_subtext": "Gratis ongkir untuk pembaca artikel ini · selama stok tersedia",
         "after_cta_text": "Ingin tahu mengapa moringa ini berbeda? Lanjut baca.",
         "show_section_break": true,
-        "utm_campaign": "menopause_discovery_launch",
-        "utm_content": "exit-cta-v2",
+        "utm_campaign": "menopause_discovery_launch_v2",
+        "utm_content": "start_cta",
         "meta_product_name": "The Discovery Pack",
         "meta_product_value": "999000",
         "meta_content_id": "9074141200572"
@@ -156,6 +158,7 @@
       "type": "advertorial-moringa-nutrients-v2",
       "settings": {
         "nutrient_image": "shopify://shop_images/infografis-nutrisi-daun-kelor-bali.webp",
+        "image_margin": "0px 0 20px",
         "body": "<p>Yang membuat moringa luar biasa untuk perempuan di fase ini adalah spesifisitas nutrisi yang diberikannya. Quercetin yang membantu meredakan kekakuan sendi. Zat besi alami yang menjaga energi tetap stabil sepanjang siang. Asam amino triptofan yang membantu tubuh tidur lebih dalam tanpa terbangun jam 2 pagi. Bukan sebagai zat kimia terpisah di laboratorium, tetapi sebagai profil nutrisi lengkap yang dikenali dan diserap tubuh secara alami.</p><p>Bagi perempuan di fase perimenopause dan menopause, ini penting.</p><p>Dan bukan itu saja yang ditawarkan pohon ini. Ingat kulit yang tiba-tiba terasa lebih kering dan tipis? Rambut yang mulai menipis? Itu adalah pola kekurangan yang sama — yang muncul di permukaan.</p><p>Minyak moringa, yang dibuat dari biji pohon ini dan digunakan oleh brand seperti Clarins dan The Body Shop untuk khasiat anti-aging-nya, mengatasi ini dari luar. Mengandung 72% asam oleat — asam lemak yang menyerupai sebum alami kulit — serta asam behenat dan antioksidan pekat. Saat menopause mempercepat kehilangan kelembapan kulit, minyak ini memberikan kembali apa yang hilang.</p><p>Nutrisi dari dalam. Perawatan dari luar. Pertanyaannya bukan apakah moringa bekerja. Pertanyaannya adalah apakah moringa yang Anda pilih cukup berkualitas untuk benar-benar memberi hasil.</p>",
         "show_section_break": true
       }
@@ -164,6 +167,7 @@
       "type": "advertorial-quality-proof-v2",
       "settings": {
         "quality_image": "shopify://shop_images/bubuk-kelor-hijau-murni-tanpa-batang.webp",
+        "image_margin": "0px 0 20px",
         "body": "<p>Tidak semua moringa sama. Masuk ke toko kesehatan mana pun, Anda akan menemukan bubuk moringa seharga Rp 50.000. Warnanya cokelat. Rasanya pahit. Sebagian besar isinya batang yang digiling — sudah teroksidasi dan berat di perut. Daya serap tubuh sangat rendah.</p><p>Moringa daun murni terlihat berbeda. Hijau cerah, seperti matcha. Perbedaannya terletak pada apakah batangnya dipisahkan — satu per satu, dengan tangan.</p><p>Inilah mengapa moringa Treelogy (di sebelah kiri) adalah satu-satunya brand yang saya percaya. Mereka menanam moringa sendiri di kebun organik bersertifikat di Bali dan memprosesnya di fasilitas terdaftar BPOM milik mereka sendiri. Dari tanah hingga produk — semuanya di bawah satu atap.</p><p>Ini lebih penting dari yang banyak orang sadari. Sebagian nutrisi dalam moringa sangat sensitif, dan jika prosesnya tidak transparan, kemungkinan besar nutrisinya sudah rusak sebelum sampai ke tangan Anda. Treelogy mempublikasikan prosesnya secara terbuka — yang setelah berminggu-minggu meneliti pasar ini, bisa saya bilang sangat jarang.</p><p>Kalau Anda ingin mencoba dan belum tahu harus mulai dari mana, mereka sedang menjalankan penawaran terbatas berupa Discovery Pack — berisi kapsul dan bubuk dalam ukuran kecil agar Anda bisa menemukan format yang paling cocok untuk rutinitas harian, ditambah minyak biji moringa untuk kulit dan rambut. Nutrisi dari dalam dan luar dalam satu box. Gratis ongkir selama stok tersedia.</p>"
       }
     },
@@ -206,8 +210,8 @@
         "cta_text": "Coba Discovery Pack →",
         "cta_subtext": "Gratis ongkir untuk pembaca artikel ini · penawaran terbatas",
         "show_section_break": true,
-        "utm_campaign": "menopause_discovery_launch",
-        "utm_content": "mid-article-v2",
+        "utm_campaign": "menopause_discovery_launch_v2",
+        "utm_content": "mid-article",
         "meta_product_name": "The Discovery Pack",
         "meta_product_value": "999000",
         "meta_content_id": "9074141200572"
@@ -249,6 +253,7 @@
       "settings": {
         "pre_subhead_text": "<p>Moringa, ketika diperlakukan dengan benar, memberikan hasil yang unik. Berikut beberapa ulasan yang menonjol dari pelanggan Treelogy.</p>",
         "social_image": "shopify://shop_images/panen-daun-kelor-segar-karangasem-bali.webp",
+        "image_margin": "20px 0",
         "subhead_prefix": "Apa yang dilaporkan oleh",
         "subhead_highlight": "4.700+",
         "subhead_suffix": "pengguna Treelogy.",
@@ -294,9 +299,12 @@
       ],
       "settings": {
         "credential_image": "shopify://shop_images/pemberdayaan-petani-lokal-karangasem-bali.webp",
+        "image_margin": "0px 0 20px",
         "body_credentials": "<p>Desember lalu, Treelogy memenangkan penghargaan The Punch Community untuk kapsul moringa mereka — sebuah platform independen yang mengulas brand wellness di Indonesia. Ini adalah tahun kedua berturut-turut, setelah tahun sebelumnya mereka menang untuk praktik pertanian mereka.</p><p>Namun yang meyakinkan saya bukan penghargaannya. Melainkan apa yang saya temukan saat mendalami cara mereka beroperasi. Treelogy saat ini adalah brand pertama dan satu-satunya di Indonesia yang mendaftarkan kapsul daun moringa murni di bawah kategori Obat Tradisional BPOM — perubahan regulasi yang mereka sendiri yang dorong. Tidak ada brand lain yang memiliki ini. Bagi saya, itu berbicara lebih banyak tentang standar mereka dibanding klaim marketing mana pun.</p><p>Prosesnya mencerminkan hal itu. Mereka memisahkan setiap daun dari batangnya dengan tangan, satu per satu — metode yang membutuhkan satu jam penuh untuk menghasilkan hanya 12 gram bubuk. Setiap batch. Dipanen saat fajar di Karangasem, Bali. Dipisahkan manual. Dikeringkan pada suhu 38°C selama 22 jam untuk menjaga vitamin dan enzim yang sensitif terhadap panas. Tanpa jalan pintas.</p>",
-        "product_image": "shopify://shop_images/capsiule-and-oil.png",
+        "product_image": "shopify://shop_images/Image_7.webp",
+        "image_margin2": "20px 0",
         "body_before_testimonial": "<p>Bagi yang tadi melewati tautan di atas — saya ingin menegaskan: ini bukan obat ajaib. Moringa Treelogy adalah yang terbaik yang saya temukan, namun tidak akan mengubah tubuh Anda dalam hitungan hari. Nutrisinya bekerja secara bertahap, dengan konsumsi yang konsisten, menutrisi dari dalam dan luar.</p>",
+        "body_text_margin": "20px 0",
         "testimonial_bridge": "Satu pelanggan yang mencoba kapsul dan minyaknya bersamaan selama lebih dari dua minggu:",
         "testimonial_quote": "Saya mencoba kombinasi 2 produk Treelogy ini dalam 15 hari — hasilnya luar biasa. Kulit lebih lembap, sendi tidak kaku lagi, tidur lebih nyenyak, hot flashes jauh berkurang. Tubuh benar-benar terasa seimbang.",
         "testimonial_attribution": "— Lina, 52, Surabaya",
@@ -305,8 +313,8 @@
         "cta_text": "Dapatkan Discovery Pack →",
         "cta_subtext": "Gratis ongkir untuk pembaca artikel ini · penawaran terbatas",
         "disclosure_text": "Disclosure: Artikel ini memuat rekomendasi produk Treelogy. Penulis melakukan riset independen terhadap brand ini untuk keperluan penulisan artikel. Untuk informasi lebih lanjut, kunjungi treelogy.com.",
-        "utm_campaign": "menopause_discovery_launch",
-        "utm_content": "end-article-v2",
+        "utm_campaign": "menopause_discovery_launch_v2",
+        "utm_content": "end-article",
         "meta_product_name": "The Discovery Pack",
         "meta_product_value": "999000",
         "meta_content_id": "9074141200572"

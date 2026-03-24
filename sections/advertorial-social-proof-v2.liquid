@@ -5,7 +5,7 @@
 {% endif %}
 
 {% if section.settings.social_image != blank %}
-  <div class="adv-image">
+  <div class="adv-image" style="margin: {{ section.settings.image_margin }};">
     {{
       section.settings.social_image
       | image_url: width: 1280
@@ -39,7 +39,7 @@
     <p class="adv-body-text" {{ block.shopify_attributes }} data-cs-capture>{{ block.settings.bridge_text }}</p>
   {% endif %}
 
-  <p class="adv-inline-quote" {{ block.shopify_attributes }} data-cs-capture>&ldquo;{{ block.settings.quote_text }}&rdquo;</p>
+  <p class="adv-inline-quote-v2" {{ block.shopify_attributes }} data-cs-capture>&ldquo;{{ block.settings.quote_text }}&rdquo;</p>
   <p class="adv-inline-attribution" data-cs-capture>{{ block.settings.attribution }}</p>
 {% endfor %}
 
@@ -66,6 +66,16 @@
       "type": "image_picker",
       "id": "social_image",
       "label": "Social Proof Image"
+    },
+    {
+      "type": "select",
+      "id": "image_margin",
+      "label": "Image Margin Style",
+      "options": [
+        { "value": "20px 0", "label": "Symmetric (20px top & bottom)" },
+        { "value": "0px 0 20px", "label": "Bottom only (0 top, 20px bottom)" }
+      ],
+      "default": "20px 0"
     },
     {
       "type": "text",

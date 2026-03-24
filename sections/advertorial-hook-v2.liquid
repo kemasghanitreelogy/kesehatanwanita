@@ -9,7 +9,7 @@
 </p>
 
 {% if section.settings.hero_image != blank %}
-  <div class="adv-image">
+  <div class="adv-image" style="margin: {{ section.settings.image_margin }};">
     {{
       section.settings.hero_image
       | image_url: width: 1280
@@ -48,6 +48,16 @@
       "type": "image_picker",
       "id": "hero_image",
       "label": "Hero Image"
+    },
+    {
+      "type": "select",
+      "id": "image_margin",
+      "label": "Image Margin Style",
+      "options": [
+        { "value": "20px 0", "label": "Symmetric (20px top & bottom)" },
+        { "value": "0px 0 20px", "label": "Bottom only (0 top, 20px bottom)" }
+      ],
+      "default": "20px 0"
     }
   ]
 }
