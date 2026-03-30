@@ -43,7 +43,7 @@
         "p2": {
           "type": "paragraph",
           "settings": {
-            "text": "Alarm belum berbunyi, tapi badan sudah lebih dulu terbangun. Lutut kaku. Jari-jari tangan pegal. Punggung bawah sudah protes bahkan sebelum sempat duduk tegak. Kaki diturunkan ke lantai dan harus menunggu — bukan karena ingin, tapi karena memang harus. Beberapa menit agar sendi \u201Cpemanasan\u201D dulu sebelum orang rumah mulai membutuhkan Anda."
+            "text": "Alarm belum berbunyi, tapi badan sudah lebih dulu terbangun. Lutut kaku. Jari-jari tangan pegal. Punggung bawah sudah protes bahkan sebelum sempat duduk tegak. Kaki diturunkan ke lantai dan harus menunggu — bukan karena ingin, tapi karena memang harus. Beberapa menit agar sendi “pemanasan” dulu sebelum orang rumah mulai membutuhkan Anda."
           }
         },
         "p3": {
@@ -186,7 +186,7 @@
       ],
       "settings": {
         "card_id": "cta1",
-        "urgency_text": "Stok Terbatas — Harga Dapat<br>Berubah Sewaktu-waktu",
+        "urgency_text": "Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu",
         "product_image": "shopify://shop_images/hero.webp",
         "label": "Penawaran Khusus Pembaca",
         "title": "Protokol 30 Hari Inside Out Moringa",
@@ -195,7 +195,7 @@
         "new_price": "Rp 690.000",
         "save_text": "Hemat Rp 170.000",
         "discount_pct": "Diskon 20%",
-        "cta_url": "https://treelogy.com/id/products/protokol-30-hari-inside-out",
+        "cta_url": "https://treelogy.com/products/the-movement-relief",
         "cta_text": "Ambil Protokol 30 Hari Saya →",
         "shipping_text": "Gratis Ongkir untuk pembaca artikel ini",
         "show_section_break": true,
@@ -227,7 +227,7 @@
           "type": "timeline_entry",
           "settings": {
             "label": "Hari ke-3–7:",
-            "body": "Perubahan pertama mulai terasa. Sendi tidak lagi sekaku biasanya. Waktu \u201Cpemanasan\u201D di pagi hari lebih singkat. Tidur mulai lebih dalam."
+            "body": "Perubahan pertama mulai terasa. Sendi tidak lagi sekaku biasanya. Waktu “pemanasan” di pagi hari lebih singkat. Tidur mulai lebih dalam."
           }
         },
         "rev1": {
@@ -291,7 +291,7 @@
         "bridge2": {
           "type": "bridge_text",
           "settings": {
-            "text": "Dan Rahma — perempuan di awal artikel ini yang menyebut dirinya \u201Cagak desperate\u201D?"
+            "text": "Dan Rahma — perempuan di awal artikel ini yang menyebut dirinya “agak desperate”?"
           }
         },
         "rev4": {
@@ -361,7 +361,7 @@
       "settings": {
         "closing_body": "<p>Harga normal untuk 90 kapsul dan 30ml oil jika dibeli terpisah adalah <strong>Rp 860.000</strong>. Protokol 30 Hari Inside Out menggabungkan keduanya seharga <strong>Rp 690.000</strong> — Anda hemat Rp 170.000, dengan gratis ongkir selama stok tersedia.</p><p>Tiga kapsul di pagi hari. Beberapa tetes oil di malam hari. Tiga puluh hari untuk merasakan dan melihat perbedaannya.</p><p>Ini untuk perempuan yang sudah selesai menyalakan lilin di setiap ruangan — dan siap menghidupkan kembali sumber listriknya.</p>",
         "card_id": "cta3",
-        "urgency_text": "Stok Terbatas — Harga Dapat<br>Berubah Sewaktu-waktu",
+        "urgency_text": "Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu",
         "product_image": "shopify://shop_images/hero.webp",
         "label": "Penawaran Khusus Pembaca",
         "title": "Protokol 30 Hari Inside Out Moringa",
@@ -370,7 +370,7 @@
         "new_price": "Rp 690.000",
         "save_text": "Hemat Rp 170.000",
         "discount_pct": "Diskon 20%",
-        "cta_url": "https://treelogy.com/id/products/protokol-30-hari-inside-out",
+        "cta_url": "https://treelogy.com/products/the-movement-relief",
         "cta_text": "Saya Siap — Mulai Protokol Saya →",
         "shipping_text": "Gratis Ongkir untuk pembaca artikel ini",
         "disclosure_text": "Disclosure: Artikel ini memuat rekomendasi produk Treelogy. Penulis melakukan riset independen terhadap brand ini untuk keperluan penulisan artikel. Untuk informasi lebih lanjut, kunjungi treelogy.com.",
