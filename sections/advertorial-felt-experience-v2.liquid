@@ -1,7 +1,7 @@
 {% for block in section.blocks %}
   {% case block.type %}
     {% when 'paragraph' %}
-      <p class="adv-body-text" {{ block.shopify_attributes }} data-cs-capture>{{ block.settings.text }}</p>
+      <div class="adv-richtext" {{ block.shopify_attributes }} data-cs-capture>{{ block.settings.text }}</div>
     {% when 'paragraph_bold' %}
       <p class="adv-body-text" {{ block.shopify_attributes }} data-cs-capture><strong>{{ block.settings.text }}</strong></p>
     {% when 'pull_quote' %}
@@ -35,7 +35,7 @@
       "name": "Paragraph",
       "settings": [
         {
-          "type": "textarea",
+          "type": "richtext",
           "id": "text",
           "label": "Paragraph Text"
         }

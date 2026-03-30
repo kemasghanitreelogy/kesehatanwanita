@@ -37,25 +37,25 @@
         "p1": {
           "type": "paragraph",
           "settings": {
-            "text": "Pagi seperti ini pasti terasa familier."
+            "text": "<p>Pagi seperti ini pasti terasa familier.</p>"
           }
         },
         "p2": {
           "type": "paragraph",
           "settings": {
-            "text": "Alarm belum berbunyi, tapi badan sudah lebih dulu terbangun. Lutut kaku. Jari-jari tangan pegal. Punggung bawah sudah protes bahkan sebelum sempat duduk tegak. Kaki diturunkan ke lantai dan harus menunggu — bukan karena ingin, tapi karena memang harus. Beberapa menit agar sendi “pemanasan” dulu sebelum orang rumah mulai membutuhkan Anda."
+            "text": "<p>Alarm belum berbunyi, tapi badan sudah lebih dulu terbangun. Lutut kaku. Jari-jari tangan pegal. Punggung bawah sudah protes bahkan sebelum sempat duduk tegak. Kaki diturunkan ke lantai dan harus menunggu — bukan karena ingin, tapi karena memang harus. Beberapa menit agar sendi \u201Cpemanasan\u201D dulu sebelum orang rumah mulai membutuhkan Anda.</p>"
           }
         },
         "p3": {
           "type": "paragraph",
           "settings": {
-            "text": "Sampai di kamar mandi. Basuh muka. Dan di situlah — kulit yang balas menatap dari cermin. Lebih kering dari biasanya. Terasa lebih tipis, entah kenapa. Beberapa helai rambut tersangkut di sisir, dan Anda bertanya-tanya sejak kapan ini mulai terjadi. Bukan sesuatu yang dramatis. Tapi bukan sesuatu yang bisa diabaikan juga."
+            "text": "<p>Sampai di kamar mandi. Basuh muka. Dan di situlah — kulit yang balas menatap dari cermin. Lebih kering dari biasanya. Terasa lebih tipis, entah kenapa. Beberapa helai rambut tersangkut di sisir, dan Anda bertanya-tanya sejak kapan ini mulai terjadi. Bukan sesuatu yang dramatis. Tapi bukan sesuatu yang bisa diabaikan juga.</p>"
           }
         },
         "p4": {
           "type": "paragraph",
           "settings": {
-            "text": "Lalu hari dimulai. Sarapan. Antar anak sekolah. Urusan rumah. Keluarga. Tidak pernah berhenti. Anda masih perempuan yang sama — yang jadi tumpuan semua orang. Yang jarang mengeluh. Tapi diam-diam — di menit-menit sepi sebelum rumah ramai — Anda mulai bertanya: sampai kapan badan ini kuat mengikuti ritme hidup seperti ini?"
+            "text": "<p>Lalu hari dimulai. Sarapan. Antar anak sekolah. Urusan rumah. Keluarga. Tidak pernah berhenti. Anda masih perempuan yang sama — yang jadi tumpuan semua orang. Yang jarang mengeluh. Tapi diam-diam — di menit-menit sepi sebelum rumah ramai — Anda mulai bertanya: <em>sampai kapan badan ini kuat mengikuti ritme hidup seperti ini?</em></p>"
           }
         },
         "pq1": {
@@ -131,9 +131,9 @@
           }
         },
         "bold1": {
-          "type": "bold_statement",
+          "type": "paragraph",
           "settings": {
-            "text": "Daun dari dalam. Minyak biji dari luar. Dua bagian dari pohon yang sama, mengatasi dua sisi dari masalah yang sama. Inilah mengapa perempuan yang melaporkan hasil terkuat bukan yang memilih salah satu — tapi yang menjalani protokol 30 hari yang menggabungkan keduanya."
+            "text": "<p><strong>Daun dari dalam. Minyak biji dari luar.</strong> Dua bagian dari pohon yang sama, mengatasi dua sisi dari masalah yang sama. Inilah mengapa perempuan yang melaporkan hasil terkuat bukan yang memilih salah satu — tapi yang menjalani protokol 30 hari yang menggabungkan keduanya.</p>"
           }
         }
       },
@@ -227,7 +227,7 @@
           "type": "timeline_entry",
           "settings": {
             "label": "Hari ke-3–7:",
-            "body": "Perubahan pertama mulai terasa. Sendi tidak lagi sekaku biasanya. Waktu “pemanasan” di pagi hari lebih singkat. Tidur mulai lebih dalam."
+            "body": "Perubahan pertama mulai terasa. Sendi tidak lagi sekaku biasanya. Waktu \u201Cpemanasan\u201D di pagi hari lebih singkat. Tidur mulai lebih dalam."
           }
         },
         "rev1": {
@@ -291,7 +291,7 @@
         "bridge2": {
           "type": "bridge_text",
           "settings": {
-            "text": "Dan Rahma — perempuan di awal artikel ini yang menyebut dirinya “agak desperate”?"
+            "text": "Dan Rahma — perempuan di awal artikel ini yang menyebut dirinya \u201Cagak desperate\u201D?"
           }
         },
         "rev4": {
