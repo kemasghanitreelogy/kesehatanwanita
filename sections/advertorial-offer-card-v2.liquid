@@ -2,8 +2,7 @@
   Product offer card — styled as a bordered card with urgency bar, product image, pricing, CTA, trust badges
 {% endcomment %}
 
-<div style="padding: 0;">
-  <div class="adv-offer-card" id="{{ section.settings.card_id | default: 'cta-offer' }}">
+<div class="adv-offer-card" id="{{ section.settings.card_id | default: 'cta-offer' }}" style="padding: 0;">
   {% if section.settings.urgency_text != blank %}
     <div class="adv-oc-urgency">
       <span class="adv-urg-icon">⏰</span> {{ section.settings.urgency_text }}
@@ -71,7 +70,6 @@
       <div class="adv-oc-ship">{{ section.settings.shipping_text }}</div>
     {% endif %}
   </div>
-</div>
 </div>
 
 {% if section.settings.show_section_break %}
