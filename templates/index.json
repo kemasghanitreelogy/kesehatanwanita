@@ -85,11 +85,14 @@
         "p6",
         "p7"
       ],
-      "settings": {}
+      "settings": {
+        "show_section_break": true
+      }
     },
     "education": {
       "type": "advertorial-education",
       "settings": {
+        "show_section_break": true,
         "subhead": "Apa yang jarang dijelaskan tentang menopause.",
         "body": "<p>Inilah yang sebenarnya terjadi.</p><p>Saat memasuki perimenopause dan menopause, kadar hormon berubah dan kemampuan tubuh untuk menyerap serta memanfaatkan nutrisi tertentu ikut menurun. Penelitian nutrisi pada perempuan di atas 40 tahun mendokumentasikan pola ini dengan jelas. Kalsium. Magnesium. Zat besi. Vitamin D. Senyawa anti-inflamasi alami yang dulu cukup, tanpa disadari, kini semuanya menurun.</p><p>Rasa kaku di pagi hari bukan sekadar “faktor usia”. Sendi terasa seperti kurang pelumas karena tubuh kekurangan fondasi nutrisinya.</p><p>Rasa capek yang tidak sebanding dengan aktivitas? Sel-sel tubuh tidak lagi mendapatkan “bahan bakar” seperti dulu. Hot flash, tidur yang tidak pernah benar-benar nyenyak, kulit yang mendadak terasa lebih kering dan tipis — ini bukan masalah yang terpisah. Ini adalah satu pola yang sama yang muncul di berbagai bagian tubuh.</p><p>Ahli nutrisi klinis yang bekerja dengan perempuan di fase ini menyebutnya: penurunan nutrisi sistemik. Tubuh tidak rusak. Tubuh hanya kekurangan bahan baku yang dulu bisa didaur ulang secara efisien — dan setelah hormon berubah, kekurangan itu semakin cepat terjadi.</p><p><strong>Tubuh tidak sedang “rusak”. Hanya sedang kekurangan apa yang dibutuhkannya.</strong> Dan ini bagian pentingnya: kondisi ini bukan sesuatu yang tidak bisa diperbaiki. Ini adalah celah. Dan celah dapat diisi.</p>"
       }
@@ -97,6 +100,7 @@
     "why-nothing-works": {
       "type": "advertorial-why-nothing-works",
       "settings": {
+        "show_section_break": true,
         "subhead": "Mengapa memaksakan diri tidak lagi efektif.",
         "body_before_image": "<p>Sebagian besar perempuan di fase ini merespons dengan cara yang sama: mengatasi gejala satu per satu. Krim untuk nyeri sendi. Kopi untuk energi. Obat tidur untuk insomnia. Mungkin juga kalsium atau kapsul herbal yang direkomendasikan teman. Tidak ada yang salah. Namun semuanya terasa tidak cukup dan ada alasan sederhana di baliknya.</p>",
         "analogy_image": "shopify://shop_images/protokol-kesehatan-atasi-akar-masalah.webp",
@@ -108,6 +112,7 @@
     "moringa-education": {
       "type": "advertorial-moringa-education",
       "settings": {
+        "show_section_break": true,
         "subhead": "Memulihkan sumbernya — bukan sekadar menyalakan lilin.",
         "body_before_callout": "<p>Riset nutrisi terbaru pada kesehatan perempuan usia 40+ menunjukkan pendekatan berbeda: alih-alih menargetkan gejala satu per satu, isi kembali kekurangan nutrisi yang mendasari semuanya dengan spektrum nutrisi yang luas, padat, dan mudah diserap tubuh — secara konsisten.</p><p>Salah satu tanaman yang profilnya paling mendekati kebutuhan ini adalah moringa oleifera. Dalam satu daun terdapat lebih dari 90 nutrisi bioavailable termasuk senyawa anti-inflamasi, kalsium, magnesium, zat besi, dan zinc. Bukan sebagai zat kimia terpisah, tetapi sebagai profil nutrisi lengkap yang dikenali tubuh secara alami.</p><p>Bagi perempuan di fase perimenopause dan menopause, ini penting. Kekurangannya bukan hanya satu nutrisi, melainkan banyak. Moringa menghadirkannya secara bersamaan seperti makanan utuh, bukan seperti label suplemen.</p>",
         "fact_label": "Dari analisis nutrisi yang dipublikasikan:",
@@ -155,6 +160,8 @@
         "cta_url": "https://treelogy.com/id/products/the-discovery-pack",
         "cta_text": "Temukan Discovery Pack →",
         "cta_subtext": "Gratis ongkir untuk pembaca artikel ini • Protokol 30 hari",
+        "utm_campaign": "moringa_discovery_launch",
+        "utm_content": "mid-article",
         "meta_product_name": "The Discovery Pack",
         "meta_product_value": "999000",
         "meta_content_id": "9074141200572"
@@ -163,6 +170,7 @@
     "quality-proof": {
       "type": "advertorial-quality-proof",
       "settings": {
+        "show_section_break": true,
         "intro_text": "<p>Kalau masih membaca sampai di sini, kemungkinan Anda ingin memahami mengapa kualitas moringa begitu menentukan dan bagaimana membedakan produk asli dengan bubuk murah yang buat banyak orang kecewa.</p>",
         "inside_outside_image": "shopify://shop_images/panen-daun-kelor-segar-karangasem-bali.webp",
         "subhead": "Cara membedakan moringa asli dengan bubuk cokelat yang tidak memberikan hasil.",
@@ -206,9 +214,11 @@
         "t3"
       ],
       "settings": {
+        "show_section_break": true,
         "subhead": "Apa yang dilaporkan oleh 4.700+ pengguna Treelogy.",
         "intro_text": "<p>Moringa bukan keajaiban. Namun pola dalam ribuan ulasan pelanggan Treelogy — perempuan Indonesia di fase kehidupan ini — terlihat cukup konsisten untuk diperhatikan.</p><p>Sebagian besar melaporkan perubahan awal antara hari ke-3 hingga hari ke-7; rasa kaku berkurang, tidur lebih nyenyak, waktu persiapan di pagi hari jadi semakin singkat. Pada hari ke-14, perubahan biasanya terasa lebih stabil.</p>",
-        "outro_text": "<p>Tidak semua orang merasakan respons yang sama. Ada yang merasakan dalam 48 jam. Ada yang butuh dua minggu. Namun pola dalam ulasan mereka menunjukkan satu hal yang konsisten: tubuh merespons ketika akhirnya mendapatkan kembali apa yang hilang.</p>"
+        "outro_text": "<p>Tidak semua orang merasakan respons yang sama. Ada yang merasakan dalam 48 jam. Ada yang butuh dua minggu. Namun pola dalam ulasan mereka menunjukkan satu hal yang konsisten: tubuh merespons ketika akhirnya mendapatkan kembali apa yang hilang.</p>",
+        "outro_position": "before_last"
       }
     },
     "final-cta": {
@@ -251,6 +261,8 @@
         "cta_text": "Temukan Discovery Pack →",
         "cta_subtext": "Saat artikel ini ditulis, Discovery Pack tersedia dengan gratis ongkir.",
         "disclosure_text": "Disclosure: Artikel ini memuat rekomendasi produk Treelogy. Penulis melakukan riset independen terhadap brand ini untuk keperluan penulisan artikel ini.",
+        "utm_campaign": "moringa_discovery_launch",
+        "utm_content": "end-article",
         "meta_product_name": "The Discovery Pack",
         "meta_product_value": "999000",
         "meta_content_id": "9074141200572"
