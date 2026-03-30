@@ -37,25 +37,25 @@
         "p1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Pagi seperti ini pasti terasa familier.</p>"
+            "text": "Pagi seperti ini pasti terasa familier."
           }
         },
         "p2": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Alarm belum berbunyi, tapi badan sudah lebih dulu terbangun. Lutut kaku. Jari-jari tangan pegal. Punggung bawah sudah protes bahkan sebelum sempat duduk tegak. Kaki diturunkan ke lantai dan harus menunggu — bukan karena ingin, tapi karena memang harus. Beberapa menit agar sendi \u201Cpemanasan\u201D dulu sebelum orang rumah mulai membutuhkan Anda.</p>"
+            "text": "Alarm belum berbunyi, tapi badan sudah lebih dulu terbangun. Lutut kaku. Jari-jari tangan pegal. Punggung bawah sudah protes bahkan sebelum sempat duduk tegak. Kaki diturunkan ke lantai dan harus menunggu — bukan karena ingin, tapi karena memang harus. Beberapa menit agar sendi \u201Cpemanasan\u201D dulu sebelum orang rumah mulai membutuhkan Anda."
           }
         },
         "p3": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Sampai di kamar mandi. Basuh muka. Dan di situlah — kulit yang balas menatap dari cermin. Lebih kering dari biasanya. Terasa lebih tipis, entah kenapa. Beberapa helai rambut tersangkut di sisir, dan Anda bertanya-tanya sejak kapan ini mulai terjadi. Bukan sesuatu yang dramatis. Tapi bukan sesuatu yang bisa diabaikan juga.</p>"
+            "text": "Sampai di kamar mandi. Basuh muka. Dan di situlah — kulit yang balas menatap dari cermin. Lebih kering dari biasanya. Terasa lebih tipis, entah kenapa. Beberapa helai rambut tersangkut di sisir, dan Anda bertanya-tanya sejak kapan ini mulai terjadi. Bukan sesuatu yang dramatis. Tapi bukan sesuatu yang bisa diabaikan juga."
           }
         },
         "p4": {
-          "type": "paragraph",
+          "type": "paragraph_rich",
           "settings": {
-            "text": "<p>Lalu hari dimulai. Sarapan. Antar anak sekolah. Urusan rumah. Keluarga. Tidak pernah berhenti. Anda masih perempuan yang sama — yang jadi tumpuan semua orang. Yang jarang mengeluh. Tapi diam-diam — di menit-menit sepi sebelum rumah ramai — Anda mulai bertanya: <em>sampai kapan badan ini kuat mengikuti ritme hidup seperti ini?</em></p>"
+            "rich_text": "<p>Lalu hari dimulai. Sarapan. Antar anak sekolah. Urusan rumah. Keluarga. Tidak pernah berhenti. Anda masih perempuan yang sama — yang jadi tumpuan semua orang. Yang jarang mengeluh. Tapi diam-diam — di menit-menit sepi sebelum rumah ramai — Anda mulai bertanya: <em>sampai kapan badan ini kuat mengikuti ritme hidup seperti ini?</em></p>"
           }
         },
         "pq1": {
