@@ -2,7 +2,7 @@
   Product offer card — styled as a bordered card with urgency bar, product image, pricing, CTA, trust badges
 {% endcomment %}
 
-<div>
+<div style="padding: 0;">
   <div class="adv-offer-card" id="{{ section.settings.card_id | default: 'cta-offer' }}">
   {% if section.settings.urgency_text != blank %}
     <div class="adv-oc-urgency">
