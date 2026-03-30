@@ -1,3 +1,13 @@
+{% if section.settings.subhead != blank %}
+  <p class="adv-subhead" data-cs-capture>{{ section.settings.subhead }}</p>
+{% endif %}
+
+{% if section.settings.body_before_image != blank %}
+  <div class="adv-richtext" data-cs-capture>
+    {{ section.settings.body_before_image }}
+  </div>
+{% endif %}
+
 {% if section.settings.quality_image != blank %}
   <div class="adv-image" style="margin: {{ section.settings.image_margin }};">
     {{
@@ -8,14 +18,39 @@
   </div>
 {% endif %}
 
-<div class="adv-richtext" data-cs-capture>
-  {{ section.settings.body }}
-</div>
+{% if section.settings.body != blank %}
+  <div class="adv-richtext" data-cs-capture>
+    {{ section.settings.body }}
+  </div>
+{% endif %}
+
+{% if section.settings.review_quote != blank %}
+  <div class="adv-review" style="--review-margin-y: {{ section.settings.review_margin_y | default: '24px' }};" data-cs-capture>
+    <q>{{ section.settings.review_quote }}</q>
+    {% if section.settings.review_attribution != blank %}
+      <cite>{{ section.settings.review_attribution }}</cite>
+    {% endif %}
+  </div>
+{% endif %}
+
+{% if section.settings.show_section_break %}
+  <div class="adv-section-break"></div>
+{% endif %}
 
 {% schema %}
 {
   "name": "Adv Quality Proof v2",
   "settings": [
+    {
+      "type": "text",
+      "id": "subhead",
+      "label": "Section Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body_before_image",
+      "label": "Body Text (before image)"
+    },
     {
       "type": "image_picker",
       "id": "quality_image",
@@ -26,15 +61,41 @@
       "id": "image_margin",
       "label": "Image Margin Style",
       "options": [
-        { "value": "20px 0", "label": "Symmetric (20px top & bottom)" },
-        { "value": "0px 0 20px", "label": "Bottom only (0 top, 20px bottom)" }
+        { "value": "24px 0", "label": "Symmetric (24px top & bottom)" },
+        { "value": "0px 0 24px", "label": "Bottom only (0 top, 24px bottom)" }
       ],
-      "default": "20px 0"
+      "default": "24px 0"
     },
     {
       "type": "richtext",
       "id": "body",
-      "label": "Body Text"
+      "label": "Body Text (after image)"
+    },
+    {
+      "type": "header",
+      "content": "Review Testimonial"
+    },
+    {
+      "type": "textarea",
+      "id": "review_quote",
+      "label": "Review Quote"
+    },
+    {
+      "type": "text",
+      "id": "review_attribution",
+      "label": "Review Attribution"
+    },
+    {
+      "type": "text",
+      "id": "review_margin_y",
+      "label": "Review vertical margin (CSS)",
+      "default": "24px"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_section_break",
+      "label": "Show section break line",
+      "default": true
     }
   ]
 }

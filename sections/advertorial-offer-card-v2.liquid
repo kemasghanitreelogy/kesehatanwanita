@@ -1,0 +1,219 @@
+{% comment %}
+  Product offer card — styled as a bordered card with urgency bar, product image, pricing, CTA, trust badges
+{% endcomment %}
+
+<div class="adv-offer-card" id="{{ section.settings.card_id | default: 'cta-offer' }}" style="padding: 0;">
+  {% if section.settings.urgency_text != blank %}
+    <div class="adv-oc-urgency">
+      <span class="adv-urg-icon">⏰</span> {{ section.settings.urgency_text }}
+    </div>
+  {% endif %}
+
+  {% if section.settings.product_image != blank %}
+    {{
+      section.settings.product_image
+      | image_url: width: 1280
+      | image_tag: loading: 'lazy', alt: section.settings.product_image.alt, class: 'adv-oc-img', data-cs-mask: 'false'
+    }}
+  {% endif %}
+
+  <div class="adv-oc-body">
+    {% if section.settings.label != blank %}
+      <div class="adv-oc-label">{{ section.settings.label }}</div>
+    {% endif %}
+
+    {% if section.settings.title != blank %}
+      <div class="adv-oc-title">{{ section.settings.title }}</div>
+    {% endif %}
+
+    {% if section.settings.subtitle != blank %}
+      <div class="adv-oc-sub">{{ section.settings.subtitle }}</div>
+    {% endif %}
+
+    <div class="adv-oc-price">
+      {% if section.settings.old_price != blank %}
+        <span class="adv-oc-old">{{ section.settings.old_price }}</span>
+      {% endif %}
+      {% if section.settings.new_price != blank %}
+        <span class="adv-oc-new">{{ section.settings.new_price }}</span>
+      {% endif %}
+      {% if section.settings.save_text != blank %}
+        <span class="adv-oc-save-badge">{{ section.settings.save_text }}</span>
+      {% endif %}
+      {% if section.settings.discount_pct != blank %}
+        <div class="adv-oc-pct">{{ section.settings.discount_pct }}</div>
+      {% endif %}
+    </div>
+
+    <a href="{{ section.settings.cta_url }}?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign={{ section.settings.utm_campaign | default: 'protocol_30day_launch' | url_encode }}&utm_content={{ section.settings.utm_content | default: 'offer-card' | url_encode }}"
+       class="adv-oc-cta"
+       data-meta-event="Lead"
+       data-meta-product-name="{{ section.settings.meta_product_name }}"
+       data-meta-content-id="{{ section.settings.meta_content_id }}"
+       data-meta-value="{{ section.settings.meta_product_value }}"
+       data-meta-currency="{{ shop.currency }}"
+       data-meta-category="Blog to Store Conversion"
+       data-meta-cta-position="{{ section.settings.utm_content | default: 'offer-card' }}"
+       id="meta-cta-trigger-{{ section.settings.card_id | default: 'offer' }}">
+      {{ section.settings.cta_text }}
+    </a>
+
+    {% if section.blocks.size > 0 %}
+      <div class="adv-oc-trust">
+        {% for block in section.blocks %}
+          <span {{ block.shopify_attributes }} data-cs-capture>{{ block.settings.badge_label }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if section.settings.shipping_text != blank %}
+      <div class="adv-oc-ship">{{ section.settings.shipping_text }}</div>
+    {% endif %}
+  </div>
+</div>
+
+{% if section.settings.show_section_break %}
+  <div class="adv-section-break"></div>
+{% endif %}
+
+{% render 'meta-cta-tracking' %}
+
+{% schema %}
+{
+  "name": "Adv Offer Card v2",
+  "settings": [
+    {
+      "type": "text",
+      "id": "card_id",
+      "label": "Card HTML ID",
+      "default": "cta1"
+    },
+    {
+      "type": "text",
+      "id": "urgency_text",
+      "label": "Urgency Bar Text",
+      "default": "⏰ Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product Image"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label",
+      "default": "Penawaran Khusus Pembaca"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Protokol 30 Hari Inside Out Moringa"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "old_price",
+      "label": "Old Price",
+      "default": "Rp 860.000"
+    },
+    {
+      "type": "text",
+      "id": "new_price",
+      "label": "New Price",
+      "default": "Rp 690.000"
+    },
+    {
+      "type": "text",
+      "id": "save_text",
+      "label": "Save Badge Text",
+      "default": "Hemat Rp 170.000"
+    },
+    {
+      "type": "text",
+      "id": "discount_pct",
+      "label": "Discount Percentage Text",
+      "default": "Diskon 20%"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Button URL"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Button Text",
+      "default": "Ambil Protokol 30 Hari Saya →"
+    },
+    {
+      "type": "text",
+      "id": "shipping_text",
+      "label": "Shipping Text",
+      "default": "<strong>Gratis Ongkir</strong> untuk pembaca artikel ini"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_section_break",
+      "label": "Show section break after card",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "UTM Tracking"
+    },
+    {
+      "type": "text",
+      "id": "utm_campaign",
+      "label": "UTM Campaign",
+      "default": "protocol_30day_launch_v2"
+    },
+    {
+      "type": "text",
+      "id": "utm_content",
+      "label": "UTM Content",
+      "default": "offer-card"
+    },
+    {
+      "type": "header",
+      "content": "Meta Pixel Tracking"
+    },
+    {
+      "type": "text",
+      "id": "meta_product_name",
+      "label": "Product Name (for Meta)",
+      "default": "Protokol 30 Hari Inside Out"
+    },
+    {
+      "type": "text",
+      "id": "meta_product_value",
+      "label": "Product Value (for Meta)",
+      "default": "690000"
+    },
+    {
+      "type": "text",
+      "id": "meta_content_id",
+      "label": "Product ID / SKU (for Meta)"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Trust Badge",
+      "settings": [
+        {
+          "type": "text",
+          "id": "badge_label",
+          "label": "Badge Label",
+          "default": "Terdaftar BPOM"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

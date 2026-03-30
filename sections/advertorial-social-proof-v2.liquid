@@ -1,19 +1,3 @@
-{% if section.settings.pre_subhead_text != blank %}
-  <div class="adv-richtext" data-cs-capture>
-    {{ section.settings.pre_subhead_text }}
-  </div>
-{% endif %}
-
-{% if section.settings.social_image != blank %}
-  <div class="adv-image" style="margin: {{ section.settings.image_margin }};">
-    {{
-      section.settings.social_image
-      | image_url: width: 1280
-      | image_tag: loading: 'lazy', alt: section.settings.social_image.alt, data-cs-mask: 'false'
-    }}
-  </div>
-{% endif %}
-
 <p class="adv-subhead" data-cs-capture>
   {{ section.settings.subhead_prefix }}
   {% if section.settings.subhead_highlight != blank %}
@@ -23,31 +7,39 @@
 </p>
 
 {% if section.settings.intro_text != blank %}
-  <div class="adv-richtext intro" data-cs-capture>
+  <div class="adv-richtext" data-cs-capture>
     {{ section.settings.intro_text }}
   </div>
 {% endif %}
 
 {% for block in section.blocks %}
-  {% if forloop.last and section.settings.outro_position == 'before_last' and section.settings.outro_text != blank %}
-    <div class="adv-richtext" data-cs-capture>
-      {{ section.settings.outro_text }}
-    </div>
-  {% endif %}
-
-  {% if block.settings.bridge_text != blank %}
-    <p class="adv-body-text" {{ block.shopify_attributes }} data-cs-capture>{{ block.settings.bridge_text }}</p>
-  {% endif %}
-
-  <p class="adv-inline-quote-v2" {{ block.shopify_attributes }} data-cs-capture>&ldquo;{{ block.settings.quote_text }}&rdquo;</p>
-  <p class="adv-inline-attribution" data-cs-capture>{{ block.settings.attribution }}</p>
+  {% case block.type %}
+    {% when 'timeline_label' %}
+      <p class="adv-body-text" {{ block.shopify_attributes }} data-cs-capture><strong>{{ block.settings.text }}</strong></p>
+    {% when 'timeline_entry' %}
+      <p class="adv-body-text" {{ block.shopify_attributes }} data-cs-capture><strong>{{ block.settings.label }}</strong> {{ block.settings.body }}</p>
+    {% when 'paragraph' %}
+      <div class="adv-richtext" {{ block.shopify_attributes }} data-cs-capture>
+        {{ block.settings.text }}
+      </div>
+    {% when 'review' %}
+      <div class="adv-review" style="--review-margin-y: {{ block.settings.margin_y | default: '24px' }};" {{ block.shopify_attributes }} data-cs-capture>
+        <q>{{ block.settings.quote_text }}</q>
+        {% if block.settings.attribution != blank %}
+          <cite>{{ block.settings.attribution }}</cite>
+        {% endif %}
+      </div>
+    {% when 'pull_quote' %}
+      <div class="adv-pull-quote" {{ block.shopify_attributes }} data-cs-capture>
+        {{ block.settings.quote_text }}
+        {% if block.settings.attribution != blank %}
+          <span class="adv-attribution">{{ block.settings.attribution }}</span>
+        {% endif %}
+      </div>
+    {% when 'bridge_text' %}
+      <p class="adv-body-text" {{ block.shopify_attributes }} data-cs-capture>{{ block.settings.text }}</p>
+  {% endcase %}
 {% endfor %}
-
-{% if section.settings.outro_position == 'after_all' and section.settings.outro_text != blank %}
-  <div class="adv-richtext" data-cs-capture>
-    {{ section.settings.outro_text }}
-  </div>
-{% endif %}
 
 {% if section.settings.show_section_break %}
   <div class="adv-section-break"></div>
@@ -58,30 +50,10 @@
   "name": "Adv Social Proof v2",
   "settings": [
     {
-      "type": "richtext",
-      "id": "pre_subhead_text",
-      "label": "Text before subhead"
-    },
-    {
-      "type": "image_picker",
-      "id": "social_image",
-      "label": "Social Proof Image"
-    },
-    {
-      "type": "select",
-      "id": "image_margin",
-      "label": "Image Margin Style",
-      "options": [
-        { "value": "20px 0", "label": "Symmetric (20px top & bottom)" },
-        { "value": "0px 0 20px", "label": "Bottom only (0 top, 20px bottom)" }
-      ],
-      "default": "20px 0"
-    },
-    {
       "type": "text",
       "id": "subhead_prefix",
       "label": "Subhead (before highlight)",
-      "default": "Apa yang dilaporkan oleh"
+      "default": "Apa yang dilaporkan"
     },
     {
       "type": "text",
@@ -93,27 +65,12 @@
       "type": "text",
       "id": "subhead_suffix",
       "label": "Subhead (after highlight)",
-      "default": "pengguna Treelogy."
+      "default": "perempuan selama 30 hari."
     },
     {
       "type": "richtext",
       "id": "intro_text",
       "label": "Intro Text"
-    },
-    {
-      "type": "richtext",
-      "id": "outro_text",
-      "label": "Outro Text"
-    },
-    {
-      "type": "select",
-      "id": "outro_position",
-      "label": "Outro Text Position",
-      "options": [
-        { "value": "before_last", "label": "Before last testimonial" },
-        { "value": "after_all", "label": "After all testimonials" }
-      ],
-      "default": "before_last"
     },
     {
       "type": "checkbox",
@@ -124,14 +81,47 @@
   ],
   "blocks": [
     {
-      "type": "testimonial",
-      "name": "Testimonial",
+      "type": "timeline_label",
+      "name": "Timeline Label",
       "settings": [
         {
           "type": "text",
-          "id": "bridge_text",
-          "label": "Bridge Text (before quote)"
+          "id": "text",
+          "label": "Label Text (e.g. Hari ke-3–7:)"
+        }
+      ]
+    },
+    {
+      "type": "timeline_entry",
+      "name": "Timeline Entry",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Bold Label (e.g. Hari ke-3–7:)"
         },
+        {
+          "type": "textarea",
+          "id": "body",
+          "label": "Body text (continues after label)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "name": "Rich Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Body Text"
+        }
+      ]
+    },
+    {
+      "type": "review",
+      "name": "Review Quote",
+      "settings": [
         {
           "type": "textarea",
           "id": "quote_text",
@@ -141,6 +131,39 @@
           "type": "text",
           "id": "attribution",
           "label": "Attribution"
+        },
+        {
+          "type": "text",
+          "id": "margin_y",
+          "label": "Vertical margin (CSS)",
+          "default": "24px"
+        }
+      ]
+    },
+    {
+      "type": "pull_quote",
+      "name": "Pull Quote (featured)",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote_text",
+          "label": "Quote Text"
+        },
+        {
+          "type": "text",
+          "id": "attribution",
+          "label": "Attribution"
+        }
+      ]
+    },
+    {
+      "type": "bridge_text",
+      "name": "Bridge Text",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Bridge Text"
         }
       ]
     }

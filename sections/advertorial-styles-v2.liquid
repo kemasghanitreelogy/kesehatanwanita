@@ -1,0 +1,467 @@
+{% comment %}
+  CSS for advertorial V2 sections only.
+  All rules scoped under .advertorial-v2 to avoid affecting V1.
+{% endcomment %}
+
+{% stylesheet %}
+  /* ===== ADVERTORIAL V2 — SCOPED STYLES ===== */
+
+  .advertorial-v2 {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: -apple-system
+    , 'Segoe UI'
+    , Roboto
+    , Helvetica
+    , Arial
+    , sans-serif;
+    background: #fff;
+    color: #1a1a1a;
+    line-height: 1.82;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+  }
+  .advertorial-v2 * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Meta header */
+  .advertorial-v2 .adv-meta-header {
+    padding: 24px 20px 0;
+    font-size: 11px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+  }
+
+  /* Headline */
+  .advertorial-v2 h1.adv-headline {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.32;
+    color: #1a1a1a;
+    padding: 18px 20px 10px;
+    margin: 0;
+    letter-spacing: -0.3px;
+    text-wrap: pretty;
+  }
+
+  /* Deck */
+  .advertorial-v2 .adv-deck {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.55;
+    padding: 0 20px 14px;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  /* Byline */
+  .advertorial-v2 .adv-byline {
+    font-size: 13px;
+    color: #999;
+    padding: 0 20px 28px;
+    line-height: 1.4;
+  }
+  .advertorial-v2 p.adv-byline {
+    text-wrap: pretty;
+  }
+  .advertorial-v2 .adv-byline strong {
+    color: #555;
+    font-weight: 600;
+  }
+
+  /* Body text */
+  .advertorial-v2 .adv-body-text {
+    font-size: 17px;
+    color: #333;
+    padding: 0 20px;
+    margin-bottom: 22px;
+    line-height: 1.82;
+  }
+  .advertorial-v2 .adv-body-text strong {
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+  .advertorial-v2 .adv-body-text em {
+    color: #555;
+  }
+
+  /* Section breaks */
+  .advertorial-v2 .adv-section-break {
+    width: 36px;
+    height: 1px;
+    background: #ddd;
+    margin: 36px 20px;
+  }
+
+  /* Subheads */
+  .advertorial-v2 .adv-subhead {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    padding: 0 20px;
+    margin-bottom: 18px;
+    line-height: 1.32;
+    letter-spacing: -0.2px;
+    text-wrap: pretty;
+  }
+
+  /* Image */
+  .advertorial-v2 .adv-image {
+    margin: 24px 0;
+    line-height: 0;
+    padding: 0;
+  }
+  .advertorial-v2 .adv-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 3px;
+    background: #f5f5f0;
+  }
+
+  /* Review quote (.rev in HTML reference) */
+  .advertorial-v2 .adv-review {
+    margin: var(--review-margin-y, 24px) 20px;
+    padding: 20px 22px;
+    background: #fafaf7;
+    border-left: 3px solid #2d6a4f;
+    border-radius: 0 6px 6px 0;
+  }
+  .advertorial-v2 .adv-review q {
+    display: block;
+    font-size: 16px;
+    font-style: italic;
+    color: #444;
+    line-height: 1.65;
+    quotes: "\201C" "\201D";
+  }
+  .advertorial-v2 .adv-review q::before {
+    content: open-quote;
+  }
+  .advertorial-v2 .adv-review q::after {
+    content: close-quote;
+  }
+  .advertorial-v2 .adv-review cite {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    color: #999;
+    margin-top: 8px;
+  }
+
+  /* Pull quote (.pq in HTML reference) */
+  .advertorial-v2 .adv-pull-quote {
+    padding: 28px 24px;
+    margin: 28px 16px;
+    background: linear-gradient(135deg, #f7faf8 0%, #f0f5f2 100%);
+    border-left: 4px solid #2d6a4f;
+    border-radius: 0 8px 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d6a4f;
+    line-height: 1.5;
+  }
+  .advertorial-v2 .adv-pull-quote .adv-attribution {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    color: #888;
+    margin-top: 10px;
+  }
+
+  /* Rich text */
+  .advertorial-v2 .adv-richtext {
+    padding: 0 20px;
+  }
+  .advertorial-v2 .adv-richtext p {
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 22px;
+    line-height: 1.82;
+  }
+  .advertorial-v2 .adv-richtext strong {
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+  .advertorial-v2 .adv-richtext em {
+    color: #555;
+  }
+  .advertorial-v2 .adv-richtext p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* CTA block (legacy button style) */
+  .advertorial-v2 .adv-cta-block {
+    text-align: center;
+    padding: 28px 20px;
+    margin: 8px 0;
+  }
+  .advertorial-v2 .adv-cta-button {
+    display: block;
+    background: #2d6a4f;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 24px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    min-height: 56px;
+    line-height: 1.2;
+    transition: background 0.2s;
+    -webkit-tap-highlight-color: rgba(45, 106, 79, 0.2);
+  }
+  .advertorial-v2 .adv-cta-button:hover {
+    background: #245a42;
+  }
+  .advertorial-v2 .adv-cta-sub {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+  }
+  .advertorial-v2 .adv-cta-badges {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+    font-size: 12px;
+    color: #888;
+  }
+  .advertorial-v2 .adv-cta-badges span {
+    background: #f5f5f0;
+    padding: 4px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  /* ===== OFFER CARD ===== */
+  .advertorial-v2 .adv-offer-card {
+    margin: 32px 16px;
+    border: 2px solid #2d6a4f;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 6px 28px rgba(45, 106, 79, 0.10);
+  }
+
+  /* Urgency bar + vibrating ⏰ */
+  @keyframes adv-vibrate {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-12deg);
+    }
+    20% {
+      transform: rotate(12deg);
+    }
+    30% {
+      transform: rotate(-10deg);
+    }
+    40% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(-6deg);
+    }
+    60% {
+      transform: rotate(6deg);
+    }
+    70% {
+      transform: rotate(-2deg);
+    }
+    80% {
+      transform: rotate(2deg);
+    }
+    90% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .advertorial-v2 .adv-oc-urgency {
+    background: #b91c1c;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 10px 16px;
+    text-transform: uppercase;
+  }
+  .advertorial-v2 .adv-oc-urgency .adv-urg-icon {
+    display: inline-block;
+    animation: adv-vibrate 0.6s ease-in-out infinite;
+    transform-origin: center center;
+  }
+
+  .advertorial-v2 .adv-oc-img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background: #f5f5f0;
+  }
+  .advertorial-v2 .adv-oc-body {
+    padding: 24px 20px 22px;
+    text-align: center;
+  }
+  .advertorial-v2 .adv-oc-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #2d6a4f;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .advertorial-v2 .adv-oc-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.3;
+    margin-bottom: 4px;
+  }
+  .advertorial-v2 .adv-oc-sub {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 18px;
+    line-height: 1.45;
+  }
+  .advertorial-v2 .adv-oc-price {
+    margin-bottom: 18px;
+  }
+  .advertorial-v2 .adv-oc-old {
+    font-size: 15px;
+    color: #aaa;
+    text-decoration: line-through;
+  }
+  .advertorial-v2 .adv-oc-new {
+    font-size: 30px;
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+    display: block;
+    margin: 4px 0;
+  }
+  .advertorial-v2 .adv-oc-save-badge {
+    display: inline-block;
+    background: #b91c1c;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 4px;
+    letter-spacing: 0.2px;
+    margin-top: 6px;
+  }
+  .advertorial-v2 .adv-oc-pct {
+    font-size: 12px;
+    color: #2d6a4f;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+  .advertorial-v2 .adv-oc-cta {
+    display: block;
+    background: #2d6a4f;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 24px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    min-height: 56px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+    margin-top: 18px;
+    transition: background 0.2s;
+    -webkit-tap-highlight-color: rgba(45, 106, 79, 0.2);
+  }
+  .advertorial-v2 .adv-oc-cta:hover {
+    background: #245a42;
+  }
+  .advertorial-v2 .adv-oc-trust {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 6px;
+  }
+  .advertorial-v2 .adv-oc-trust span {
+    background: #f5f5f0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .advertorial-v2 .adv-oc-ship {
+    font-size: 13px;
+    color: #555;
+    margin-top: 6px;
+  }
+  .advertorial-v2 .adv-oc-ship strong {
+    color: #2d6a4f;
+    font-weight: 600;
+  }
+
+  /* Sign-off / disclosure */
+  .advertorial-v2 .adv-sign-off {
+    padding: 24px 20px;
+    font-size: 13px;
+    color: #999;
+    border-top: 1px solid #eee;
+    margin-top: 24px;
+    line-height: 1.5;
+  }
+  .advertorial-v2 .adv-sign-off strong {
+    color: #555;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  /* Desktop */
+  @media (min-width: 641px) {
+    .advertorial-v2 {
+      padding: 0 20px;
+    }
+    .advertorial-v2 h1.adv-headline {
+      font-size: 29px;
+    }
+    .advertorial-v2 .adv-subhead {
+      font-size: 22px;
+    }
+    .advertorial-v2 .adv-offer-card {
+      margin: 36px 0;
+    }
+    .advertorial-v2 .adv-oc-new {
+      font-size: 34px;
+    }
+    .advertorial-v2 .adv-cta-button {
+      width: auto;
+      min-width: 320px;
+      display: inline-block;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+  {
+    "name": "Advertorial Styles V2",
+    "settings": []
+  }
+{% endschema %}

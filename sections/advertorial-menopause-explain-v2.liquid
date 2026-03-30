@@ -4,6 +4,16 @@
   {{ section.settings.body }}
 </div>
 
+{% if section.settings.section_image != blank %}
+  <div class="adv-image" style="margin: {{ section.settings.image_margin }};">
+    {{
+      section.settings.section_image
+      | image_url: width: 1280
+      | image_tag: loading: 'lazy', alt: section.settings.section_image.alt, data-cs-mask: 'false'
+    }}
+  </div>
+{% endif %}
+
 {% if section.settings.show_section_break %}
   <div class="adv-section-break"></div>
 {% endif %}
@@ -22,6 +32,21 @@
       "type": "richtext",
       "id": "body",
       "label": "Body Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_image",
+      "label": "Section Image"
+    },
+    {
+      "type": "select",
+      "id": "image_margin",
+      "label": "Image Margin Style",
+      "options": [
+        { "value": "24px 0", "label": "Symmetric (24px top & bottom)" },
+        { "value": "0px 0 24px", "label": "Bottom only (0 top, 24px bottom)" }
+      ],
+      "default": "24px 0"
     },
     {
       "type": "checkbox",
