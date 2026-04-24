@@ -4,42 +4,61 @@
 {% endcomment %}
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 {% stylesheet %}
-  body:has(.v7-cluster-page) { background: #fafaf7; margin: 0; }
+  body:has(.v7-cluster-page) {
+    background: #fafaf7;
+    margin: 0;
+  }
 
   .v7-cluster-page {
     max-width: 680px;
     margin: 0 auto;
     background: #fff;
-    box-shadow: 0 0 40px rgba(0,0,0,0.04);
-    font-family: 'Source Serif 4', Georgia, serif;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.04);
+    font-family: 'Source Serif 4'
+    , Georgia
+    , serif;
     color: #1a1a1a;
     line-height: 1.82;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
   }
-  .v7-cluster-page, .v7-cluster-page * { box-sizing: border-box; }
-  .v7-cluster-page p, .v7-cluster-page h1, .v7-cluster-page blockquote,
-  .v7-cluster-page div { margin: 0; }
+  .v7-cluster-page,
+  .v7-cluster-page * {
+    box-sizing: border-box;
+  }
+  .v7-cluster-page p,
+  .v7-cluster-page h1,
+  .v7-cluster-page blockquote,
+  .v7-cluster-page div {
+    margin: 0;
+  }
 
   .v7-cluster-page .version-banner {
     background: #0d3b2e;
     color: #fff;
     padding: 10px 20px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.5px;
   }
-  .v7-cluster-page .version-banner strong { color: #c9a96e; }
+  .v7-cluster-page .version-banner strong {
+    color: #c9a96e;
+  }
 
   .v7-cluster-page .masthead {
     padding: 22px 24px 18px;
     border-bottom: 1px solid #eee;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
   }
   .v7-cluster-page .masthead .pub {
     font-size: 11px;
@@ -49,7 +68,9 @@
     margin-bottom: 4px;
   }
   .v7-cluster-page .masthead .pub-name {
-    font-family: 'Source Serif 4', Georgia, serif;
+    font-family: 'Source Serif 4'
+    , Georgia
+    , serif;
     font-size: 22px;
     font-weight: 700;
     color: #0d3b2e;
@@ -58,7 +79,8 @@
 
   .v7-cluster-page .article-meta {
     padding: 28px 24px 0;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-size: 12px;
     color: #8a8a8a;
     text-transform: uppercase;
@@ -75,7 +97,10 @@
     letter-spacing: -0.5px;
   }
   @media (max-width: 480px) {
-    .v7-cluster-page h1 { font-size: 25px; line-height: 1.28; }
+    .v7-cluster-page h1 {
+      font-size: 25px;
+      line-height: 1.28;
+    }
   }
 
   .v7-cluster-page .deck {
@@ -88,13 +113,17 @@
   }
 
   .v7-cluster-page .byline {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-size: 13px;
     color: #888;
     padding: 0 24px 24px;
     letter-spacing: 0.2px;
   }
-  .v7-cluster-page .byline strong { color: #333; font-weight: 600; }
+  .v7-cluster-page .byline strong {
+    color: #333;
+    font-weight: 600;
+  }
 
   .v7-cluster-page .hero-img {
     width: 100%;
@@ -109,7 +138,10 @@
     line-height: 1.72;
     padding: 0 24px 22px;
   }
-  .v7-cluster-page p.body strong { color: #0d3b2e; font-weight: 700; }
+  .v7-cluster-page p.body strong {
+    color: #0d3b2e;
+    font-weight: 700;
+  }
 
   .v7-cluster-page .lead {
     font-size: 22px;
@@ -120,7 +152,9 @@
     letter-spacing: -0.2px;
   }
   @media (max-width: 480px) {
-    .v7-cluster-page .lead { font-size: 19px; }
+    .v7-cluster-page .lead {
+      font-size: 19px;
+    }
   }
 
   .v7-cluster-page .cluster-intro {
@@ -131,11 +165,13 @@
     font-weight: 500;
   }
   .v7-cluster-page .cluster-list {
-    margin: 0 24px 28px;
     padding: 24px 24px 10px;
     background: #f4f3ee;
     border-left: 3px solid #0d3b2e;
     border-radius: 0 6px 6px 0;
+  }
+  .cluster-list-container {
+    padding: 0 24px 28;
   }
   .v7-cluster-page .cluster-item {
     display: flex;
@@ -156,7 +192,8 @@
     border-radius: 50%;
     background: #0d3b2e;
     color: #fff;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-size: 14px;
     font-weight: 700;
     display: flex;
@@ -201,7 +238,8 @@
     font-style: normal;
     font-size: 13px;
     color: #777;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-weight: 500;
   }
 
@@ -220,7 +258,8 @@
     font-style: normal;
     font-size: 12px;
     color: #888;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-weight: 500;
     letter-spacing: 0.3px;
     text-transform: uppercase;
@@ -239,27 +278,35 @@
     margin: 0 24px 24px;
     padding: 60px 20px;
     text-align: center;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-size: 13px;
     color: #888;
     border-radius: 4px;
     line-height: 1.5;
   }
-  .v7-cluster-page .img-placeholder strong { color: #555; display: block; margin-bottom: 4px; }
+  .v7-cluster-page .img-placeholder strong {
+    color: #555;
+    display: block;
+    margin-bottom: 4px;
+  }
 
-  .v7-cluster-page .offer-wrap { padding: 12px 16px 36px; }
+  .v7-cluster-page .offer-wrap {
+    padding: 12px 16px 36px;
+  }
   .v7-cluster-page .offer-card {
     background: #fff;
     border: 1px solid #e3e0d5;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 24px rgba(13,59,46,0.06);
+    box-shadow: 0 8px 24px rgba(13, 59, 46, 0.06);
   }
   .v7-cluster-page .offer-urgency {
     background: #fff8e1;
     color: #8a5a00;
     padding: 10px 16px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-size: 13px;
     font-weight: 500;
     text-align: center;
@@ -273,12 +320,21 @@
     border-bottom: 1px solid #eee;
     width: 100%;
   }
-  .v7-cluster-page .offer-card .img-placeholder { padding: 50px 20px; }
-  .v7-cluster-page .offer-card .product-img { display: block; height: auto; }
+  .v7-cluster-page .offer-card .img-placeholder {
+    padding: 50px 20px;
+  }
+  .v7-cluster-page .offer-card .product-img {
+    display: block;
+    height: auto;
+  }
 
-  .v7-cluster-page .offer-body { padding: 26px 22px 24px; text-align: center; }
+  .v7-cluster-page .offer-body {
+    padding: 26px 22px 24px;
+    text-align: center;
+  }
   .v7-cluster-page .offer-label {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-size: 11px;
     letter-spacing: 1.8px;
     text-transform: uppercase;
@@ -300,7 +356,9 @@
     margin-bottom: 22px;
     line-height: 1.45;
   }
-  .v7-cluster-page .price-stack { margin-bottom: 22px; }
+  .v7-cluster-page .price-stack {
+    margin-bottom: 22px;
+  }
   .v7-cluster-page .price-old {
     font-size: 16px;
     color: #999;
@@ -319,14 +377,16 @@
     font-size: 16px;
     font-weight: 700;
     color: #c0392b;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
   }
   .v7-cluster-page .price-discount-pct {
     display: inline-block;
     margin-top: 6px;
     font-size: 11px;
     color: #2d6a4f;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-weight: 600;
     letter-spacing: 0.5px;
     border: 1px solid #b9d4c5;
@@ -339,7 +399,8 @@
     width: 100%;
     background: #0d3b2e;
     color: #fff;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-size: 17px;
     font-weight: 600;
     text-align: center;
@@ -349,23 +410,31 @@
     margin-bottom: 18px;
     letter-spacing: 0.2px;
   }
-  .v7-cluster-page .cta-btn:hover { background: #0a2e24; }
+  .v7-cluster-page .cta-btn:hover {
+    background: #0a2e24;
+  }
   .v7-cluster-page .trust-badges {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 6px 10px;
     margin-bottom: 16px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-size: 11px;
     color: #666;
     letter-spacing: 0.6px;
     text-transform: uppercase;
     font-weight: 500;
   }
-  .v7-cluster-page .trust-badges span::before { content: '✓ '; color: #2d6a4f; font-weight: 700; }
+  .v7-cluster-page .trust-badges span::before {
+    content: '✓ ';
+    color: #2d6a4f;
+    font-weight: 700;
+  }
   .v7-cluster-page .quality-line {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-size: 12.5px;
     color: #444;
     font-weight: 500;
@@ -374,9 +443,13 @@
     text-align: center;
     letter-spacing: 0.1px;
   }
-  .v7-cluster-page .quality-line strong { color: #0d3b2e; font-weight: 700; }
+  .v7-cluster-page .quality-line strong {
+    color: #0d3b2e;
+    font-weight: 700;
+  }
   .v7-cluster-page .shipping-line {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-size: 14px;
     color: #0d3b2e;
     font-weight: 600;
@@ -386,7 +459,8 @@
 
   .v7-cluster-page .disclosure {
     padding: 32px 24px 40px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans'
+    , sans-serif;
     font-size: 12px;
     color: #999;
     font-style: italic;
@@ -396,8 +470,8 @@
 {% endstylesheet %}
 
 {% schema %}
-{
-  "name": "Cluster V7 · Styles",
-  "settings": []
-}
+  {
+    "name": "Cluster V7 · Styles",
+    "settings": []
+  }
 {% endschema %}
