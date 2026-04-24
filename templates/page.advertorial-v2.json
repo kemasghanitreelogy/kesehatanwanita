@@ -27,7 +27,7 @@
         "deck": "Temukan akar penyebabnya — dan bagaimana perempuan di atas 45 tahun mengatasinya dengan protokol alami sederhana dari dalam dan luar tubuh.",
         "author_name": "Kusumawardani",
         "author_credential": "Penulis Nutrisi & Kesehatan Wanita",
-        "hero_image": "shopify://shop_images/Image_0.0_1.webp",
+        "hero_image": "shopify://shop_images/image_1b.png",
         "image_margin": "24px 0"
       }
     },
@@ -186,7 +186,7 @@
       ],
       "settings": {
         "card_id": "cta1",
-        "urgency_text": "Stok Terbatas — Harga Dapat<br>Berubah Sewaktu-waktu",
+        "urgency_text": "Stok Terbatas — Harga DapatBerubah Sewaktu-waktu",
         "product_image": "shopify://shop_images/hero.webp",
         "label": "Penawaran Khusus Pembaca",
         "title": "Protokol 30 Hari Inside Out Moringa",
@@ -195,12 +195,12 @@
         "new_price": "Rp 690.000",
         "save_text": "Hemat Rp 170.000",
         "discount_pct": "Diskon 20%",
-        "cta_url": "https://treelogy.com/products/the-movement-relief",
+        "cta_url": "https://treelogy.com/id/products/moringa-inside-out-protocol",
         "cta_text": "Ambil Protokol 30 Hari Saya →",
         "shipping_text": "Gratis Ongkir untuk pembaca artikel ini",
         "show_section_break": true,
-        "utm_campaign": "protocol_30day_launch_v2",
-        "utm_content": "mid-article",
+        "utm_campaign": "protocol_30day",
+        "utm_content": "cta1",
         "meta_product_name": "Protokol 30 Hari Inside Out",
         "meta_product_value": "690000",
         "meta_content_id": ""
@@ -361,7 +361,7 @@
       "settings": {
         "closing_body": "<p>Harga normal untuk 90 kapsul dan 30ml oil jika dibeli terpisah adalah <strong>Rp 860.000</strong>. Protokol 30 Hari Inside Out menggabungkan keduanya seharga <strong>Rp 690.000</strong> — Anda hemat Rp 170.000, dengan gratis ongkir selama stok tersedia.</p><p>Tiga kapsul di pagi hari. Beberapa tetes oil di malam hari. Tiga puluh hari untuk merasakan dan melihat perbedaannya.</p><p>Ini untuk perempuan yang sudah selesai menyalakan lilin di setiap ruangan — dan siap menghidupkan kembali sumber listriknya.</p>",
         "card_id": "cta3",
-        "urgency_text": "Stok Terbatas — Harga Dapat<br>Berubah Sewaktu-waktu",
+        "urgency_text": "Stok Terbatas — Harga DapatBerubah Sewaktu-waktu",
         "product_image": "shopify://shop_images/hero.webp",
         "label": "Penawaran Khusus Pembaca",
         "title": "Protokol 30 Hari Inside Out Moringa",
@@ -370,12 +370,12 @@
         "new_price": "Rp 690.000",
         "save_text": "Hemat Rp 170.000",
         "discount_pct": "Diskon 20%",
-        "cta_url": "https://treelogy.com/products/the-movement-relief",
+        "cta_url": "https://treelogy.com/id/products/moringa-inside-out-protocol",
         "cta_text": "Saya Siap — Mulai Protokol Saya →",
         "shipping_text": "Gratis Ongkir untuk pembaca artikel ini",
         "disclosure_text": "Disclosure: Artikel ini memuat rekomendasi produk Treelogy. Penulis melakukan riset independen terhadap brand ini untuk keperluan penulisan artikel. Untuk informasi lebih lanjut, kunjungi treelogy.com.",
-        "utm_campaign": "protocol_30day_launch_v2",
-        "utm_content": "end-article",
+        "utm_campaign": "protocol_30day",
+        "utm_content": "cta2",
         "meta_product_name": "Protokol 30 Hari Inside Out",
         "meta_product_value": "690000",
         "meta_content_id": ""
