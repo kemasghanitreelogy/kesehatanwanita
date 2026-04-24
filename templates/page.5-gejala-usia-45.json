@@ -1,0 +1,502 @@
+{
+  "wrapper": "div.v7-cluster-page",
+  "sections": {
+    "styles": {
+      "type": "advertorial-cluster-v7-styles",
+      "settings": {}
+    },
+    "hook": {
+      "type": "advertorial-cluster-v7-hook",
+      "settings": {
+        "version_banner_html": "<strong>V7 ID — CLUSTER ANGLE</strong> · Protokol 60 Hari · Rp 590.000 · Translated from locked V7 EN",
+        "pub_label": "Kesehatan Wanita Blog",
+        "pub_name": "Kesehatan Wanita Blog",
+        "article_meta": "Kesehatan Wanita · Nutrisi · 7 menit baca",
+        "headline": "Lima hal yang perempuan Indonesia di atas 45 tahun sering anggap \"wajar karena usia\" — dan mengapa mengatasinya satu per satu tidak pernah berhasil.",
+        "deck": "Dokter jantung tidak akan bertanya tentang mood swing Anda. Dokter kulit tidak akan memeriksa lutut Anda. Tapi jika tiga dari lima hal ini terjadi pada Anda sekaligus, tubuh Anda bukan sedang menua — melainkan kekurangan nutrisi yang sama, di tempat yang berbeda. Dan masalah ini bisa diatasi.",
+        "byline_html": "Oleh <strong>Kusumawardani</strong> · Penulis Nutrisi &amp; Kesehatan Wanita",
+        "hero_alt": "Diagram medis perbandingan sendi lutut — di kiri tulang rawan yang meradang dan terkikis, di kanan tulang rawan yang bersih, halus, dan ternutrisi"
+      }
+    },
+    "checklist": {
+      "type": "advertorial-cluster-v7-checklist",
+      "settings": {
+        "intro": "Daftar berikut mungkin akan terasa terlalu familier.",
+        "punchline": "Jika tiga dari lima hal itu terasa benar — dan sebagian dari Anda mengenali diri sendiri di lebih dari satu poin — maka sisa artikel ini untuk Anda.",
+        "followup_html": "Karena selama ini tidak ada yang memberi tahu Anda bahwa kelima hal ini sebenarnya adalah masalah yang sama."
+      },
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "title": "Pagi yang dimulai dengan kaku.",
+            "body": "Lutut, jari-jari tangan, punggung bawah. Anda duduk di tepi tempat tidur dan menunggu — bukan karena ingin, tapi karena memang harus — sampai sendi-sendi \"pemanasan\" dulu sebelum sanggup menopang hari Anda."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "title": "Lelah yang tidak sebanding dengan aktivitas Anda.",
+            "body": "Anda sudah tidur. Anda tidak melakukan banyak hal. Tapi begitu masuk jam 3 sore, tenaga Anda habis begitu saja. Bukan sekadar lelah — benar-benar terkuras habis."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "title": "Tidur yang tidak pernah benar-benar lelap.",
+            "body": "Anda mudah tertidur. Yang jadi masalah adalah jam 2 pagi. Anda terjaga, tidak memikirkan apa-apa secara spesifik, dan dua jam berikutnya lenyap begitu saja."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "title": "Hot flash yang datang tanpa peringatan.",
+            "body": "Rasa panas yang melintas di punggung. Di dada. Kadang di tengah rapat. Kadang di malam hari — selimut ditendang, bantal dibalik, dan tidur pun sudah hilang."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "title": "Wajah dan rambut.",
+            "body": "Kulit yang lebih kering dari biasanya. Rambut tertinggal di sisir lebih banyak dari yang ingin Anda lihat. Pantulan di cermin yang entah kenapa tampak lebih tipis dan lebih lelah daripada yang Anda rasakan di dalam."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5"
+      ]
+    },
+    "reframe": {
+      "type": "advertorial-cluster-v7-body",
+      "blocks": {
+        "lead1": {
+          "type": "lead",
+          "settings": {
+            "text": "Ini bukan penuaan. Ini kekurangan."
+          }
+        },
+        "p1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Kebanyakan perempuan menghadapi kelima hal itu satu per satu. Krim untuk sendi. Kopi untuk energi. Obat tidur. Moisturiser baru. Mungkin konsultasi HRT yang tidak ke mana-mana. Mungkin suplemen rekomendasi teman yang ternyata tidak begitu berhasil. Tidak ada yang sepenuhnya salah dengan semua itu. Tapi tidak ada juga yang benar-benar berhasil — dan sekarang, Anda mungkin sudah tahu itu."
+          }
+        },
+        "p2": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Ini alasannya."
+          }
+        },
+        "p3": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Saat tubuh Anda memasuki perimenopause dan menopause, kadar hormon berubah — dan bersamanya, kemampuan tubuh Anda untuk menyerap dan menahan nutrisi penting ikut menurun. Kalsium. Magnesium. Zat besi. Quercetin. Senyawa anti-inflamasi yang dulu meredakan sendi Anda sebelum sempat mengeluh. Triptofan yang dulu membawa Anda ke tidur yang dalam. Mineral yang dulu menjaga kulit Anda tetap lentur dan rambut Anda tetap kuat di akarnya."
+          }
+        },
+        "p4": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Tidak ada satu pun sistem itu yang rusak sendiri-sendiri. Mereka berbagi satu suplai darah. Satu cadangan nutrisi yang sama. Begitu cadangan itu turun di bawah ambang tertentu, setiap sistem yang bergantung padanya mulai mengirim sinyal — dengan suara yang berbeda-beda."
+          }
+        },
+        "p5": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<strong>Inilah mengapa mengatasi setiap gejala secara terpisah tidak pernah berhasil di fase kehidupan ini. Anda bukan sedang menumpuk lima kegagalan. Anda sedang mengatasi satu masalah sebanyak lima kali.</strong>"
+          }
+        },
+        "dm": {
+          "type": "dm_quote",
+          "settings": {
+            "quote": "\"Saya 49 tahun. Sendi kaku, hot flash, emosi kacau, kulit muka agak kering. Udah agak desperate.\"",
+            "attribution": "— Rahma, 49, Jakarta · via Instagram DM"
+          }
+        },
+        "p6": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Saat itu, Rahma bukan sedang menggambarkan lima kondisi. Dia sedang menggambarkan satu. Dan yang akhirnya mengatasinya bukan obat. Melainkan sehelai daun."
+          }
+        }
+      },
+      "block_order": [
+        "lead1",
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "dm",
+        "p6"
+      ]
+    },
+    "mechanism": {
+      "type": "advertorial-cluster-v7-body",
+      "blocks": {
+        "img": {
+          "type": "image",
+          "settings": {
+            "alt": "Daun kelor utuh + kapsul dengan anotasi nutrisi yang dipetakan ke 5 gejala cluster",
+            "placeholder_title": "[ GAMBAR DIBUTUHKAN ]",
+            "placeholder_body": "Foto bersih daun kelor utuh + kapsul / botol kapsul dengan anotasi nutrisi yang dipetakan ke 5 gejala cluster (Quercetin → sendi kaku pagi, Triptofan → tidur terbangun jam 2 pagi, Zat besi nabati → lelah jam 3 sore, Magnesium → hot flash, Klorofil & anti-inflamasi → kulit dari luar). Cahaya natural, nuansa hijau dan earthy, gaya editorial bukan katalog."
+          }
+        },
+        "lead": {
+          "type": "lead",
+          "settings": {
+            "text": "Satu daun. 90+ nutrisi. Tubuh Anda, terpenuhi kembali."
+          }
+        },
+        "p1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Jika masalahnya adalah kekurangan sistemik, maka jawabannya harus pemenuhan sistemik. Bukan satu vitamin saja. Bukan ekstrak yang hanya menargetkan satu jalur. Sesuatu yang mengisi kembali seluruh cadangan."
+          }
+        },
+        "p2": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Inilah peran <strong>daun kelor</strong> — dan mengapa daun ini diam-diam menjadi salah satu yang paling sering direkomendasikan di antara perempuan Indonesia di atas 45 tahun yang sudah mencoba hampir semua cara lain."
+          }
+        },
+        "p3": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Satu daun kelor mengandung lebih dari 90 nutrisi yang mudah diserap tubuh. Quercetin dan klorofil untuk peradangan sendi. Zat besi nabati untuk penyaluran oksigen dan energi sore yang benar-benar bertahan. Triptofan untuk tidur yang dalam. Magnesium dan kalsium untuk mengatur hot flash dan menenangkan sistem saraf. Senyawa anti-inflamasi spesifik yang tubuh Anda kekurangan sejak hormon mulai berubah."
+          }
+        },
+        "p4": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<strong>Bukan sepuluh suplemen berbeda berharap salah satunya cocok. Satu profil nutrisi lengkap yang dikenali tubuh sebagai makanan — dalam tiga kapsul sehari.</strong>"
+          }
+        },
+        "p5": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Dan karena kulit, rambut, dan kuku Anda semuanya diberi nutrisi dari dalam — lewat suplai darah yang sama yang menutrisi sendi dan otak — apa yang Anda atasi dari dalam akan mulai terlihat di luar juga. Bukan sebagai janji kosmetik. Tapi sebagai konsekuensi."
+          }
+        },
+        "t1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "\"Ini beneran terjadi, baru coba 4 hari ngefek banget ama knee pain saya. Pagi badan ga kaku, dan hot flash mulai berkurang.\"",
+            "attribution": "— Dian, 48, Bandung · Kapsul"
+          }
+        },
+        "p6": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Dian datang untuk mengatasi masalah lutut. Hot flash adalah hal lain yang tubuhnya \"kembalikan\" begitu cadangan nutrisinya mulai terisi lagi."
+          }
+        }
+      },
+      "block_order": [
+        "img",
+        "lead",
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "t1",
+        "p6"
+      ]
+    },
+    "offer-1": {
+      "type": "advertorial-cluster-v7-offer",
+      "settings": {
+        "urgency_text": "⏰ Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu",
+        "product_image_alt": "Botol 180 kapsul moringa organik",
+        "placeholder_title": "[ GAMBAR OFFER DIBUTUHKAN ]",
+        "placeholder_body": "Foto produk botol 180 kapsul. Cahaya natural lembut. Botol + 3 kapsul disusun di sampingnya sebagai penanda dosis harian.",
+        "offer_label": "Penawaran Khusus Pembaca",
+        "offer_title": "Protokol 60 Hari Moringa",
+        "offer_contents_html": "180 Kapsul Daun Moringa Organik\n(Persediaan 2 bulan · 3 kapsul/hari)",
+        "price_old": "Rp 690.000",
+        "price_new": "Rp 590.000",
+        "price_saving": "Hemat Rp 100.000",
+        "price_discount": "-14%",
+        "cta_url": "https://treelogy.com/id/products/moringa-60-day-protocol?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign=cluster_angle&utm_content=cta1",
+        "cta_text": "Ambil Protokol 60 Hari Saya →",
+        "quality_line_html": "Kapsul <strong>daun kelor murni pertama dan satu-satunya di Indonesia</strong> yang terdaftar di BPOM sebagai Obat Tradisional.",
+        "shipping_text": "Gratis Ongkir untuk pembaca artikel ini"
+      },
+      "blocks": {
+        "b1": {
+          "type": "badge",
+          "settings": {
+            "label": "BPOM Obat Tradisional"
+          }
+        },
+        "b2": {
+          "type": "badge",
+          "settings": {
+            "label": "Halal"
+          }
+        },
+        "b3": {
+          "type": "badge",
+          "settings": {
+            "label": "100% Organik"
+          }
+        },
+        "b4": {
+          "type": "badge",
+          "settings": {
+            "label": "Teruji Lab"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "quality": {
+      "type": "advertorial-cluster-v7-body",
+      "blocks": {
+        "lead": {
+          "type": "lead",
+          "settings": {
+            "text": "Kenapa moringa ini, bukan moringa lain."
+          }
+        },
+        "p1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Kebanyakan moringa yang dijual berwarna cokelat, pahit, dan penuh batang yang ikut digiling — sudah teroksidasi dan sulit diserap tubuh. Moringa daun murni terlihat berbeda: hijau cerah, seperti matcha. Bedanya terletak pada apakah batangnya dipisahkan dari daunnya — satu per satu, dengan tangan."
+          }
+        },
+        "p2": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Treelogy melakukan ini di kebun organik mereka sendiri di Bali. Satu jam pemisahan manual menghasilkan hanya 12 gram. Pengeringan dilakukan pada suhu 38°C selama 22 jam untuk menjaga nutrisi yang sensitif terhadap panas. Treelogy adalah brand pertama dan satu-satunya di Indonesia yang mendaftarkan kapsul moringa daun murni di bawah kategori Obat Tradisional BPOM — standar yang tidak dimiliki brand lain."
+          }
+        },
+        "img": {
+          "type": "image",
+          "settings": {
+            "alt": "Perbandingan visual antara bubuk moringa hijau murni hasil sortir tangan (daun murni) dengan bubuk moringa kualitas rendah yang berwarna kecokelatan karena campuran batang",
+            "placeholder_title": "[ GAMBAR DIBUTUHKAN ]",
+            "placeholder_body": "Perbandingan bubuk moringa hijau murni vs kecokelatan."
+          }
+        },
+        "t1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "\"Harganya bikin ngomel… tapi kualitasnya bikin diam.\"",
+            "attribution": "— Pembeli Terverifikasi · Kapsul"
+          }
+        }
+      },
+      "block_order": [
+        "lead",
+        "p1",
+        "p2",
+        "img",
+        "t1"
+      ]
+    },
+    "timeline": {
+      "type": "advertorial-cluster-v7-body",
+      "blocks": {
+        "lead": {
+          "type": "lead",
+          "settings": {
+            "text": "Apa yang dilaporkan 4.700+ perempuan — dan mengapa terjadinya selalu dalam urutan ini."
+          }
+        },
+        "p1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Moringa bukan keajaiban. Tapi dari ribuan ulasan perempuan Indonesia di fase kehidupan yang sama persis, pola pemulihannya sangat konsisten — dan selalu muncul dalam urutan yang spesifik."
+          }
+        },
+        "p2": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<strong>Minggu 1–2. Sinyal yang paling keras merespons lebih dulu.</strong> Sendi tidak lagi kaku di pagi hari. Energi di sore hari lebih stabil. Tidur lebih dalam sebelum lebih panjang. Sistem-sistem ini merespons lebih dulu karena paling haus nutrisi — dan paling kelaparan selama ini."
+          }
+        },
+        "t1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "\"Biasanya bangun pagi badan kaku-kaku. Setelah minum kapsulnya, badan jauh lebih segar dan berenergi. Efeknya luar biasa.\"",
+            "attribution": "— Pembeli Terverifikasi · Kapsul"
+          }
+        },
+        "p3": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<strong>Minggu 3–4. Ritme tubuh mulai stabil.</strong> Hot flash muncul lebih jarang. Pagi hari tidak lagi terasa seperti \"tawar-menawar\" dengan tubuh sendiri. Anda menyadari sudah berhenti mengandalkan kopi untuk bisa berfungsi."
+          }
+        },
+        "p4": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<strong>Akhir bulan pertama.</strong> Di sinilah kebanyakan perempuan menoleh ke belakang dan menyadari ada sesuatu yang diam-diam berubah. Tidak dramatis — tapi tidak mungkin keliru. Pagi-pagi terasa lebih mudah. Hari terasa lebih panjang, dalam arti yang baik. Dan Anda mulai menyadari apa yang selama ini ditunggu oleh kulit Anda juga."
+          }
+        },
+        "t2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "\"Setelah 1 bulan konsumsi moringa kapsul, hot flash di punggung sudah hampir hilang semua, tidur pulas tidak terbangun di malam hari, lebih tidak gampang capek, kulit lebih kencang.\"",
+            "attribution": "— Pembeli Terverifikasi · Kapsul"
+          }
+        },
+        "p5": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<strong>Bulan ke-2. Sistem-sistem yang lebih dalam menyusul.</strong> Inilah mengapa 60 hari menjadi penting — bukan 30. Sinyal-sinyal yang paling keras (sendi, energi, tidur) merespons lebih dulu karena paling haus nutrisi. Sistem yang lebih dalam — regulasi hormon, stabilitas mood, pembaruan kulit, ritme menstruasi bagi yang masih haid — membutuhkan bulan kedua untuk benar-benar menguat. Perubahan berhenti menjadi respons sesaat dan mulai menjadi kondisi baru yang stabil."
+          }
+        },
+        "t3": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "\"Sakit sendi hilang, energi kembali karena jarang capek, hot flash malam hilang, mens teratur lagi, memori sharp alias jarang lupa. Best sih…\"",
+            "attribution": "— Pembeli Terverifikasi · Kapsul · Perimenopause"
+          }
+        }
+      },
+      "block_order": [
+        "lead",
+        "p1",
+        "p2",
+        "t1",
+        "p3",
+        "p4",
+        "t2",
+        "p5",
+        "t3"
+      ]
+    },
+    "closing": {
+      "type": "advertorial-cluster-v7-body",
+      "blocks": {
+        "p1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Dan Rahma — perempuan di awal artikel ini yang menyebut dirinya \"agak desperate\"?"
+          }
+        },
+        "t1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "\"Hot flash ama sendi yang kaku pelan-pelan berkurang dan hampir hilang. Sampai lupa kapan berhenti hot flash. Teman-teman juga pada ikutan minum.\"",
+            "attribution": "— Rahma, 49, Jakarta · Kapsul"
+          }
+        },
+        "p2": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Lima hal yang dia tulis di DM-nya tidak menghilang satu per satu. Mereka mundur bersamaan, dalam urutan yang kurang lebih sama seperti yang dijelaskan 4.700+ ulasan lainnya — karena kelima hal itu memang satu masalah sejak awal."
+          }
+        },
+        "p3": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Harga normal untuk 180 kapsul — persediaan dua bulan daun kelor murni Treelogy — adalah <strong>Rp 690.000</strong>. Melalui artikel ini, Protokol 60 Hari Moringa tersedia seharga <strong>Rp 590.000</strong>. Anda hemat Rp 100.000, dengan gratis ongkir selama stok tersedia."
+          }
+        },
+        "p4": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Tiga kapsul di pagi hari. Enam puluh hari untuk memberi tubuh Anda waktu memulihkan diri sepenuhnya."
+          }
+        },
+        "p5": {
+          "type": "paragraph",
+          "settings": {
+            "text": "Ini untuk perempuan yang sudah selesai menyalakan lilin di setiap ruangan — dan siap menghidupkan kembali sumber listriknya."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "t1",
+        "p2",
+        "p3",
+        "p4",
+        "p5"
+      ]
+    },
+    "offer-2": {
+      "type": "advertorial-cluster-v7-offer",
+      "settings": {
+        "urgency_text": "⏰ Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu",
+        "product_image_alt": "Botol 180 kapsul moringa organik",
+        "placeholder_title": "[ GAMBAR OFFER ]",
+        "placeholder_body": "Botol 180 kapsul — sama dengan CTA 1.",
+        "offer_label": "Penawaran Khusus Pembaca",
+        "offer_title": "Protokol 60 Hari Moringa",
+        "offer_contents_html": "180 Kapsul Daun Moringa Organik\n(Persediaan 2 bulan · 3 kapsul/hari)",
+        "price_old": "Rp 690.000",
+        "price_new": "Rp 590.000",
+        "price_saving": "Hemat Rp 100.000",
+        "price_discount": "-14%",
+        "cta_url": "https://treelogy.com/id/products/moringa-60-day-protocol?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign=cluster_angle&utm_content=cta2",
+        "cta_text": "Saya Siap — Mulai Protokol Saya →",
+        "quality_line_html": "Kapsul <strong>daun kelor murni pertama dan satu-satunya di Indonesia</strong> yang terdaftar di BPOM sebagai Obat Tradisional.",
+        "shipping_text": "Gratis Ongkir untuk pembaca artikel ini"
+      },
+      "blocks": {
+        "b1": {
+          "type": "badge",
+          "settings": {
+            "label": "BPOM Obat Tradisional"
+          }
+        },
+        "b2": {
+          "type": "badge",
+          "settings": {
+            "label": "Halal"
+          }
+        },
+        "b3": {
+          "type": "badge",
+          "settings": {
+            "label": "100% Organik"
+          }
+        },
+        "b4": {
+          "type": "badge",
+          "settings": {
+            "label": "Teruji Lab"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "disclosure": {
+      "type": "advertorial-cluster-v7-disclosure",
+      "settings": {
+        "text_html": "Disclosure: Artikel ini memuat rekomendasi produk Treelogy. Penulis melakukan riset independen terhadap brand ini untuk keperluan penulisan artikel. Untuk informasi lebih lanjut, kunjungi treelogy.com."
+      }
+    }
+  },
+  "order": [
+    "styles",
+    "hook",
+    "checklist",
+    "reframe",
+    "mechanism",
+    "offer-1",
+    "quality",
+    "timeline",
+    "closing",
+    "offer-2",
+    "disclosure"
+  ]
+}

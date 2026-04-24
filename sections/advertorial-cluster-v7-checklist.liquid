@@ -1,0 +1,70 @@
+{%- if section.settings.intro != blank -%}
+  <p class="cluster-intro">{{ section.settings.intro }}</p>
+{%- endif -%}
+
+<div class="cluster-list">
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'item' -%}
+      <div class="cluster-item" {{ block.shopify_attributes }}>
+        <div class="cluster-num">{{ forloop.index }}</div>
+        <div class="cluster-text">
+          <strong>{{ block.settings.title }}</strong>
+          {{ block.settings.body }}
+        </div>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+</div>
+
+{%- if section.settings.punchline != blank -%}
+  <p class="cluster-punchline">{{ section.settings.punchline }}</p>
+{%- endif -%}
+
+{%- if section.settings.followup_html != blank -%}
+  <p class="body">{{ section.settings.followup_html }}</p>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Cluster V7 · Checklist",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "text",
+      "id": "intro",
+      "label": "Intro line",
+      "default": "Daftar berikut mungkin akan terasa terlalu familier."
+    },
+    {
+      "type": "text",
+      "id": "punchline",
+      "label": "Punchline",
+      "default": "Jika tiga dari lima hal itu terasa benar — dan sebagian dari Anda mengenali diri sendiri di lebih dari satu poin — maka sisa artikel ini untuk Anda."
+    },
+    {
+      "type": "inline_richtext",
+      "id": "followup_html",
+      "label": "Follow-up paragraph",
+      "default": "Karena selama ini tidak ada yang memberi tahu Anda bahwa kelima hal ini sebenarnya adalah masalah yang sama."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Cluster item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "body",
+          "label": "Body"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,215 @@
+{% liquid
+  assign urgency = section.settings.urgency_text
+  assign pimg = section.settings.product_image
+  assign pimg_alt = section.settings.product_image_alt
+  assign placeholder_title = section.settings.placeholder_title
+  assign placeholder_body = section.settings.placeholder_body
+  assign label = section.settings.offer_label
+  assign title = section.settings.offer_title
+  assign contents = section.settings.offer_contents_html
+  assign price_old = section.settings.price_old
+  assign price_new = section.settings.price_new
+  assign price_saving = section.settings.price_saving
+  assign price_discount = section.settings.price_discount
+  assign cta_url = section.settings.cta_url
+  assign cta_text = section.settings.cta_text
+  assign quality_html = section.settings.quality_line_html
+  assign shipping = section.settings.shipping_text
+%}
+
+<div class="offer-wrap">
+  <div class="offer-card">
+    {% if urgency != blank %}
+      <div class="offer-urgency">{{ urgency }}</div>
+    {% endif %}
+
+    {% if pimg != blank %}
+      {{ pimg | image_url: width: 1360 | image_tag:
+          class: 'product-img',
+          alt: pimg_alt,
+          loading: 'lazy',
+          widths: '340,680,1020,1360',
+          sizes: '(max-width: 680px) 100vw, 680px'
+      }}
+    {% else %}
+      <div class="img-placeholder">
+        <strong>{{ placeholder_title }}</strong>
+        {{ placeholder_body }}
+      </div>
+    {% endif %}
+
+    <div class="offer-body">
+      {% if label != blank %}<div class="offer-label">{{ label }}</div>{% endif %}
+      {% if title != blank %}<div class="offer-title">{{ title }}</div>{% endif %}
+      {% if contents != blank %}<div class="offer-contents">{{ contents | newline_to_br }}</div>{% endif %}
+
+      <div class="price-stack">
+        {% if price_old != blank %}<span class="price-old">{{ price_old }}</span>{% endif %}
+        {% if price_new != blank %}<span class="price-new">{{ price_new }}</span>{% endif %}
+        {% if price_saving != blank %}<span class="price-saving">{{ price_saving }}</span>{% endif %}
+        {% if price_discount != blank %}<span class="price-discount-pct">{{ price_discount }}</span>{% endif %}
+      </div>
+
+      {% if cta_text != blank %}
+        <a href="{{ cta_url | default: '#' }}" class="cta-btn">{{ cta_text }}</a>
+      {% endif %}
+
+      {% if quality_html != blank %}
+        <div class="quality-line">{{ quality_html }}</div>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+        <div class="trust-badges">
+          {% for block in section.blocks %}
+            {% if block.type == 'badge' %}
+              <span {{ block.shopify_attributes }}>{{ block.settings.label }}</span>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if shipping != blank %}
+        <div class="shipping-line">{{ shipping }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Cluster V7 · Offer card",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Urgency"
+    },
+    {
+      "type": "text",
+      "id": "urgency_text",
+      "label": "Urgency text",
+      "default": "⏰ Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu"
+    },
+    {
+      "type": "header",
+      "content": "Product image"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product image"
+    },
+    {
+      "type": "text",
+      "id": "product_image_alt",
+      "label": "Product image alt text",
+      "default": "Botol 180 kapsul moringa organik"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_title",
+      "label": "Placeholder title (when no image)",
+      "default": "[ GAMBAR OFFER DIBUTUHKAN ]"
+    },
+    {
+      "type": "textarea",
+      "id": "placeholder_body",
+      "label": "Placeholder body (when no image)",
+      "default": "Foto produk botol 180 kapsul. Cahaya natural lembut. Botol + 3 kapsul disusun di sampingnya sebagai penanda dosis harian."
+    },
+    {
+      "type": "header",
+      "content": "Offer body"
+    },
+    {
+      "type": "text",
+      "id": "offer_label",
+      "label": "Offer label",
+      "default": "Penawaran Khusus Pembaca"
+    },
+    {
+      "type": "text",
+      "id": "offer_title",
+      "label": "Offer title",
+      "default": "Protokol 60 Hari Moringa"
+    },
+    {
+      "type": "textarea",
+      "id": "offer_contents_html",
+      "label": "Offer contents (line breaks preserved)",
+      "default": "180 Kapsul Daun Moringa Organik\n(Persediaan 2 bulan · 3 kapsul/hari)"
+    },
+    {
+      "type": "header",
+      "content": "Price"
+    },
+    {
+      "type": "text",
+      "id": "price_old",
+      "label": "Original price",
+      "default": "Rp 690.000"
+    },
+    {
+      "type": "text",
+      "id": "price_new",
+      "label": "Current price",
+      "default": "Rp 590.000"
+    },
+    {
+      "type": "text",
+      "id": "price_saving",
+      "label": "Savings text",
+      "default": "Hemat Rp 100.000"
+    },
+    {
+      "type": "text",
+      "id": "price_discount",
+      "label": "Discount badge",
+      "default": "-14%"
+    },
+    {
+      "type": "header",
+      "content": "CTA"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA URL"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA button text",
+      "default": "Ambil Protokol 60 Hari Saya →"
+    },
+    {
+      "type": "header",
+      "content": "Trust + shipping"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "quality_line_html",
+      "label": "Quality line HTML",
+      "default": "Kapsul <strong>daun kelor murni pertama dan satu-satunya di Indonesia</strong> yang terdaftar di BPOM sebagai Obat Tradisional."
+    },
+    {
+      "type": "text",
+      "id": "shipping_text",
+      "label": "Shipping line",
+      "default": "Gratis Ongkir untuk pembaca artikel ini"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Trust badge",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Badge label"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

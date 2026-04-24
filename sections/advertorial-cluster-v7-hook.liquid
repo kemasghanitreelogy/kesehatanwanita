@@ -1,0 +1,121 @@
+{% liquid
+  assign vb = section.settings.version_banner_html
+  assign pub_label = section.settings.pub_label
+  assign pub_name = section.settings.pub_name
+  assign meta = section.settings.article_meta
+  assign headline = section.settings.headline
+  assign deck = section.settings.deck
+  assign byline = section.settings.byline_html
+  assign hero = section.settings.hero_image
+  assign hero_alt = section.settings.hero_alt
+%}
+
+{% if vb != blank %}
+  <div class="version-banner">{{ vb }}</div>
+{% endif %}
+
+<div class="masthead">
+  <div class="pub">{{ pub_label }}</div>
+  <div class="pub-name">{{ pub_name }}</div>
+</div>
+
+<div class="article-meta">{{ meta }}</div>
+
+<h1>{{ headline }}</h1>
+
+<p class="deck">{{ deck }}</p>
+
+<p class="byline">{{ byline }}</p>
+
+{% if hero != blank %}
+  {{ hero | image_url: width: 1360 | image_tag:
+      class: 'hero-img',
+      alt: hero_alt,
+      loading: 'eager',
+      fetchpriority: 'high',
+      widths: '340,680,1020,1360',
+      sizes: '(max-width: 680px) 100vw, 680px'
+  }}
+{% else %}
+  <div class="img-placeholder" style="margin: 0 0 28px;">
+    <strong>[ HERO IMAGE ]</strong>
+    {{ hero_alt }}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Cluster V7 · Hook",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Version banner"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "version_banner_html",
+      "label": "Version banner HTML",
+      "default": "<strong>V7 ID — CLUSTER ANGLE</strong> · Protokol 60 Hari · Rp 590.000 · Translated from locked V7 EN"
+    },
+    {
+      "type": "header",
+      "content": "Masthead"
+    },
+    {
+      "type": "text",
+      "id": "pub_label",
+      "label": "Publication label",
+      "default": "Kesehatan Wanita Blog"
+    },
+    {
+      "type": "text",
+      "id": "pub_name",
+      "label": "Publication name",
+      "default": "Kesehatan Wanita Blog"
+    },
+    {
+      "type": "text",
+      "id": "article_meta",
+      "label": "Article meta",
+      "default": "Kesehatan Wanita · Nutrisi · 7 menit baca"
+    },
+    {
+      "type": "header",
+      "content": "Headline"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Lima hal yang perempuan Indonesia di atas 45 tahun sering anggap \"wajar karena usia\" — dan mengapa mengatasinya satu per satu tidak pernah berhasil."
+    },
+    {
+      "type": "textarea",
+      "id": "deck",
+      "label": "Deck",
+      "default": "Dokter jantung tidak akan bertanya tentang mood swing Anda. Dokter kulit tidak akan memeriksa lutut Anda. Tapi jika tiga dari lima hal ini terjadi pada Anda sekaligus, tubuh Anda bukan sedang menua — melainkan kekurangan nutrisi yang sama, di tempat yang berbeda. Dan masalah ini bisa diatasi."
+    },
+    {
+      "type": "inline_richtext",
+      "id": "byline_html",
+      "label": "Byline HTML",
+      "default": "Oleh <strong>Kusumawardani</strong> · Penulis Nutrisi &amp; Kesehatan Wanita"
+    },
+    {
+      "type": "header",
+      "content": "Hero image"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero image"
+    },
+    {
+      "type": "text",
+      "id": "hero_alt",
+      "label": "Hero image alt text",
+      "default": "Diagram medis perbandingan sendi lutut — di kiri tulang rawan yang meradang dan terkikis, di kanan tulang rawan yang bersih, halus, dan ternutrisi"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,403 @@
+{% comment %}
+  Shared styles for the V7 ID Cluster advertorial.
+  All rules scoped under .v7-cluster-page so they do not leak.
+{% endcomment %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+{% stylesheet %}
+  body:has(.v7-cluster-page) { background: #fafaf7; margin: 0; }
+
+  .v7-cluster-page {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 40px rgba(0,0,0,0.04);
+    font-family: 'Source Serif 4', Georgia, serif;
+    color: #1a1a1a;
+    line-height: 1.82;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+  }
+  .v7-cluster-page, .v7-cluster-page * { box-sizing: border-box; }
+  .v7-cluster-page p, .v7-cluster-page h1, .v7-cluster-page blockquote,
+  .v7-cluster-page div { margin: 0; }
+
+  .v7-cluster-page .version-banner {
+    background: #0d3b2e;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  .v7-cluster-page .version-banner strong { color: #c9a96e; }
+
+  .v7-cluster-page .masthead {
+    padding: 22px 24px 18px;
+    border-bottom: 1px solid #eee;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .v7-cluster-page .masthead .pub {
+    font-size: 11px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 4px;
+  }
+  .v7-cluster-page .masthead .pub-name {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0d3b2e;
+    letter-spacing: -0.2px;
+  }
+
+  .v7-cluster-page .article-meta {
+    padding: 28px 24px 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 500;
+  }
+
+  .v7-cluster-page h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.22;
+    color: #111;
+    padding: 16px 24px 14px;
+    letter-spacing: -0.5px;
+  }
+  @media (max-width: 480px) {
+    .v7-cluster-page h1 { font-size: 25px; line-height: 1.28; }
+  }
+
+  .v7-cluster-page .deck {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    padding: 0 24px 18px;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .v7-cluster-page .byline {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: #888;
+    padding: 0 24px 24px;
+    letter-spacing: 0.2px;
+  }
+  .v7-cluster-page .byline strong { color: #333; font-weight: 600; }
+
+  .v7-cluster-page .hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  .v7-cluster-page p.body {
+    font-size: 18px;
+    color: #222;
+    line-height: 1.72;
+    padding: 0 24px 22px;
+  }
+  .v7-cluster-page p.body strong { color: #0d3b2e; font-weight: 700; }
+
+  .v7-cluster-page .lead {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.38;
+    color: #0d3b2e;
+    padding: 8px 24px 22px;
+    letter-spacing: -0.2px;
+  }
+  @media (max-width: 480px) {
+    .v7-cluster-page .lead { font-size: 19px; }
+  }
+
+  .v7-cluster-page .cluster-intro {
+    font-size: 19px;
+    color: #222;
+    line-height: 1.6;
+    padding: 10px 24px 20px;
+    font-weight: 500;
+  }
+  .v7-cluster-page .cluster-list {
+    margin: 0 24px 28px;
+    padding: 24px 24px 10px;
+    background: #f4f3ee;
+    border-left: 3px solid #0d3b2e;
+    border-radius: 0 6px 6px 0;
+  }
+  .v7-cluster-page .cluster-item {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #e3e2dc;
+  }
+  .v7-cluster-page .cluster-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 6px;
+  }
+  .v7-cluster-page .cluster-num {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #0d3b2e;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+  .v7-cluster-page .cluster-text {
+    font-size: 17px;
+    line-height: 1.58;
+    color: #2a2a2a;
+  }
+  .v7-cluster-page .cluster-text strong {
+    display: block;
+    color: #0d3b2e;
+    font-weight: 700;
+    margin-bottom: 4px;
+    font-size: 17px;
+  }
+  .v7-cluster-page .cluster-punchline {
+    font-size: 19px;
+    font-weight: 600;
+    color: #0d3b2e;
+    line-height: 1.5;
+    padding: 0 24px 22px;
+  }
+
+  .v7-cluster-page blockquote.dm {
+    background: #f4f3ee;
+    border-left: 3px solid #0d3b2e;
+    margin: 4px 24px 28px;
+    padding: 18px 22px;
+    font-size: 17px;
+    font-style: italic;
+    color: #2a2a2a;
+    line-height: 1.6;
+    border-radius: 0 6px 6px 0;
+  }
+  .v7-cluster-page blockquote.dm .attribution {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 13px;
+    color: #777;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+  }
+
+  .v7-cluster-page blockquote.testimonial {
+    margin: 4px 24px 28px;
+    padding: 0 0 0 18px;
+    border-left: 3px solid #c9a96e;
+    font-size: 17px;
+    font-style: italic;
+    color: #333;
+    line-height: 1.56;
+  }
+  .v7-cluster-page blockquote.testimonial .attribution {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 12px;
+    color: #888;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+
+  .v7-cluster-page .section-img {
+    width: calc(100% - 48px);
+    height: auto;
+    display: block;
+    margin: 0 24px 24px;
+    border-radius: 4px;
+  }
+  .v7-cluster-page .img-placeholder {
+    background: #f0efe9;
+    border: 1px dashed #bbb;
+    margin: 0 24px 24px;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: #888;
+    border-radius: 4px;
+    line-height: 1.5;
+  }
+  .v7-cluster-page .img-placeholder strong { color: #555; display: block; margin-bottom: 4px; }
+
+  .v7-cluster-page .offer-wrap { padding: 12px 16px 36px; }
+  .v7-cluster-page .offer-card {
+    background: #fff;
+    border: 1px solid #e3e0d5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(13,59,46,0.06);
+  }
+  .v7-cluster-page .offer-urgency {
+    background: #fff8e1;
+    color: #8a5a00;
+    padding: 10px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid #f0e4b5;
+  }
+  .v7-cluster-page .offer-card .img-placeholder,
+  .v7-cluster-page .offer-card .product-img {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+  }
+  .v7-cluster-page .offer-card .img-placeholder { padding: 50px 20px; }
+  .v7-cluster-page .offer-card .product-img { display: block; height: auto; }
+
+  .v7-cluster-page .offer-body { padding: 26px 22px 24px; text-align: center; }
+  .v7-cluster-page .offer-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #0d3b2e;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .v7-cluster-page .offer-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #111;
+    margin-bottom: 6px;
+    letter-spacing: -0.3px;
+  }
+  .v7-cluster-page .offer-contents {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 22px;
+    line-height: 1.45;
+  }
+  .v7-cluster-page .price-stack { margin-bottom: 22px; }
+  .v7-cluster-page .price-old {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+    margin-right: 10px;
+  }
+  .v7-cluster-page .price-new {
+    font-size: 34px;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: -0.5px;
+  }
+  .v7-cluster-page .price-saving {
+    display: block;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #c0392b;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .v7-cluster-page .price-discount-pct {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 11px;
+    color: #2d6a4f;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: 1px solid #b9d4c5;
+    padding: 3px 9px;
+    border-radius: 3px;
+    background: #f0f7f2;
+  }
+  .v7-cluster-page .cta-btn {
+    display: block;
+    width: 100%;
+    background: #0d3b2e;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    padding: 18px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 18px;
+    letter-spacing: 0.2px;
+  }
+  .v7-cluster-page .cta-btn:hover { background: #0a2e24; }
+  .v7-cluster-page .trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 10px;
+    margin-bottom: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    color: #666;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .v7-cluster-page .trust-badges span::before { content: '✓ '; color: #2d6a4f; font-weight: 700; }
+  .v7-cluster-page .quality-line {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12.5px;
+    color: #444;
+    font-weight: 500;
+    line-height: 1.45;
+    padding: 0 10px 14px;
+    text-align: center;
+    letter-spacing: 0.1px;
+  }
+  .v7-cluster-page .quality-line strong { color: #0d3b2e; font-weight: 700; }
+  .v7-cluster-page .shipping-line {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #0d3b2e;
+    font-weight: 600;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+  }
+
+  .v7-cluster-page .disclosure {
+    padding: 32px 24px 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: #999;
+    font-style: italic;
+    line-height: 1.5;
+    border-top: 1px solid #eee;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Cluster V7 · Styles",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,151 @@
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'lead' -%}
+      <p class="lead" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+
+    {%- when 'paragraph' -%}
+      <p class="body" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+
+    {%- when 'dm_quote' -%}
+      <blockquote class="dm" {{ block.shopify_attributes }}>
+        {{ block.settings.quote }}
+        <span class="attribution">{{ block.settings.attribution }}</span>
+      </blockquote>
+
+    {%- when 'testimonial' -%}
+      <blockquote class="testimonial" {{ block.shopify_attributes }}>
+        {{ block.settings.quote }}
+        <span class="attribution">{{ block.settings.attribution }}</span>
+      </blockquote>
+
+    {%- when 'image' -%}
+      {%- if block.settings.image != blank -%}
+        {{ block.settings.image | image_url: width: 1360 | image_tag:
+            class: 'section-img',
+            alt: block.settings.alt,
+            loading: 'lazy',
+            widths: '340,680,1020,1360',
+            sizes: '(max-width: 680px) 100vw, 680px'
+        }}
+      {%- else -%}
+        <div class="img-placeholder" {{ block.shopify_attributes }}>
+          <strong>{{ block.settings.placeholder_title }}</strong>
+          {{ block.settings.placeholder_body }}
+        </div>
+      {%- endif -%}
+
+    {%- when 'placeholder' -%}
+      <div class="img-placeholder" {{ block.shopify_attributes }}>
+        <strong>{{ block.settings.title }}</strong>
+        {{ block.settings.body }}
+      </div>
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+{
+  "name": "Cluster V7 · Body",
+  "max_blocks": 50,
+  "settings": [],
+  "blocks": [
+    {
+      "type": "lead",
+      "name": "Lead (bold green)",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Lead text"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "name": "Paragraph",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "Paragraph HTML"
+        }
+      ]
+    },
+    {
+      "type": "dm_quote",
+      "name": "DM quote card",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote"
+        },
+        {
+          "type": "text",
+          "id": "attribution",
+          "label": "Attribution"
+        }
+      ]
+    },
+    {
+      "type": "testimonial",
+      "name": "Testimonial (gold bar)",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote"
+        },
+        {
+          "type": "text",
+          "id": "attribution",
+          "label": "Attribution"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt text"
+        },
+        {
+          "type": "text",
+          "id": "placeholder_title",
+          "label": "Placeholder title (when no image)",
+          "default": "[ GAMBAR DIBUTUHKAN ]"
+        },
+        {
+          "type": "textarea",
+          "id": "placeholder_body",
+          "label": "Placeholder description (when no image)"
+        }
+      ]
+    },
+    {
+      "type": "placeholder",
+      "name": "Placeholder (dashed box)",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "[ GAMBAR DIBUTUHKAN ]"
+        },
+        {
+          "type": "textarea",
+          "id": "body",
+          "label": "Body"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
