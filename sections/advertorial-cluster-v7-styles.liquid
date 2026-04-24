@@ -272,10 +272,10 @@
   }
 
   .v7-cluster-page .section-img {
-    width: calc(100% - 48px);
+    width: 100%;
     height: auto;
     display: block;
-    margin: 0 24px 24px;
+    margin: 0 0 24px;
     border-radius: 4px;
   }
   .v7-cluster-page .img-placeholder {
@@ -297,17 +297,39 @@
 
   /* ===== OFFER CARD — mirrors .adv-offer-card on /pages/menopause ===== */
   @keyframes v7-vibrate {
-    0%   { transform: rotate(0deg); }
-    10%  { transform: rotate(-12deg); }
-    20%  { transform: rotate(12deg); }
-    30%  { transform: rotate(-10deg); }
-    40%  { transform: rotate(10deg); }
-    50%  { transform: rotate(-6deg); }
-    60%  { transform: rotate(6deg); }
-    70%  { transform: rotate(-2deg); }
-    80%  { transform: rotate(2deg); }
-    90%  { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-12deg);
+    }
+    20% {
+      transform: rotate(12deg);
+    }
+    30% {
+      transform: rotate(-10deg);
+    }
+    40% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(-6deg);
+    }
+    60% {
+      transform: rotate(6deg);
+    }
+    70% {
+      transform: rotate(-2deg);
+    }
+    80% {
+      transform: rotate(2deg);
+    }
+    90% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
 
   .v7-cluster-page .offer-wrap {
