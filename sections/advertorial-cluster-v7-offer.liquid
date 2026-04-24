@@ -51,7 +51,11 @@
 <div class="offer-wrap">
   <div class="offer-card">
     {% if urgency != blank %}
-      <div class="offer-urgency">{{ urgency }}</div>
+      {% assign urgency_text = urgency | remove: '⏰' | strip %}
+      <div class="offer-urgency">
+        <span class="urg-icon">⏰</span>
+        {{ urgency_text }}
+      </div>
     {% endif %}
 
     {% if pimg != blank %}
