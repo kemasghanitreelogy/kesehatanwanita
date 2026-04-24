@@ -40,6 +40,28 @@
     margin: 0;
   }
 
+
+  /*
+   Theme-level rules put .shopify-section into a flex+stretch container and
+   force every direct child to width:100% + 20px side padding. Left unchecked
+   the stretched width + our 24px side margins make blockquote.dm,
+   blockquote.testimonial, and .img-placeholder overflow the 680px page.
+   Fix by restoring block flow and width:auto. We intentionally DO NOT reset
+   padding-left/right here — our per-element padding rules below (.article-
+   meta, h1, .deck, .byline, p.body, .lead, etc.) already override the theme
+   because they are more specific, and zeroing padding here would win on
+   specificity against element selectors like h1 and break their 24px inset.
+*/
+  .v7-cluster-page > .shopify-section {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .v7-cluster-page > .shopify-section > * {
+    width: auto;
+    max-width: none;
+  }
+
   .v7-cluster-page .version-banner {
     background: #0d3b2e;
     color: #fff;
@@ -170,8 +192,8 @@
     border-left: 3px solid #0d3b2e;
     border-radius: 0 6px 6px 0;
   }
-  .cluster-list-container {
-    padding: 0 24px 28;
+  .v7-cluster-page .cluster-list-container {
+    padding: 0 24px 28px;
   }
   .v7-cluster-page .cluster-item {
     display: flex;

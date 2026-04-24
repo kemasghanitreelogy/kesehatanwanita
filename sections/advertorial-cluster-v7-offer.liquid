@@ -15,6 +15,17 @@
   assign cta_text = section.settings.cta_text
   assign quality_html = section.settings.quality_line_html
   assign shipping = section.settings.shipping_text
+  assign utm_campaign = section.settings.utm_campaign
+
+  assign final_cta_url = cta_url | default: '#'
+  if utm_campaign != blank and final_cta_url != '#'
+    assign campaign_value = utm_campaign | url_encode
+    if final_cta_url contains '?'
+      assign final_cta_url = final_cta_url | append: '&utm_campaign=' | append: campaign_value
+    else
+      assign final_cta_url = final_cta_url | append: '?utm_campaign=' | append: campaign_value
+    endif
+  endif
 %}
 
 <div class="offer-wrap">
@@ -51,7 +62,7 @@
       </div>
 
       {% if cta_text != blank %}
-        <a href="{{ cta_url | default: '#' }}" class="cta-btn">{{ cta_text }}</a>
+        <a href="{{ final_cta_url }}" class="cta-btn">{{ cta_text }}</a>
       {% endif %}
 
       {% if quality_html != blank %}
@@ -173,13 +184,19 @@
     {
       "type": "url",
       "id": "cta_url",
-      "label": "CTA URL"
+      "label": "CTA URL (base — utm_campaign is appended automatically)"
     },
     {
       "type": "text",
       "id": "cta_text",
       "label": "CTA button text",
       "default": "Ambil Protokol 60 Hari Saya →"
+    },
+    {
+      "type": "text",
+      "id": "utm_campaign",
+      "label": "utm_campaign (appended to CTA URL)",
+      "default": "5-gejala-usia-45"
     },
     {
       "type": "header",
