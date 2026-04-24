@@ -15,11 +15,20 @@
   assign cta_text = section.settings.cta_text
   assign quality_html = section.settings.quality_line_html
   assign shipping = section.settings.shipping_text
+  assign utm_source = section.settings.utm_source
   assign utm_campaign = section.settings.utm_campaign
   assign utm_content = section.settings.utm_content
 
   assign final_cta_url = cta_url | default: '#'
   if final_cta_url != '#'
+    if utm_source != blank
+      assign source_value = utm_source | url_encode
+      if final_cta_url contains '?'
+        assign final_cta_url = final_cta_url | append: '&utm_source=' | append: source_value
+      else
+        assign final_cta_url = final_cta_url | append: '?utm_source=' | append: source_value
+      endif
+    endif
     if utm_campaign != blank
       assign campaign_value = utm_campaign | url_encode
       if final_cta_url contains '?'
@@ -202,6 +211,12 @@
       "id": "cta_text",
       "label": "CTA button text",
       "default": "Ambil Protokol 60 Hari Saya →"
+    },
+    {
+      "type": "text",
+      "id": "utm_source",
+      "label": "utm_source (appended to CTA URL)",
+      "default": "kesehatanwanita_blog"
     },
     {
       "type": "text",
