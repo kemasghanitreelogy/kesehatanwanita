@@ -271,7 +271,8 @@
         "cta_text": "Ambil Protokol 60 Hari Saya →",
         "utm_campaign": "5-gejala-usia-45",
         "quality_line_html": "Kapsul <strong>daun kelor murni pertama dan satu-satunya di Indonesia</strong> yang terdaftar di BPOM sebagai Obat Tradisional.",
-        "shipping_text": "Gratis Ongkir untuk pembaca artikel ini"
+        "shipping_text": "Gratis Ongkir untuk pembaca artikel ini",
+        "utm_content": "cta1"
       }
     },
     "quality": {
@@ -497,7 +498,8 @@
         "cta_text": "Saya Siap — Mulai Protokol Saya →",
         "utm_campaign": "5-gejala-usia-45",
         "quality_line_html": "Kapsul <strong>daun kelor murni pertama dan satu-satunya di Indonesia</strong> yang terdaftar di BPOM sebagai Obat Tradisional.",
-        "shipping_text": "Gratis Ongkir untuk pembaca artikel ini"
+        "shipping_text": "Gratis Ongkir untuk pembaca artikel ini",
+        "utm_content": "cta2"
       }
     },
     "disclosure": {

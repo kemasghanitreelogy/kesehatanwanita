@@ -16,14 +16,25 @@
   assign quality_html = section.settings.quality_line_html
   assign shipping = section.settings.shipping_text
   assign utm_campaign = section.settings.utm_campaign
+  assign utm_content = section.settings.utm_content
 
   assign final_cta_url = cta_url | default: '#'
-  if utm_campaign != blank and final_cta_url != '#'
-    assign campaign_value = utm_campaign | url_encode
-    if final_cta_url contains '?'
-      assign final_cta_url = final_cta_url | append: '&utm_campaign=' | append: campaign_value
-    else
-      assign final_cta_url = final_cta_url | append: '?utm_campaign=' | append: campaign_value
+  if final_cta_url != '#'
+    if utm_campaign != blank
+      assign campaign_value = utm_campaign | url_encode
+      if final_cta_url contains '?'
+        assign final_cta_url = final_cta_url | append: '&utm_campaign=' | append: campaign_value
+      else
+        assign final_cta_url = final_cta_url | append: '?utm_campaign=' | append: campaign_value
+      endif
+    endif
+    if utm_content != blank
+      assign content_value = utm_content | url_encode
+      if final_cta_url contains '?'
+        assign final_cta_url = final_cta_url | append: '&utm_content=' | append: content_value
+      else
+        assign final_cta_url = final_cta_url | append: '?utm_content=' | append: content_value
+      endif
     endif
   endif
 %}
@@ -197,6 +208,12 @@
       "id": "utm_campaign",
       "label": "utm_campaign (appended to CTA URL)",
       "default": "5-gejala-usia-45"
+    },
+    {
+      "type": "text",
+      "id": "utm_content",
+      "label": "utm_content (unique per button — appended to CTA URL)",
+      "default": "cta1"
     },
     {
       "type": "header",
