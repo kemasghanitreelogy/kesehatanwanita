@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "wrapper": "div.v7-cluster-page",
   "sections": {
@@ -14,17 +23,13 @@
         "article_meta": "Kesehatan Wanita · Nutrisi · 7 menit baca",
         "headline": "Lima hal yang perempuan Indonesia di atas 45 tahun sering anggap \"wajar karena usia\" — dan mengapa mengatasinya satu per satu tidak pernah berhasil.",
         "deck": "Dokter jantung tidak akan bertanya tentang mood swing Anda. Dokter kulit tidak akan memeriksa lutut Anda. Tapi jika tiga dari lima hal ini terjadi pada Anda sekaligus, tubuh Anda bukan sedang menua — melainkan kekurangan nutrisi yang sama, di tempat yang berbeda. Dan masalah ini bisa diatasi.",
-        "byline_html": "Oleh <strong>Kusumawardani</strong> · Penulis Nutrisi &amp; Kesehatan Wanita",
+        "byline_html": "Oleh <strong>Kusumawardani</strong> · Penulis Nutrisi & Kesehatan Wanita",
+        "hero_image": "shopify://shop_images/Photo_1.png",
         "hero_alt": "Diagram medis perbandingan sendi lutut — di kiri tulang rawan yang meradang dan terkikis, di kanan tulang rawan yang bersih, halus, dan ternutrisi"
       }
     },
     "checklist": {
       "type": "advertorial-cluster-v7-checklist",
-      "settings": {
-        "intro": "Daftar berikut mungkin akan terasa terlalu familier.",
-        "punchline": "Jika tiga dari lima hal itu terasa benar — dan sebagian dari Anda mengenali diri sendiri di lebih dari satu poin — maka sisa artikel ini untuk Anda.",
-        "followup_html": "Karena selama ini tidak ada yang memberi tahu Anda bahwa kelima hal ini sebenarnya adalah masalah yang sama."
-      },
       "blocks": {
         "i1": {
           "type": "item",
@@ -68,7 +73,12 @@
         "i3",
         "i4",
         "i5"
-      ]
+      ],
+      "settings": {
+        "intro": "Daftar berikut mungkin akan terasa terlalu familier.",
+        "punchline": "Jika tiga dari lima hal itu terasa benar — dan sebagian dari Anda mengenali diri sendiri di lebih dari satu poin — maka sisa artikel ini untuk Anda.",
+        "followup_html": "Karena selama ini tidak ada yang memberi tahu Anda bahwa kelima hal ini sebenarnya adalah masalah yang sama."
+      }
     },
     "reframe": {
       "type": "advertorial-cluster-v7-body",
@@ -132,7 +142,8 @@
         "p5",
         "dm",
         "p6"
-      ]
+      ],
+      "settings": {}
     },
     "mechanism": {
       "type": "advertorial-cluster-v7-body",
@@ -140,6 +151,7 @@
         "img": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/photo_2.png",
             "alt": "Daun kelor utuh + kapsul dengan anotasi nutrisi yang dipetakan ke 5 gejala cluster",
             "placeholder_title": "[ GAMBAR DIBUTUHKAN ]",
             "placeholder_body": "Foto bersih daun kelor utuh + kapsul / botol kapsul dengan anotasi nutrisi yang dipetakan ke 5 gejala cluster (Quercetin → sendi kaku pagi, Triptofan → tidur terbangun jam 2 pagi, Zat besi nabati → lelah jam 3 sore, Magnesium → hot flash, Klorofil & anti-inflamasi → kulit dari luar). Cahaya natural, nuansa hijau dan earthy, gaya editorial bukan katalog."
@@ -205,27 +217,11 @@
         "p5",
         "t1",
         "p6"
-      ]
+      ],
+      "settings": {}
     },
     "offer-1": {
       "type": "advertorial-cluster-v7-offer",
-      "settings": {
-        "urgency_text": "⏰ Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu",
-        "product_image_alt": "Botol 180 kapsul moringa organik",
-        "placeholder_title": "[ GAMBAR OFFER DIBUTUHKAN ]",
-        "placeholder_body": "Foto produk botol 180 kapsul. Cahaya natural lembut. Botol + 3 kapsul disusun di sampingnya sebagai penanda dosis harian.",
-        "offer_label": "Penawaran Khusus Pembaca",
-        "offer_title": "Protokol 60 Hari Moringa",
-        "offer_contents_html": "180 Kapsul Daun Moringa Organik\n(Persediaan 2 bulan · 3 kapsul/hari)",
-        "price_old": "Rp 690.000",
-        "price_new": "Rp 590.000",
-        "price_saving": "Hemat Rp 100.000",
-        "price_discount": "-14%",
-        "cta_url": "https://treelogy.com/id/products/moringa-60-day-protocol?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign=cluster_angle&utm_content=cta1",
-        "cta_text": "Ambil Protokol 60 Hari Saya →",
-        "quality_line_html": "Kapsul <strong>daun kelor murni pertama dan satu-satunya di Indonesia</strong> yang terdaftar di BPOM sebagai Obat Tradisional.",
-        "shipping_text": "Gratis Ongkir untuk pembaca artikel ini"
-      },
       "blocks": {
         "b1": {
           "type": "badge",
@@ -257,7 +253,25 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "urgency_text": "⏰ Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu",
+        "product_image": "shopify://shop_images/Photo_PP.png",
+        "product_image_alt": "Botol 180 kapsul moringa organik",
+        "placeholder_title": "[ GAMBAR OFFER DIBUTUHKAN ]",
+        "placeholder_body": "Foto produk botol 180 kapsul. Cahaya natural lembut. Botol + 3 kapsul disusun di sampingnya sebagai penanda dosis harian.",
+        "offer_label": "Penawaran Khusus Pembaca",
+        "offer_title": "Protokol 60 Hari Moringa",
+        "offer_contents_html": "180 Kapsul Daun Moringa Organik\n(Persediaan 2 bulan · 3 kapsul/hari)",
+        "price_old": "Rp 690.000",
+        "price_new": "Rp 590.000",
+        "price_saving": "Hemat Rp 100.000",
+        "price_discount": "-14%",
+        "cta_url": "https://treelogy.com/id/products/moringa-60-day-protocol?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign=cluster_angle&utm_content=cta1",
+        "cta_text": "Ambil Protokol 60 Hari Saya →",
+        "quality_line_html": "Kapsul <strong>daun kelor murni pertama dan satu-satunya di Indonesia</strong> yang terdaftar di BPOM sebagai Obat Tradisional.",
+        "shipping_text": "Gratis Ongkir untuk pembaca artikel ini"
+      }
     },
     "quality": {
       "type": "advertorial-cluster-v7-body",
@@ -283,6 +297,7 @@
         "img": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/photo_3.png",
             "alt": "Perbandingan visual antara bubuk moringa hijau murni hasil sortir tangan (daun murni) dengan bubuk moringa kualitas rendah yang berwarna kecokelatan karena campuran batang",
             "placeholder_title": "[ GAMBAR DIBUTUHKAN ]",
             "placeholder_body": "Perbandingan bubuk moringa hijau murni vs kecokelatan."
@@ -302,7 +317,8 @@
         "p2",
         "img",
         "t1"
-      ]
+      ],
+      "settings": {}
     },
     "timeline": {
       "type": "advertorial-cluster-v7-body",
@@ -375,7 +391,8 @@
         "t2",
         "p5",
         "t3"
-      ]
+      ],
+      "settings": {}
     },
     "closing": {
       "type": "advertorial-cluster-v7-body",
@@ -425,27 +442,11 @@
         "p3",
         "p4",
         "p5"
-      ]
+      ],
+      "settings": {}
     },
     "offer-2": {
       "type": "advertorial-cluster-v7-offer",
-      "settings": {
-        "urgency_text": "⏰ Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu",
-        "product_image_alt": "Botol 180 kapsul moringa organik",
-        "placeholder_title": "[ GAMBAR OFFER ]",
-        "placeholder_body": "Botol 180 kapsul — sama dengan CTA 1.",
-        "offer_label": "Penawaran Khusus Pembaca",
-        "offer_title": "Protokol 60 Hari Moringa",
-        "offer_contents_html": "180 Kapsul Daun Moringa Organik\n(Persediaan 2 bulan · 3 kapsul/hari)",
-        "price_old": "Rp 690.000",
-        "price_new": "Rp 590.000",
-        "price_saving": "Hemat Rp 100.000",
-        "price_discount": "-14%",
-        "cta_url": "https://treelogy.com/id/products/moringa-60-day-protocol?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign=cluster_angle&utm_content=cta2",
-        "cta_text": "Saya Siap — Mulai Protokol Saya →",
-        "quality_line_html": "Kapsul <strong>daun kelor murni pertama dan satu-satunya di Indonesia</strong> yang terdaftar di BPOM sebagai Obat Tradisional.",
-        "shipping_text": "Gratis Ongkir untuk pembaca artikel ini"
-      },
       "blocks": {
         "b1": {
           "type": "badge",
@@ -477,7 +478,25 @@
         "b2",
         "b3",
         "b4"
-      ]
+      ],
+      "settings": {
+        "urgency_text": "⏰ Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu",
+        "product_image": "shopify://shop_images/Photo_PP.png",
+        "product_image_alt": "Botol 180 kapsul moringa organik",
+        "placeholder_title": "[ GAMBAR OFFER ]",
+        "placeholder_body": "Botol 180 kapsul — sama dengan CTA 1.",
+        "offer_label": "Penawaran Khusus Pembaca",
+        "offer_title": "Protokol 60 Hari Moringa",
+        "offer_contents_html": "180 Kapsul Daun Moringa Organik\n(Persediaan 2 bulan · 3 kapsul/hari)",
+        "price_old": "Rp 690.000",
+        "price_new": "Rp 590.000",
+        "price_saving": "Hemat Rp 100.000",
+        "price_discount": "-14%",
+        "cta_url": "https://treelogy.com/id/products/moringa-60-day-protocol?utm_source=kesehatanwanita_blog&utm_medium=advertorial_cta&utm_campaign=cluster_angle&utm_content=cta2",
+        "cta_text": "Saya Siap — Mulai Protokol Saya →",
+        "quality_line_html": "Kapsul <strong>daun kelor murni pertama dan satu-satunya di Indonesia</strong> yang terdaftar di BPOM sebagai Obat Tradisional.",
+        "shipping_text": "Gratis Ongkir untuk pembaca artikel ini"
+      }
     },
     "disclosure": {
       "type": "advertorial-cluster-v7-disclosure",
