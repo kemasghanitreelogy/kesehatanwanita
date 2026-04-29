@@ -94,10 +94,30 @@
       {% endif %}
 
       {% if section.blocks.size > 0 %}
-        <div class="trust-badges">
+        {% assign has_logo = false %}
+        {% for block in section.blocks %}
+          {% if block.type == 'logo' %}
+            {% assign has_logo = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        <div class="trust-badges{% if has_logo %} trust-badges--logos{% endif %}">
           {% for block in section.blocks %}
             {% if block.type == 'badge' %}
               <span {{ block.shopify_attributes }}>{{ block.settings.label }}</span>
+            {% elsif block.type == 'logo' %}
+              <div class="trust-logo" {{ block.shopify_attributes }}>
+                {% if block.settings.image != blank %}
+                  {{ block.settings.image | image_url: width: 240 | image_tag:
+                      class: 'trust-logo-img',
+                      alt: block.settings.alt_text,
+                      loading: 'lazy',
+                      widths: '120,240,360'
+                  }}
+                {% elsif block.settings.svg_markup != blank %}
+                  <span class="trust-logo-svg" role="img" aria-label="{{ block.settings.alt_text | escape }}">{{ block.settings.svg_markup }}</span>
+                {% endif %}
+              </div>
             {% endif %}
           {% endfor %}
         </div>
@@ -260,6 +280,27 @@
           "type": "text",
           "id": "label",
           "label": "Badge label"
+        }
+      ]
+    },
+    {
+      "type": "logo",
+      "name": "Trust logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo image (PNG/JPG/SVG file)"
+        },
+        {
+          "type": "textarea",
+          "id": "svg_markup",
+          "label": "Inline SVG markup (used if no image)"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt text"
         }
       ]
     }
