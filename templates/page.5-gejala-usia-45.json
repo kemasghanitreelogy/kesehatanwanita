@@ -223,32 +223,35 @@
     "offer-1": {
       "type": "advertorial-cluster-v7-offer",
       "blocks": {
-        "b1": {
-          "type": "badge",
+        "logo_9rGgnU": {
+          "type": "logo",
           "settings": {
-            "alt_text": "Trust logo 1",
-            "label": ""
+            "image": "shopify://shop_images/bpom.svg",
+            "svg_markup": "",
+            "alt_text": ""
           }
         },
-        "b2": {
-          "type": "badge",
+        "logo_TLExh7": {
+          "type": "logo",
           "settings": {
-            "alt_text": "Trust logo 2",
-            "label": ""
+            "image": "shopify://shop_images/usda.svg",
+            "svg_markup": "",
+            "alt_text": ""
           }
         },
-        "b3": {
-          "type": "badge",
+        "logo_KmAqmb": {
+          "type": "logo",
           "settings": {
-            "alt_text": "Trust logo 3",
-            "label": ""
+            "image": "shopify://shop_images/halal.svg",
+            "svg_markup": "",
+            "alt_text": ""
           }
         }
       },
       "block_order": [
-        "b1",
-        "b2",
-        "b3"
+        "logo_9rGgnU",
+        "logo_TLExh7",
+        "logo_KmAqmb"
       ],
       "settings": {
         "urgency_text": "⏰ Penawaran Khusus Pembaca Artikel Ini",
@@ -451,18 +454,18 @@
     "offer-2": {
       "type": "advertorial-cluster-v7-offer",
       "blocks": {
-        "logo_GiUhHN": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/usda.svg",
-            "svg_markup": "",
-            "alt_text": ""
-          }
-        },
         "logo_Fbkt4B": {
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/bpom.svg",
+            "svg_markup": "",
+            "alt_text": ""
+          }
+        },
+        "logo_GiUhHN": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/usda.svg",
             "svg_markup": "",
             "alt_text": ""
           }
@@ -477,8 +480,8 @@
         }
       },
       "block_order": [
-        "logo_GiUhHN",
         "logo_Fbkt4B",
+        "logo_GiUhHN",
         "logo_PMfk8g"
       ],
       "settings": {
