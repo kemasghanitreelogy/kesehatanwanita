@@ -451,32 +451,35 @@
     "offer-2": {
       "type": "advertorial-cluster-v7-offer",
       "blocks": {
-        "b1": {
-          "type": "badge",
+        "logo_GiUhHN": {
+          "type": "logo",
           "settings": {
-            "alt_text": "Trust logo 1",
-            "label": ""
+            "image": "shopify://shop_images/usda.svg",
+            "svg_markup": "",
+            "alt_text": ""
           }
         },
-        "b2": {
-          "type": "badge",
+        "logo_Fbkt4B": {
+          "type": "logo",
           "settings": {
-            "alt_text": "Trust logo 2",
-            "label": ""
+            "image": "shopify://shop_images/bpom.svg",
+            "svg_markup": "",
+            "alt_text": ""
           }
         },
-        "b3": {
-          "type": "badge",
+        "logo_PMfk8g": {
+          "type": "logo",
           "settings": {
-            "alt_text": "Trust logo 3",
-            "label": ""
+            "image": "shopify://shop_images/halal.svg",
+            "svg_markup": "",
+            "alt_text": ""
           }
         }
       },
       "block_order": [
-        "b1",
-        "b2",
-        "b3"
+        "logo_GiUhHN",
+        "logo_Fbkt4B",
+        "logo_PMfk8g"
       ],
       "settings": {
         "urgency_text": "⏰ Penawaran Khusus Pembaca Artikel Ini",
