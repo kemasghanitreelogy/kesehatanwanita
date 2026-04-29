@@ -116,43 +116,28 @@
       {% if section.blocks.size > 0 %}
         {% assign has_logo = false %}
         {% for block in section.blocks %}
-          {% if block.type == 'badge' and block.settings.image != blank %}
-            {% assign has_logo = true %}
-            {% break %}
-          {% endif %}
-          {% if block.type == 'logo' %}
+          {% if block.settings.image != blank or block.settings.svg_markup != blank %}
             {% assign has_logo = true %}
             {% break %}
           {% endif %}
         {% endfor %}
         <div class="trust-badges{% if has_logo %} trust-badges--logos{% endif %}">
           {% for block in section.blocks %}
-            {% if block.type == 'badge' %}
-              {% if block.settings.image != blank %}
-                <div class="trust-logo" {{ block.shopify_attributes }}>
-                  {{ block.settings.image | image_url: width: 240 | image_tag:
-                      class: 'trust-logo-img',
-                      alt: block.settings.alt_text,
-                      loading: 'lazy',
-                      widths: '120,240,360'
-                  }}
-                </div>
-              {% elsif block.settings.label != blank %}
-                <span {{ block.shopify_attributes }}>{{ block.settings.label }}</span>
-              {% endif %}
-            {% elsif block.type == 'logo' %}
+            {% if block.settings.image != blank %}
               <div class="trust-logo" {{ block.shopify_attributes }}>
-                {% if block.settings.image != blank %}
-                  {{ block.settings.image | image_url: width: 240 | image_tag:
-                      class: 'trust-logo-img',
-                      alt: block.settings.alt_text,
-                      loading: 'lazy',
-                      widths: '120,240,360'
-                  }}
-                {% elsif block.settings.svg_markup != blank %}
-                  <span class="trust-logo-svg" role="img" aria-label="{{ block.settings.alt_text | escape }}">{{ block.settings.svg_markup }}</span>
-                {% endif %}
+                {{ block.settings.image | image_url: width: 240 | image_tag:
+                    class: 'trust-logo-img',
+                    alt: block.settings.alt_text,
+                    loading: 'lazy',
+                    widths: '120,240,360'
+                }}
               </div>
+            {% elsif block.settings.svg_markup != blank %}
+              <div class="trust-logo" {{ block.shopify_attributes }}>
+                <span class="trust-logo-svg" role="img" aria-label="{{ block.settings.alt_text | escape }}">{{ block.settings.svg_markup }}</span>
+              </div>
+            {% elsif block.settings.label != blank %}
+              <span {{ block.shopify_attributes }}>{{ block.settings.label }}</span>
             {% endif %}
           {% endfor %}
         </div>

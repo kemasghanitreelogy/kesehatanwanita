@@ -538,9 +538,11 @@
     font-weight: 700;
   }
   .v7-cluster-page .trust-badges--logos {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 12px;
+    justify-content: center;
+    gap: 18px;
     text-transform: none;
     letter-spacing: 0;
     padding: 4px 0 6px;
@@ -549,15 +551,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 200px;
+    flex: 0 0 auto;
   }
   .v7-cluster-page .trust-logo-img,
   .v7-cluster-page .trust-logo-svg svg {
     display: block;
-    max-width: 100%;
-    height: auto;
-    max-height: 56px;
     width: auto;
+    height: 48px;
+    max-width: 110px;
+    object-fit: contain;
   }
   .v7-cluster-page .shipping-line {
     font-size: 14px;
