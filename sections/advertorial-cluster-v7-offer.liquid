@@ -7,6 +7,10 @@
   assign label = section.settings.offer_label
   assign title = section.settings.offer_title
   assign contents = section.settings.offer_contents_html
+  assign product_name = section.settings.product_name
+  assign benefit_1 = section.settings.benefit_1
+  assign benefit_2 = section.settings.benefit_2
+  assign benefit_3 = section.settings.benefit_3
   assign price_old = section.settings.price_old
   assign price_new = section.settings.price_new
   assign price_saving = section.settings.price_saving
@@ -76,7 +80,23 @@
     <div class="offer-body">
       {% if label != blank %}<div class="offer-label">{{ label }}</div>{% endif %}
       {% if title != blank %}<div class="offer-title">{{ title }}</div>{% endif %}
-      {% if contents != blank %}<div class="offer-contents">{{ contents | newline_to_br }}</div>{% endif %}
+
+      {% capture benefit_icon %}<svg class="benefit-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#2d6a4f" stroke-width="2"/><path d="M7.5 12.5l3 3 6-6" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{% endcapture %}
+
+      {% if product_name != blank or benefit_1 != blank or benefit_2 != blank or benefit_3 != blank %}
+        <div class="offer-contents">
+          {% if product_name != blank %}<div class="offer-product-name">{{ product_name }}</div>{% endif %}
+          {% if benefit_1 != blank or benefit_2 != blank or benefit_3 != blank %}
+            <ul class="offer-benefits">
+              {% if benefit_1 != blank %}<li class="offer-benefit">{{ benefit_icon }}<span>{{ benefit_1 }}</span></li>{% endif %}
+              {% if benefit_2 != blank %}<li class="offer-benefit">{{ benefit_icon }}<span>{{ benefit_2 }}</span></li>{% endif %}
+              {% if benefit_3 != blank %}<li class="offer-benefit">{{ benefit_icon }}<span>{{ benefit_3 }}</span></li>{% endif %}
+            </ul>
+          {% endif %}
+        </div>
+      {% elsif contents != blank %}
+        <div class="offer-contents">{{ contents | newline_to_br }}</div>
+      {% endif %}
 
       <div class="price-stack">
         {% if price_old != blank %}<span class="price-old">{{ price_old }}</span>{% endif %}
@@ -96,6 +116,10 @@
       {% if section.blocks.size > 0 %}
         {% assign has_logo = false %}
         {% for block in section.blocks %}
+          {% if block.type == 'badge' and block.settings.image != blank %}
+            {% assign has_logo = true %}
+            {% break %}
+          {% endif %}
           {% if block.type == 'logo' %}
             {% assign has_logo = true %}
             {% break %}
@@ -104,7 +128,18 @@
         <div class="trust-badges{% if has_logo %} trust-badges--logos{% endif %}">
           {% for block in section.blocks %}
             {% if block.type == 'badge' %}
-              <span {{ block.shopify_attributes }}>{{ block.settings.label }}</span>
+              {% if block.settings.image != blank %}
+                <div class="trust-logo" {{ block.shopify_attributes }}>
+                  {{ block.settings.image | image_url: width: 240 | image_tag:
+                      class: 'trust-logo-img',
+                      alt: block.settings.alt_text,
+                      loading: 'lazy',
+                      widths: '120,240,360'
+                  }}
+                </div>
+              {% elsif block.settings.label != blank %}
+                <span {{ block.shopify_attributes }}>{{ block.settings.label }}</span>
+              {% endif %}
             {% elsif block.type == 'logo' %}
               <div class="trust-logo" {{ block.shopify_attributes }}>
                 {% if block.settings.image != blank %}
@@ -190,8 +225,32 @@
     {
       "type": "textarea",
       "id": "offer_contents_html",
-      "label": "Offer contents (line breaks preserved)",
-      "default": "180 Kapsul Daun Moringa Organik\n(Persediaan 2 bulan · 3 kapsul/hari)"
+      "label": "Offer contents (legacy — line breaks preserved). Leave blank if using product name + benefits below.",
+      "default": ""
+    },
+    {
+      "type": "text",
+      "id": "product_name",
+      "label": "Product name (above benefits)",
+      "default": "180 Kapsul Daun Moringa Organik"
+    },
+    {
+      "type": "text",
+      "id": "benefit_1",
+      "label": "Benefit 1",
+      "default": "Kaku sendi di pagi hari berkurang"
+    },
+    {
+      "type": "text",
+      "id": "benefit_2",
+      "label": "Benefit 2",
+      "default": "Energi stabil sepanjang sore"
+    },
+    {
+      "type": "text",
+      "id": "benefit_3",
+      "label": "Benefit 3",
+      "default": "Tidur lebih nyenyak tanpa hot flash"
     },
     {
       "type": "header",
@@ -274,12 +333,22 @@
   "blocks": [
     {
       "type": "badge",
-      "name": "Trust badge",
+      "name": "Trust badge / logo",
       "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo image (PNG/JPG/SVG file). If set, label is ignored."
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Image alt text"
+        },
         {
           "type": "text",
           "id": "label",
-          "label": "Badge label"
+          "label": "Badge label (text fallback)"
         }
       ]
     },

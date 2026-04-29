@@ -226,33 +226,32 @@
         "b1": {
           "type": "badge",
           "settings": {
-            "label": "BPOM Obat Tradisional"
+            "image": null,
+            "alt_text": "Trust logo 1",
+            "label": ""
           }
         },
         "b2": {
           "type": "badge",
           "settings": {
-            "label": "Halal"
+            "image": null,
+            "alt_text": "Trust logo 2",
+            "label": ""
           }
         },
         "b3": {
           "type": "badge",
           "settings": {
-            "label": "100% Organik"
-          }
-        },
-        "b4": {
-          "type": "badge",
-          "settings": {
-            "label": "Teruji Lab"
+            "image": null,
+            "alt_text": "Trust logo 3",
+            "label": ""
           }
         }
       },
       "block_order": [
         "b1",
         "b2",
-        "b3",
-        "b4"
+        "b3"
       ],
       "settings": {
         "urgency_text": "⏰ Penawaran Khusus Pembaca Artikel Ini",
@@ -262,7 +261,11 @@
         "placeholder_body": "Foto produk botol 180 kapsul. Cahaya natural lembut. Botol + 3 kapsul disusun di sampingnya sebagai penanda dosis harian.",
         "offer_label": "Penawaran Khusus Pembaca",
         "offer_title": "Protokol 60 Hari Moringa",
-        "offer_contents_html": "180 Kapsul Daun Moringa Organik",
+        "offer_contents_html": "",
+        "product_name": "180 Kapsul Daun Moringa Organik",
+        "benefit_1": "Kaku sendi di pagi hari berkurang",
+        "benefit_2": "Energi stabil sepanjang sore",
+        "benefit_3": "Tidur lebih nyenyak tanpa hot flash",
         "price_old": "Rp 690.000",
         "price_new": "Rp 590.000",
         "price_saving": "Hemat Rp 100.000",
@@ -454,33 +457,32 @@
         "b1": {
           "type": "badge",
           "settings": {
-            "label": "BPOM Obat Tradisional"
+            "image": null,
+            "alt_text": "Trust logo 1",
+            "label": ""
           }
         },
         "b2": {
           "type": "badge",
           "settings": {
-            "label": "Halal"
+            "image": null,
+            "alt_text": "Trust logo 2",
+            "label": ""
           }
         },
         "b3": {
           "type": "badge",
           "settings": {
-            "label": "100% Organik"
-          }
-        },
-        "b4": {
-          "type": "badge",
-          "settings": {
-            "label": "Teruji Lab"
+            "image": null,
+            "alt_text": "Trust logo 3",
+            "label": ""
           }
         }
       },
       "block_order": [
         "b1",
         "b2",
-        "b3",
-        "b4"
+        "b3"
       ],
       "settings": {
         "urgency_text": "⏰ Penawaran Khusus Pembaca Artikel Ini",
@@ -490,7 +492,11 @@
         "placeholder_body": "Botol 180 kapsul — sama dengan CTA 1.",
         "offer_label": "Penawaran Khusus Pembaca",
         "offer_title": "Protokol 60 Hari Moringa",
-        "offer_contents_html": "180 Kapsul Daun Moringa Organik",
+        "offer_contents_html": "",
+        "product_name": "180 Kapsul Daun Moringa Organik",
+        "benefit_1": "Kaku sendi di pagi hari berkurang",
+        "benefit_2": "Energi stabil sepanjang sore",
+        "benefit_3": "Tidur lebih nyenyak tanpa hot flash",
         "price_old": "Rp 690.000",
         "price_new": "Rp 590.000",
         "price_saving": "Hemat Rp 100.000",
