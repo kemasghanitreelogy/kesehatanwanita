@@ -255,7 +255,7 @@
         "b4"
       ],
       "settings": {
-        "urgency_text": "⏰ Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu",
+        "urgency_text": "⏰ Penawaran Khusus Pembaca Artikel Ini",
         "product_image": "shopify://shop_images/Photo_PP.png",
         "product_image_alt": "Botol 180 kapsul moringa organik",
         "placeholder_title": "[ GAMBAR OFFER DIBUTUHKAN ]",
@@ -483,18 +483,18 @@
         "b4"
       ],
       "settings": {
-        "urgency_text": "⏰ Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu",
+        "urgency_text": "⏰ Penawaran Khusus Pembaca Artikel Ini",
         "product_image": "shopify://shop_images/Photo_PP.png",
         "product_image_alt": "Botol 180 kapsul moringa organik",
         "placeholder_title": "[ GAMBAR OFFER ]",
         "placeholder_body": "Botol 180 kapsul — sama dengan CTA 1.",
         "offer_label": "Penawaran Khusus Pembaca",
         "offer_title": "Protokol 60 Hari Moringa",
-        "offer_contents_html": "180 Kapsul Daun Moringa Organik\n(Persediaan 2 bulan · 3 kapsul/hari)",
+        "offer_contents_html": "180 Kapsul Daun Moringa Organik",
         "price_old": "Rp 690.000",
         "price_new": "Rp 590.000",
         "price_saving": "Hemat Rp 100.000",
-        "price_discount": "-14%",
+        "price_discount": "",
         "cta_url": "https://treelogy.com/id/products/organic-moringa-capsules",
         "cta_text": "Saya Siap — Mulai Protokol Saya →",
         "utm_source": "kesehatanwanita_blog",
