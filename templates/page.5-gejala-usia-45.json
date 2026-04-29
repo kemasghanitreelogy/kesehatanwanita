@@ -226,7 +226,6 @@
         "b1": {
           "type": "badge",
           "settings": {
-            "image": null,
             "alt_text": "Trust logo 1",
             "label": ""
           }
@@ -234,7 +233,6 @@
         "b2": {
           "type": "badge",
           "settings": {
-            "image": null,
             "alt_text": "Trust logo 2",
             "label": ""
           }
@@ -242,7 +240,6 @@
         "b3": {
           "type": "badge",
           "settings": {
-            "image": null,
             "alt_text": "Trust logo 3",
             "label": ""
           }
@@ -457,7 +454,6 @@
         "b1": {
           "type": "badge",
           "settings": {
-            "image": null,
             "alt_text": "Trust logo 1",
             "label": ""
           }
@@ -465,7 +461,6 @@
         "b2": {
           "type": "badge",
           "settings": {
-            "image": null,
             "alt_text": "Trust logo 2",
             "label": ""
           }
@@ -473,7 +468,6 @@
         "b3": {
           "type": "badge",
           "settings": {
-            "image": null,
             "alt_text": "Trust logo 3",
             "label": ""
           }
