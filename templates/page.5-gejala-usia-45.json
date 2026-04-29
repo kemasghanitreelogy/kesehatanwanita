@@ -224,34 +224,35 @@
       "type": "advertorial-cluster-v7-offer",
       "blocks": {
         "b1": {
-          "type": "logo",
+          "type": "badge",
           "settings": {
-            "image": null,
-            "svg_markup": "",
-            "alt_text": "Trust logo 1"
+            "label": "BPOM Obat Tradisional"
           }
         },
         "b2": {
-          "type": "logo",
+          "type": "badge",
           "settings": {
-            "image": null,
-            "svg_markup": "",
-            "alt_text": "Trust logo 2"
+            "label": "Halal"
           }
         },
         "b3": {
-          "type": "logo",
+          "type": "badge",
           "settings": {
-            "image": null,
-            "svg_markup": "",
-            "alt_text": "Trust logo 3"
+            "label": "100% Organik"
+          }
+        },
+        "b4": {
+          "type": "badge",
+          "settings": {
+            "label": "Teruji Lab"
           }
         }
       },
       "block_order": [
         "b1",
         "b2",
-        "b3"
+        "b3",
+        "b4"
       ],
       "settings": {
         "urgency_text": "⏰ Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu",
@@ -261,11 +262,11 @@
         "placeholder_body": "Foto produk botol 180 kapsul. Cahaya natural lembut. Botol + 3 kapsul disusun di sampingnya sebagai penanda dosis harian.",
         "offer_label": "Penawaran Khusus Pembaca",
         "offer_title": "Protokol 60 Hari Moringa",
-        "offer_contents_html": "<div class=\"offer-product-name\">180 Kapsul Daun Moringa Organik</div><ul class=\"offer-benefits\"><li class=\"offer-benefit\"><svg class=\"benefit-icon\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\" stroke=\"#2d6a4f\" stroke-width=\"2\"/><path d=\"M7.5 12.5l3 3 6-6\" stroke=\"#2d6a4f\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg><span>Kaku sendi di pagi hari berkurang</span></li><li class=\"offer-benefit\"><svg class=\"benefit-icon\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\" stroke=\"#2d6a4f\" stroke-width=\"2\"/><path d=\"M7.5 12.5l3 3 6-6\" stroke=\"#2d6a4f\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg><span>Energi stabil sepanjang sore</span></li><li class=\"offer-benefit\"><svg class=\"benefit-icon\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\" stroke=\"#2d6a4f\" stroke-width=\"2\"/><path d=\"M7.5 12.5l3 3 6-6\" stroke=\"#2d6a4f\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg><span>Tidur lebih nyenyak tanpa hot flash</span></li></ul>",
+        "offer_contents_html": "180 Kapsul Daun Moringa Organik",
         "price_old": "Rp 690.000",
         "price_new": "Rp 590.000",
         "price_saving": "Hemat Rp 100.000",
-        "price_discount": "-14%",
+        "price_discount": "",
         "cta_url": "https://treelogy.com/id/products/organic-moringa-capsules",
         "cta_text": "Ambil Protokol 60 Hari Saya →",
         "utm_source": "kesehatanwanita_blog",
@@ -451,34 +452,35 @@
       "type": "advertorial-cluster-v7-offer",
       "blocks": {
         "b1": {
-          "type": "logo",
+          "type": "badge",
           "settings": {
-            "image": null,
-            "svg_markup": "",
-            "alt_text": "Trust logo 1"
+            "label": "BPOM Obat Tradisional"
           }
         },
         "b2": {
-          "type": "logo",
+          "type": "badge",
           "settings": {
-            "image": null,
-            "svg_markup": "",
-            "alt_text": "Trust logo 2"
+            "label": "Halal"
           }
         },
         "b3": {
-          "type": "logo",
+          "type": "badge",
           "settings": {
-            "image": null,
-            "svg_markup": "",
-            "alt_text": "Trust logo 3"
+            "label": "100% Organik"
+          }
+        },
+        "b4": {
+          "type": "badge",
+          "settings": {
+            "label": "Teruji Lab"
           }
         }
       },
       "block_order": [
         "b1",
         "b2",
-        "b3"
+        "b3",
+        "b4"
       ],
       "settings": {
         "urgency_text": "⏰ Stok Terbatas — Harga Dapat Berubah Sewaktu-waktu",
@@ -488,7 +490,7 @@
         "placeholder_body": "Botol 180 kapsul — sama dengan CTA 1.",
         "offer_label": "Penawaran Khusus Pembaca",
         "offer_title": "Protokol 60 Hari Moringa",
-        "offer_contents_html": "<div class=\"offer-product-name\">180 Kapsul Daun Moringa Organik</div><ul class=\"offer-benefits\"><li class=\"offer-benefit\"><svg class=\"benefit-icon\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\" stroke=\"#2d6a4f\" stroke-width=\"2\"/><path d=\"M7.5 12.5l3 3 6-6\" stroke=\"#2d6a4f\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg><span>Kaku sendi di pagi hari berkurang</span></li><li class=\"offer-benefit\"><svg class=\"benefit-icon\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\" stroke=\"#2d6a4f\" stroke-width=\"2\"/><path d=\"M7.5 12.5l3 3 6-6\" stroke=\"#2d6a4f\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg><span>Energi stabil sepanjang sore</span></li><li class=\"offer-benefit\"><svg class=\"benefit-icon\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\" stroke=\"#2d6a4f\" stroke-width=\"2\"/><path d=\"M7.5 12.5l3 3 6-6\" stroke=\"#2d6a4f\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg><span>Tidur lebih nyenyak tanpa hot flash</span></li></ul>",
+        "offer_contents_html": "180 Kapsul Daun Moringa Organik\n(Persediaan 2 bulan · 3 kapsul/hari)",
         "price_old": "Rp 690.000",
         "price_new": "Rp 590.000",
         "price_saving": "Hemat Rp 100.000",
